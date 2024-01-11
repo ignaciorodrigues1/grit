@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <Flex as="footer" bg="#090D1D" color="white" py={{base: '8', md: '10'}} w='100%'>
+    <Flex as="footer" bg="#1D1C1C" color="white" h="62px" w='100%'>
       <Container maxW="1200px" mx="auto">
         <Flex
           direction={{ base: "column", md: "row" }}
