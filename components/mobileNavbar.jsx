@@ -21,12 +21,12 @@ const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box position="fixed" top="2rem" left="2rem" alignItems="center">
+    <Flex position="fixed" top="2rem" mx="auto" px='2rem' w="100%" alignItems="center" justifyContent="space-between">
+      <Box>
         <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
       </Box>
 
-      <Flex position="fixed" top="2rem" right="2rem" alignItems="center">
+      <Flex>
         <IconButton
           backgroundColor="#3C463B4D"
           backdropFilter="blur(20px)"
@@ -124,7 +124,7 @@ const MobileNavbar = () => {
           </DrawerOverlay>
         </Drawer>
       </Flex>
-    </>
+    </Flex>
   );
 };
 
