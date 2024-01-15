@@ -7,20 +7,19 @@ const Navbar = () => {
     <>
     {/* Desktop navbar */}
 
-    <Box maxW="1200px" mx="auto" position='relative' display={{base: "none", md:"block"}}>
+    <Box maxW="1280px" mx="auto" position='relative' display={{base: "none", md:"block"}} >
       <Flex
         as="nav"
         align="center"
         justify="space-between"
         wrap="wrap"
-        paddingX="5rem"
+        paddingX={{base: "5rem", xl: "0"}}
         paddingY="2rem"
         bg="transparent"
         position="absolute"
         width="100%"
         top="0"
         zIndex="999"
-        w='100%'
       >
         {/* Brand Image */}
         <Link href="/">
