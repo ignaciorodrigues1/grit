@@ -12,10 +12,10 @@ const Hero = () => {
       minH="80vh"
     >
       {Array.from({ length: 4 }).map((_, index) => (
-        <Box className="curlyGridBox" position="relative"/>
+        <Box className="curlyGridBox" position="relative" key={1}/>
       ))}
       {Array.from({ length: 4 }).map((_, index) => (
-        <Box className="curlyGridBox" position="relative"/>
+        <Box className="curlyGridBox" position="relative" key={2}/>
       ))}
     </Grid>
   );
