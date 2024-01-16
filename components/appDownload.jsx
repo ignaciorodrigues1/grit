@@ -11,7 +11,7 @@ const AppDownload = () => {
       overflowX="hidden"
       zIndex={1}
     >
-      <Flex maxW="1280px" mx="auto">
+      <Flex maxW="1280px" mx="auto" paddingX={{base: "1rem", md: "3rem", xl: "0"}}>
         {/* Left Side */}
         <Flex flex="1" flexDirection="column" p={8} color="#ffffff" mt="25%">
           {/* Heading */}

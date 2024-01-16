@@ -21,7 +21,7 @@ const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex position="fixed" top="2rem" mx="auto" px='2rem' w="100%" alignItems="center" justifyContent="space-between">
+    <Flex position="fixed" top="2rem" mx="auto" px='2rem' w="100%" alignItems="center" justifyContent="space-between" zIndex="99">
       <Box>
         <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
       </Box>
@@ -50,7 +50,7 @@ const MobileNavbar = () => {
                 zIndex="2"
                 position="absolute"
                 right="2rem"
-                top="2rem"
+                top="4rem"
                 fontSize="25px"
               />
               <DrawerBody>

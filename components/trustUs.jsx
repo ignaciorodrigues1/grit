@@ -14,8 +14,7 @@ const TrustUs = () => {
           justify="center"
           gap={20}
           py={8}
-          paddingX={{base: "5rem", xl: "0"}}
-          style={{ display: "flex" }}
+          paddingX={{base: "1rem", md: "3rem", xl: "0"}}
         >
           <Image
             src="/images/brand.png"

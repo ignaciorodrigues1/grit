@@ -13,7 +13,7 @@ const Navbar = () => {
         align="center"
         justify="space-between"
         wrap="wrap"
-        paddingX={{base: "5rem", xl: "0"}}
+        paddingX={{base: "2rem", md: "3rem", xl: "0"}}
         paddingY="2rem"
         bg="transparent"
         position="absolute"
