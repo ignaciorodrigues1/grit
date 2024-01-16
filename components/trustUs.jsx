@@ -7,14 +7,14 @@ const TrustUs = () => {
 
   return (
     <Box backgroundColor="#1D1C1C" maxW="100vw">
-      <Box maxW="1200px" mx="auto">
+      <Box maxW="1280px" mx="auto">
         {/* Heading */}
         <Flex
           align="center"
           justify="center"
           gap={20}
           py={8}
-          px="5rem"
+          paddingX={{base: "5rem", xl: "0"}}
           style={{ display: "flex" }}
         >
           <Image

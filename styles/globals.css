@@ -7,8 +7,7 @@ body,
 .curlyGridBox {
   position: relative;
   border: none;
-  border-image: radial-gradient(67.08px at calc(100% - 90.00px) 50%,#000 99%,#0000 101%) 0 calc(50% - 60px)/100% 120px,
-                radial-gradient(67.08px at calc(100% + 60.00px) 50%,#0000 99%,#000 101%) calc(100% - 30px) 50%/100% 120px repeat-y;
+  border-radius: 0% 8% 8% 100% / 0% 50% 50% 0%;
 }
 
 .curlyGridBox:not(:nth-child(4n)) {
