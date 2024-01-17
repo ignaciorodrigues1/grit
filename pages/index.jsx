@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import TrustUs from "../components/trustUs";
 import AppDownload from "../components/appDownload";
 import NewsSlider from "../components/newsSlider";
+import ContactForm from "../components/contactForm";
 
 const HomePage = () => {
  
@@ -15,6 +16,7 @@ const HomePage = () => {
       <TrustUs />
       <AppDownload />
       <NewsSlider />
+      <ContactForm />
     </Box>
   );
 };

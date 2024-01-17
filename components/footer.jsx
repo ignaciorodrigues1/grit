@@ -7,7 +7,6 @@ const Footer = () => {
     <Flex as="footer" bg="#1D1C1C" color="white" h="62px" w="100%" alignItems="center">
       <Container maxW="1280px" mx="auto">
         <Flex
-          direction={{ base: "column", md: "row" }}
           wrap="wrap"
           align="center"
           justify="space-between"
