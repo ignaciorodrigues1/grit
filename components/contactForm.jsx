@@ -119,6 +119,7 @@ const ContactForm = () => {
             fontFamily="Travels"
             bgColor="#EC6E44"
             h="36px"
+            _hover={{ bgColor: "#9EAC8E" }}
           >
             Enviar consulta
           </Button>
