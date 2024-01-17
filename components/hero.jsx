@@ -21,7 +21,7 @@ const Hero = () => {
         <Image
           src="/images/brand.png"
           alt="Brand Logo"
-          boxSize="200px"
+          boxSize={{base: "120px", md: "180px"}}
           mt="15%"
           mb={10}
         />
