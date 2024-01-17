@@ -28,11 +28,11 @@ const Hero = () => {
 
         <Heading
           color="white"
-          fontSize={{ base: "35px", md: "55px", lg: "72px" }}
+          fontSize={{ base: "25px", md: "55px", lg: "72px" }}
           fontWeight="bold"
           fontFamily="Travels"
           textTransform="uppercase"
-          lineHeight={{ base: "35px", md: "55px", lg: "67px" }}
+          lineHeight={{ base: "25px", md: "55px", lg: "67px" }}
           textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
         >
           Desarrollamos comunidades sustentables
