@@ -36,7 +36,7 @@ const WavyGrid = () => {
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           {/* First Image-Information Pair */}
           <Box display={{ base: "block", md: "none" }} mr="-10%">
-            <Image src="/images/image2M.png" alt="Image 3" maxH="220px" w="100%"/>
+            <Image src="/images/image2M.png" alt="Image 3" maxH="250px" w="100%"/>
           </Box>
           <Box display={{ base: "none", md: "block" }}>
             <Image src="/images/image2.png" alt="Image 3" />
@@ -60,14 +60,14 @@ const WavyGrid = () => {
             <Text>Details about Image 3</Text>
           </Box>
           <Box display={{ base: "block", md: "none" }} ml="-10%">
-            <Image src="/images/image3M.png" alt="Image 3" height="220px" width="100%"/>
+            <Image src="/images/image3M.png" alt="Image 3" height="250px" width="100%"/>
           </Box>
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           {/* First Image-Information Pair */}
           <Box display={{ base: "block", md: "none" }} mr="-10%">
-            <Image src="/images/image4M.png" alt="Image 3" height="220px" width="100%" />
+            <Image src="/images/image4M.png" alt="Image 3" height="250px" width="100%" />
           </Box>
 
           <Box color="white" p="3rem" mx="auto">
@@ -89,7 +89,7 @@ const WavyGrid = () => {
             <Text>Details about Image 5</Text>
           </Box>
           <Box display={{ base: "block", md: "none" }} ml="-10%">
-            <Image src="/images/image5M.png" alt="Image 3" height="220px" width="100%" />
+            <Image src="/images/image5M.png" alt="Image 3" height="250px" width="100%" />
           </Box>
           <Box display={{ base: "none", md: "block" }}>
             <Image src="/images/image5.png" alt="Image 3" />
