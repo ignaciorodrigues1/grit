@@ -4,25 +4,15 @@ body,
   height: 100%;;
 }
 
-.body {
-  overflow: hidden;
+/* Change the background color of the scrollbar track */
+::-webkit-scrollbar {
+  background-color: #FFFFFF;
+  width: 10px;
 }
 
-.curlyGridBox {
-  position: relative;
-  border: none;
-  border-radius: 0% 8% 8% 100% / 0% 50% 50% 0%;
-}
+/* Change the color of the scrollbar handle (slider) */
+::-webkit-scrollbar-thumb {
+  background-color: #9EAC8E;
+  border-radius: 5px;
 
-.curlyGridBox:not(:nth-child(4n)) {
-  border-right: 1px solid #FFFFFF99;
-  ; /* Set border-right to transparent to allow the radial gradient pattern to show */
-}
-
-/* Elimina el borde inferior del elemento en el medio de cada fila */
-.curlyGridBox:nth-child(4n - 1),
-.curlyGridBox:nth-child(4n - 2),
-.curlyGridBox:nth-child(4n - 3),
-.curlyGridBox:nth-child(4n - 4) {
-  border-bottom: none;
 }
