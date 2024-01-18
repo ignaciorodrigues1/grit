@@ -3,16 +3,3 @@ body,
 :root {
   height: 100%;;
 }
-
-/* Change the background color of the scrollbar track */
-::-webkit-scrollbar {
-  background-color: #FFFFFF;
-  width: 10px;
-}
-
-/* Change the color of the scrollbar handle (slider) */
-::-webkit-scrollbar-thumb {
-  background-color: #9EAC8E;
-  border-radius: 5px;
-
-}
