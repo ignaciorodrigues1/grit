@@ -28,7 +28,7 @@ const ContactForm = () => {
     >
       <Box
         backgroundColor="#3C463B4D"
-        backdropFilter="blur(20px)"
+        backdropFilter="blur(5px)"
         p={8}
         borderRadius="lg"
         w="600px"

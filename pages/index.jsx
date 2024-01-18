@@ -6,6 +6,7 @@ import TrustUs from "../components/trustUs";
 import AppDownload from "../components/appDownload";
 import NewsSlider from "../components/newsSlider";
 import ContactForm from "../components/contactForm";
+import WavyGrid from "../components/wavyGrid";
 
 const HomePage = () => {
  
@@ -13,6 +14,7 @@ const HomePage = () => {
   return (
     <Box>
       <Hero />
+      <WavyGrid />
       <TrustUs />
       <AppDownload />
       <NewsSlider />
