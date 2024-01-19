@@ -22,7 +22,7 @@ const ContactForm = () => {
       backgroundImage="url('/images/contactBg.png')"
       backgroundSize="cover"
       backgroundPosition="center"
-      minH="80vh"
+      py="10"
       alignItems="center"
       justifyContent="center"
     >

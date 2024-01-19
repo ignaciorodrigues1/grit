@@ -1,4 +1,4 @@
-import { Box, Image, Heading, Flex } from "@chakra-ui/react";
+import { Image, Heading, Flex } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
