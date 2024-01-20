@@ -13,7 +13,7 @@ const Footer = () => {
       alignItems="center"
       overflowX="hidden"
     >
-      <Container maxW="1280px" mx="auto" py={{ Base: "5", sm: "none" }}>
+      <Container maxW="1280px" mx="auto" py={{ base: "5", sm: "none" }}>
         <Flex
           flexDirection={{ base: "column-reverse", sm: "row" }}
           align="center"
