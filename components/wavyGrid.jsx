@@ -210,7 +210,7 @@ const WavyGrid = () => {
           <Box display={{ base: "block", md: "none" }} ml="-10%">
             <Image
               src="/images/image5M.png"
-              alt="Image 3"
+              alt="Image 5"
               maxH="250px"
               width="100%"
             />
@@ -218,7 +218,7 @@ const WavyGrid = () => {
           <Box display={{ base: "none", md: "block" }} ml="-10%">
             <Image
               src="/images/image5.png"
-              alt="Image 3"
+              alt="Image 5"
               maxH="320px"
               width="100%"
             />
@@ -233,13 +233,13 @@ const WavyGrid = () => {
               alt="Image 6"
               display={{ base: "none", md: "block" }}
               width="100%"
-              height="auto"
+              maxH="320px"
             />
             <Image
               src="/images/image6M.png"
               alt="Image 6"
               display={{ base: "block", md: "none" }}
-              width="100%"
+              w="100vw"
             />
             <Flex
               p="20"
@@ -301,12 +301,13 @@ const WavyGrid = () => {
               alt="Image 7"
               display={{ base: "none", md: "block" }}
               width="100%"
+              
             />
             <Image
               src="/images/image7M.png"
               alt="Image 7"
               display={{ base: "block", md: "none" }}
-              width="100%"
+              w="100%"
             />
             <Flex
               p="20"
