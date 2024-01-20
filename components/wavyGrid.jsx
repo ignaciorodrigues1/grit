@@ -265,6 +265,9 @@ const WavyGrid = () => {
               >
                 Neander
               </Text>
+              <Box my="3">
+                <hr />
+              </Box>
               <Text
                 color="#EBEBEB"
                 fontFamily="Ubuntu Mono"
@@ -279,7 +282,6 @@ const WavyGrid = () => {
                   type="link"
                   textAlign="center"
                   color="white"
-                  w="100%"
                   textTransform="uppercase"
                   fontFamily="Travels"
                   bgColor="#EC6E44"
@@ -330,6 +332,9 @@ const WavyGrid = () => {
               >
                 Los Pinos 4
               </Text>
+              <Box my="3">
+                <hr />
+              </Box>
               <Text
                 color="#EBEBEB"
                 fontFamily="Ubuntu Mono"
@@ -344,7 +349,6 @@ const WavyGrid = () => {
                   type="link"
                   textAlign="center"
                   color="white"
-                  w="100%"
                   textTransform="uppercase"
                   fontFamily="Travels"
                   bgColor="#EC6E44"
