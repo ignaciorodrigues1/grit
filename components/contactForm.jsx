@@ -19,14 +19,26 @@ const ContactForm = () => {
 
   return (
     <Flex
+      position="relative"
       backgroundImage="url('/images/contactBg.png')"
       backgroundSize="cover"
       backgroundPosition="center"
       py="10"
       alignItems="center"
       justifyContent="center"
+      zIndex="-1"
     >
+      {/* Contact Vector Image */}
+      <Image
+        src="/images/contactVector.png"
+        alt="Contact Vector"
+        position="absolute"
+        inset="0"
+        zIndex="0"
+      />
+
       <Box
+        position="relative"
         backgroundColor="#3C463B4D"
         backdropFilter="blur(5px)"
         p={8}
@@ -36,6 +48,7 @@ const ContactForm = () => {
         mx="auto"
         pt={8}
         alignItems="center"
+        zIndex="1" 
       >
         {/* Company Logo */}
         <Flex justify="center" mb={4}>
