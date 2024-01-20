@@ -6,7 +6,7 @@ const TrustUs = () => {
   const brands = ["GALICIA", "VERDE MUNDO", "INMOBILIARIA", "PINK", "GALICIA", "VERDE MUNDO", "INMOBILIARIA", "PINK"];
 
   return (
-    <Box backgroundColor="#1D1C1C" maxW="100vw">
+    <Box backgroundColor="#1D1C1C" maxW="100vw" overflowX="hidden">
       <Box maxW="1280px" mx="auto">
         {/* Heading */}
         <Flex

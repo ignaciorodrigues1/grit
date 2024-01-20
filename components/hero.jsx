@@ -7,6 +7,7 @@ const Hero = () => {
       backgroundSize="cover"
       backgroundPosition="center"
       minH="80vh"
+      overflowX="hidden"
     >
       <Flex
         maxW="1280px"

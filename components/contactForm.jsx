@@ -27,6 +27,7 @@ const ContactForm = () => {
       alignItems="center"
       justifyContent="center"
       zIndex="-1"
+      overflowX="hidden"
     >
       {/* Contact Vector Image */}
       <Image

@@ -20,6 +20,7 @@ const Navbar = () => {
         width="100%"
         top="0"
         zIndex="999"
+        overflowX="hidden"
       >
         {/* Brand Image */}
         <Link href="/">

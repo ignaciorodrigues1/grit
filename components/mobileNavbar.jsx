@@ -21,7 +21,17 @@ const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex position="fixed" top="2rem" mx="auto" px='2rem' w="100%" alignItems="center" justifyContent="space-between" zIndex="99">
+    <Flex
+      position="fixed"
+      top="2rem"
+      mx="auto"
+      px="2rem"
+      w="100vw"
+      alignItems="center"
+      justifyContent="space-between"
+      zIndex="99"
+      overflowX="hidden"
+    >
       <Box>
         <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
       </Box>

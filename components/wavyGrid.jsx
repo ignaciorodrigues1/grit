@@ -10,14 +10,14 @@ import {
 
 const WavyGrid = () => {
   return (
-    <Box bgColor="#1D1C1C">
+    <Box bgColor="#1D1C1C" overflowX="hidden">
       <Box maxW="1280px" mx="auto">
         {/* Responsive Grid */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           {/* Items for Small Devices (base to sm) */}
           <Box
             color="white"
-            p="3rem"
+            p={{base:"1rem", md:"3rem"}}
             mx="auto"
             gridColumn={{ base: "span 2", md: "span 3" }}
           >

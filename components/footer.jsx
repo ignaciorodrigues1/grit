@@ -4,13 +4,17 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <Flex as="footer" bg="#1D1C1C" color="white" h="62px" w="100%" alignItems="center">
+    <Flex
+      as="footer"
+      bg="#1D1C1C"
+      color="white"
+      h="62px"
+      w="100%"
+      alignItems="center"
+      overflowX="hidden"
+    >
       <Container maxW="1280px" mx="auto">
-        <Flex
-          wrap="wrap"
-          align="center"
-          justify="space-between"
-        >
+        <Flex wrap="wrap" align="center" justify="space-between">
           {/* Text and Copyright */}
           <Box>
             <p>© Copyright 2023 - Grit Desarrollos</p>
@@ -38,4 +42,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
