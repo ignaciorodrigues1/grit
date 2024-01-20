@@ -17,7 +17,7 @@ const WavyGrid = () => {
           {/* Items for Small Devices (base to sm) */}
           <Box
             color="white"
-            p={{base:"1rem", md:"3rem"}}
+            p={{ base: "1rem", md: "3rem" }}
             mx="auto"
             gridColumn={{ base: "span 2", md: "span 3" }}
           >
@@ -227,19 +227,19 @@ const WavyGrid = () => {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
           {/* First Row/Column */}
-          <Box position="relative" mr="-5.5%">
+          <Box position="relative" border="1px white" ml="-5.5%">
             <Image
               src="/images/image6.png"
               alt="Image 6"
               display={{ base: "none", md: "block" }}
               width="100%"
-              maxH="320px"
+              maxW="100vw"
             />
             <Image
               src="/images/image6M.png"
               alt="Image 6"
               display={{ base: "block", md: "none" }}
-              w="100vw"
+              w="100%"
             />
             <Flex
               p="20"
@@ -252,7 +252,7 @@ const WavyGrid = () => {
                 color="white"
                 fontFamily="Travels"
                 fontWeight="400"
-                fontSize="32px"
+                fontSize={{ base: "25px", md: "32px" }}
               >
                 01
               </Text>
@@ -261,7 +261,7 @@ const WavyGrid = () => {
                 fontFamily="Travels"
                 fontWeight="900"
                 textTransform="uppercase"
-                fontSize="32px"
+                fontSize={{ base: "25px", md: "32px" }}
               >
                 Neander
               </Text>
@@ -301,7 +301,7 @@ const WavyGrid = () => {
               alt="Image 7"
               display={{ base: "none", md: "block" }}
               width="100%"
-              
+              maxW="100vw"
             />
             <Image
               src="/images/image7M.png"
@@ -320,7 +320,7 @@ const WavyGrid = () => {
                 color="white"
                 fontFamily="Travels"
                 fontWeight="400"
-                fontSize="32px"
+                fontSize={{ base: "25px", md: "32px" }}
               >
                 02
               </Text>
@@ -329,7 +329,7 @@ const WavyGrid = () => {
                 fontFamily="Travels"
                 fontWeight="900"
                 textTransform="uppercase"
-                fontSize="32px"
+                fontSize={{ base: "25px", md: "32px" }}
               >
                 Los Pinos 4
               </Text>
