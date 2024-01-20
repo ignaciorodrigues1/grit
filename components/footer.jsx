@@ -8,15 +8,19 @@ const Footer = () => {
       as="footer"
       bg="#1D1C1C"
       color="white"
-      h="62px"
+      minHeight="62px"
       w="100%"
       alignItems="center"
       overflowX="hidden"
     >
-      <Container maxW="1280px" mx="auto">
-        <Flex wrap="wrap" align="center" justify="space-between">
+      <Container maxW="1280px" mx="auto" py={{ Base: "5", sm: "none" }}>
+        <Flex
+          flexDirection={{ base: "column-reverse", sm: "row" }}
+          align="center"
+          justify="space-between"
+        >
           {/* Text and Copyright */}
-          <Box>
+          <Box pt={{ base: "10px", sm: "none" }}>
             <p>© Copyright 2023 - Grit Desarrollos</p>
           </Box>
 
