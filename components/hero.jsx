@@ -17,23 +17,23 @@ const Hero = () => {
         alignItems="center"
         textAlign="center"
         position="relative"
-        paddingX={{base: "2rem", md: "3rem", xl: "0"}}
+        paddingX={{ base: "2rem", md: "3rem", xl: "0" }}
       >
         <Image
           src="/images/brand.png"
           alt="Brand Logo"
-          boxSize={{base: "120px", md: "180px"}}
+          boxSize={{ base: "120px", md: "180px" }}
           mt="15%"
           mb={10}
         />
 
         <Heading
           color="white"
-          fontSize={{ base: "25px", md: "55px", lg: "72px" }}
+          fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
           fontWeight="bold"
           fontFamily="Travels"
           textTransform="uppercase"
-          lineHeight={{ base: "25px", md: "55px", lg: "67px" }}
+          lineHeight={{ base: "25px", sm: "6vw", md: "55px", lg: "67px" }}
           textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
         >
           Desarrollamos comunidades sustentables

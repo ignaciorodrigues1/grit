@@ -17,7 +17,7 @@ const WavyGrid = () => {
           {/* Items for Small Devices (base to sm) */}
           <Box
             color="white"
-            p={{ base: "1rem", md: "3rem" }}
+            p={{ base: "1rem", md:"1.2rem", lg:"3rem" }}
             mx="auto"
             gridColumn={{ base: "span 2", md: "span 3" }}
           >
@@ -26,8 +26,9 @@ const WavyGrid = () => {
                 color="#EBEBEB"
                 fontFamily="Travels"
                 fontWeight="700"
-                fontSize={{ base: "24px", md: "48px" }}
-                lineHeight={{ base: "26px", md: "48px" }}
+                pb={2}
+                fontSize={{ base: "20px", sm: "5vw", md: "38px" }}
+                lineHeight={{ base: "26px", sm: "5vw", md: "38px" }}
               >
                 UN CAMINO DE{" "}
                 <Box as="span" color="#9EAC8E" fontWeight="900">
@@ -227,7 +228,7 @@ const WavyGrid = () => {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
           {/* First Row/Column */}
-          <Box position="relative" border="1px white" ml="-5.5%">
+          <Box position="relative" border="1px white" mr="-5.5%">
             <Image
               src="/images/image6.png"
               alt="Image 6"

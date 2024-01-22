@@ -60,7 +60,7 @@ const ContactForm = () => {
         <Heading
           textAlign="center"
           mb={4}
-          fontSize="32px"
+          fontSize={{base: "21px", sm:"32px"}}
           fontFamily="Travels"
           fontWeight="900"
           color="white"

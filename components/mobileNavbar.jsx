@@ -33,7 +33,9 @@ const MobileNavbar = () => {
       overflowX="hidden"
     >
       <Box>
-        <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
+        <Link href="/">
+          <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
+        </Link>
       </Box>
 
       <Flex>
