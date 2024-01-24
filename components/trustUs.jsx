@@ -1,20 +1,36 @@
-import { Box, Flex, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, useBreakpointValue } from "@chakra-ui/react";
 
 import Marquee from "react-fast-marquee";
 
 const TrustUs = () => {
-  const brands = ["GALICIA", "VERDE MUNDO", "INMOBILIARIA", "PINK", "GALICIA", "VERDE MUNDO", "INMOBILIARIA", "PINK"];
+  const brands = [
+    "GALICIA",
+    "VERDE MUNDO",
+    "INMOBILIARIA",
+    "PINK",
+    "GALICIA",
+    "VERDE MUNDO",
+    "INMOBILIARIA",
+    "PINK",
+  ];
+
+  const isGradientEnabled = useBreakpointValue({ base: false, md: true });
 
   return (
-    <Box backgroundColor="#1D1C1C" maxW="100vw" overflowX="hidden">
+    <Box
+      backgroundColor="#1D1C1C"
+      maxW="100vw"
+      overflowX="hidden"
+      position="relative"
+    >
       <Box maxW="1280px" mx="auto">
         {/* Heading */}
         <Flex
           align="center"
           justify="center"
           gap={20}
-          py={8}
-          paddingX={{base: "1rem", md: "3rem", xl: "0"}}
+          pt={10}
+          paddingX={{ base: "1rem", md: "3rem", xl: "0" }}
         >
           <Image
             src="/images/brand.png"
@@ -44,7 +60,8 @@ const TrustUs = () => {
         <Flex
           align="center"
           justify="center"
-          my={8}
+          mt={8}
+          mb={{base: 10, md: 20}}
           mx="auto"
           maxW="100%"
           overflowX="hidden"
@@ -73,11 +90,16 @@ const TrustUs = () => {
           />
         </Flex>
 
-        <Flex>
+        <Flex pb={10}>
           <Marquee
             speed={40}
-            gradient={true}
-            gradientColor="#1D1C1C"
+            style={{
+              position: "absolute", // Puedes usar "fixed" si quieres que sea fijo en la pantalla
+              width: "100%",
+              maxWidth: "100vw",
+              bottom: "15px", // Ajusta la posición según tu diseño
+              left: 0,
+            }}
           >
             {brands.map((brand, index) => (
               <Box
@@ -87,7 +109,7 @@ const TrustUs = () => {
                 color="#FFFFFF99"
                 fontFamily="Travels"
                 fontWeight="700"
-                fontSize={{ base: "16px", md: "19px", lg: "32px" }}
+                fontSize={{ base: "16px", md: "25px", lg: "32px" }}
               >
                 {brand}
               </Box>

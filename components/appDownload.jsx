@@ -9,7 +9,6 @@ const AppDownload = () => {
       backgroundSize="cover"
       backgroundPosition="center"
       position="relative"
-      overflowX="hidden"
       zIndex={1}
     >
       <Flex
@@ -63,15 +62,16 @@ const AppDownload = () => {
           </Flex>
         </Flex>
 
-        <Box
-          maxH={{ base: "310px", md: "620px" }}
-          zIndex={{ base: "-1", md: "null" }}
-          ml={{ base: "-9", md: "null" }}
-        >
+        <Flex zIndex="-1" ml={{ base: "-9", md: "null" }} align="center">
           <AnimatedIcon>
-            <Image src="/images/appImage.png" alt="Right Side Image" />
+            <Image
+              src="/images/appImage.png"
+              alt="App Image"
+              w="100%"
+              maxH={{ base: "310px", md: "620px" }}
+            />
           </AnimatedIcon>
-        </Box>
+        </Flex>
       </Flex>
     </Box>
   );
