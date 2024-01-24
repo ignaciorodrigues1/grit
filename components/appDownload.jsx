@@ -1,4 +1,5 @@
-import { Flex, Image, Text, Box } from "@chakra-ui/react";
+import { Flex, Image, Text, Box, Link } from "@chakra-ui/react";
+import { AnimatedIcon } from "./animations/animatedIcon";
 
 const AppDownload = () => {
   return (
@@ -11,10 +12,12 @@ const AppDownload = () => {
       overflowX="hidden"
       zIndex={1}
     >
-      <Flex maxW="1280px" mx="auto" paddingX={{base: "1rem", md: "3rem", xl: "0"}}>
-        {/* Left Side */}
-        <Flex flex="1" flexDirection="column" p={8} color="#ffffff" mt="25%">
-          {/* Heading */}
+      <Flex
+        maxW="1280px"
+        mx="auto"
+        paddingX={{ base: "1rem", md: "3rem", xl: "0" }}
+      >
+        <Flex flex="1" flexDirection="column" pr={6} color="#ffffff" mt="25%">
           <Text
             mb={2}
             textTransform="uppercase"
@@ -26,7 +29,6 @@ const AppDownload = () => {
             Invertí en tu futuro
           </Text>
 
-          {/* Subtitle */}
           <Text
             fontSize="14px"
             lineHeight="14px"
@@ -52,26 +54,24 @@ const AppDownload = () => {
 
           {/* App Store and Play Store Links */}
           <Flex align="center">
-            <Image src="/images/playStore.png" alt="Play Store" mr={4} height={{base: "34px", md: "auto"}} />
-            <Image src="/images/appStore.png" alt="App Store" height={{base: "34px", md: "auto"}} />
+            <Link href="#" mr={4} height={{ base: "34px", md: "auto" }}>
+              <Image src="/images/playStore.png" alt="Play Store" />
+            </Link>
+            <Link href="#" height={{ base: "34px", md: "auto" }}>
+              <Image src="/images/appStore.png" alt="App Store" />
+            </Link>
           </Flex>
         </Flex>
 
-        {/* Right Side Desktop*/}
-        <Image
-          src="/images/appImage.png"
-          alt="Right Side Image"
-          display={{ base: "none", md: "block" }}
-        />
-
-        {/* Right Side Mobile*/}
-        <Image
-          src="/images/appImageMobile.png"
-          alt="Right Side Image"
-          display={{ base: "block", md: "none" }}
-          zIndex={-1}
-          ml={-9}
-        />
+        <Box
+          maxH={{ base: "310px", md: "620px" }}
+          zIndex={{ base: "-1", md: "null" }}
+          ml={{ base: "-9", md: "null" }}
+        >
+          <AnimatedIcon>
+            <Image src="/images/appImage.png" alt="Right Side Image" />
+          </AnimatedIcon>
+        </Box>
       </Flex>
     </Box>
   );

@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-export const AnimatedIcon = ({ IconComponent }) => {
+export const AnimatedIcon = ({ children }) => {
   const transitionValues = {
-    duration: 1,
+    duration: 3,
     repeat: Infinity,
     repeatType: 'mirror',
   };
@@ -14,7 +14,7 @@ export const AnimatedIcon = ({ IconComponent }) => {
         y: ['-6px', '6px']
       }}
     >
-      <IconComponent />
+      {children}
     </motion.div>
   );
 };

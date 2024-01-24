@@ -14,12 +14,13 @@ const WavyGrid = () => {
       <Box maxW="1280px" mx="auto">
         {/* Responsive Grid */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          {/* Items for Small Devices (base to sm) */}
+
           <Box
             color="white"
-            p={{ base: "1rem", md:"1.2rem", lg:"3rem" }}
+            p={{ base: "3rem", md:"1.2rem", lg:"3rem" }}
             mx="auto"
             gridColumn={{ base: "span 2", md: "span 3" }}
+            maxH="320px"
           >
             <Flex align="center" justify="center">
               <Box
@@ -43,7 +44,6 @@ const WavyGrid = () => {
             </Text>
           </Box>
 
-          {/* Image - Only for md and larger */}
           <Box display={{ base: "none", md: "block" }} ml="-10%">
             <Image
               src="/images/image1.png"
@@ -54,9 +54,7 @@ const WavyGrid = () => {
           </Box>
         </SimpleGrid>
 
-        {/* Second Responsive Grid for Image-Information pairs */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          {/* First Image-Information Pair */}
           <Box display={{ base: "block", md: "none" }} mr="-10%">
             <Image
               src="/images/image2M.png"
@@ -81,15 +79,13 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            {/* Ícono */}
+            
             <Image src="/images/icono1.png" alt="Icono 1" />
 
-            {/* Primer Texto */}
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
               +30K
             </Text>
 
-            {/* Segundo Texto */}
             <Text fontSize="sm" fontFamily="Ubuntu Mono">
               árboles
             </Text>
@@ -113,15 +109,13 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            {/* Ícono */}
+            
             <Image src="/images/icono2.png" alt="Icono 2" />
 
-            {/* Primer Texto */}
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
               +400K
             </Text>
 
-            {/* Segundo Texto */}
             <Text fontSize="sm" fontFamily="Ubuntu Mono">
               ecoladrillos
             </Text>
@@ -158,15 +152,13 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            {/* Ícono */}
+            
             <Image src="/images/icono3.png" alt="Icono 3" />
 
-            {/* Primer Texto */}
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
               +500M
             </Text>
 
-            {/* Segundo Texto */}
             <Text fontSize="sm" fontFamily="Ubuntu Mono">
               hectáreas
             </Text>
@@ -192,15 +184,13 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            {/* Ícono */}
+            
             <Image src="/images/icono4.png" alt="Icono 4" />
 
-            {/* Primer Texto */}
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
               +100
             </Text>
 
-            {/* Segundo Texto */}
             <Text fontSize="sm" fontFamily="Ubuntu Mono">
               familias
             </Text>
@@ -228,7 +218,7 @@ const WavyGrid = () => {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
           {/* First Row/Column */}
-          <Box position="relative" border="1px white" mr="-5.5%">
+          <Box position="relative" mr={{base: "", md: "-5.5%"}}>
             <Image
               src="/images/image6.png"
               alt="Image 6"
@@ -296,7 +286,7 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Row/Column */}
-          <Box position="relative" border="1px white" ml="-5.5%">
+          <Box position="relative" ml={{base: "", md: "-5.5%"}}>
             <Image
               src="/images/image7.png"
               alt="Image 7"

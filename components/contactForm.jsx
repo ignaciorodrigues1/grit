@@ -27,15 +27,15 @@ const ContactForm = () => {
       alignItems="center"
       justifyContent="center"
       zIndex="-1"
-      overflowX="hidden"
     >
       {/* Contact Vector Image */}
-      <Image
-        src="/images/contactVector.png"
+      <Box
+        backgroundImage="url('/images/contactVector.png')"
+        backgroundSize="cover"
+        backgroundPosition="center"
         alt="Contact Vector"
         position="absolute"
-        inset="0"
-        zIndex="0"
+        inset={0}
       />
 
       <Box
@@ -49,18 +49,18 @@ const ContactForm = () => {
         mx="auto"
         pt={8}
         alignItems="center"
-        zIndex="1" 
+        zIndex="1"
       >
         {/* Company Logo */}
         <Flex justify="center" mb={4}>
-          <Image src="/images/brand.png" alt="Grit Logo" />
+          <Image src="/images/brand.png" alt="Grit Logo" maxH="75px" />
         </Flex>
 
         {/* Form Title */}
         <Heading
           textAlign="center"
           mb={4}
-          fontSize={{base: "21px", sm:"32px"}}
+          fontSize={{ base: "21px", sm: "32px" }}
           fontFamily="Travels"
           fontWeight="900"
           color="white"
