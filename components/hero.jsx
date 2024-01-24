@@ -11,7 +11,6 @@ const Hero = () => {
         backgroundSize="cover"
         backgroundPosition="center"
         minH="70vh"
-        overflowX="hidden"
         position="relative"
       >
         <Flex
@@ -23,6 +22,7 @@ const Hero = () => {
           textAlign="center"
           position="relative"
           paddingX={{ base: "2rem", md: "3rem", xl: "0" }}
+          py={10}
         >
           <Image
             src="/images/brand.png"
