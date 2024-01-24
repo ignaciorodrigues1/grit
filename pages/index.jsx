@@ -9,7 +9,6 @@ import ContactForm from "../components/contactForm";
 import WavyGrid from "../components/wavyGrid";
 
 const HomePage = () => {
- 
 
   return (
     <Box>

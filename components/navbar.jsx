@@ -43,7 +43,7 @@ const Navbar = () => {
             fontFamily="Ubuntu Mono"
             fontSize="16px"
           >
-            <Link href="#" _hover={{ textDecoration: "none" }}>
+            <Link href="/proyectos" _hover={{ textDecoration: "none" }}>
               Proyectos
             </Link>
           </Box>
