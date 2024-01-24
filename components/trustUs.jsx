@@ -14,16 +14,41 @@ const TrustUs = () => {
     "PINK",
   ];
 
-  const isGradientEnabled = useBreakpointValue({ base: false, md: true });
+  const isGradientEnabled = useBreakpointValue({ base: false, xl: true });
 
   return (
     <Box
       backgroundColor="#1D1C1C"
       maxW="100vw"
-      overflowX="hidden"
       position="relative"
     >
-      <Box maxW="1280px" mx="auto">
+      <Box
+        maxW="1280px"
+        mx="auto"
+        position="relative"
+        _before={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: "97%",
+          background: isGradientEnabled
+            ? "linear-gradient(to left, rgba(29, 28, 28, 0), #1D1C1C)"
+            : "transparent",
+        }}
+        _after={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: "97%",
+          background: isGradientEnabled
+            ? "linear-gradient(to right, rgba(29, 28, 28, 0), #1D1C1C)"
+            : "transparent",
+        }}
+      >
         {/* Heading */}
         <Flex
           align="center"
@@ -61,7 +86,7 @@ const TrustUs = () => {
           align="center"
           justify="center"
           mt={8}
-          mb={{base: 10, md: 20}}
+          mb={{ base: 10, md: 20 }}
           mx="auto"
           maxW="100%"
           overflowX="hidden"
@@ -90,17 +115,10 @@ const TrustUs = () => {
           />
         </Flex>
 
-        <Flex pb={10}>
-          <Marquee
-            speed={40}
-            style={{
-              position: "absolute", // Puedes usar "fixed" si quieres que sea fijo en la pantalla
-              width: "100%",
-              maxWidth: "100vw",
-              bottom: "15px", // Ajusta la posición según tu diseño
-              left: 0,
-            }}
-          >
+        <Flex
+          pb={10}
+        >
+          <Marquee speed={40}>
             {brands.map((brand, index) => (
               <Box
                 key={index}

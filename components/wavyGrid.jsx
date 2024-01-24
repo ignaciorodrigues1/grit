@@ -6,12 +6,44 @@ import {
   Image,
   Flex,
   Link,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 const WavyGrid = () => {
+
+  const isGradientEnabled = useBreakpointValue({ base: false, xl: true });
+
   return (
     <Box bgColor="#1D1C1C" overflowX="hidden">
-      <Box maxW="1280px" mx="auto">
+            <Box
+        maxW="1280px"
+        mx="auto"
+        position="relative"
+        _before={{
+          content: '""',
+          position: "absolute",
+          zIndex: "99",
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: "97%",
+          background: isGradientEnabled
+            ? "linear-gradient(to left, rgba(29, 28, 28, 0), #1D1C1C)"
+            : "transparent",
+        }}
+        _after={{
+          content: '""',
+          position: "absolute",
+          zIndex: "99",
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: "97%",
+          background: isGradientEnabled
+            ? "linear-gradient(to right, rgba(29, 28, 28, 0), #1D1C1C)"
+            : "transparent",
+        }}
+      >
         {/* Responsive Grid */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
 
