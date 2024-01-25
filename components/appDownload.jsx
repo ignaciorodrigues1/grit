@@ -22,9 +22,10 @@ const AppDownload = () => {
             textTransform="uppercase"
             fontFamily="Travels"
             fontWeight="900"
-            fontSize={{ base: "32px", md: "72px" }}
+            fontSize={{ base: "18px", sm: "32px", md: "72px" }}
             lineHeight={{ base: "31px", md: "62px" }}
             width="75%"
+            
           >
             Invertí en tu futuro
           </Text>
@@ -32,7 +33,7 @@ const AppDownload = () => {
           <Text
             fontSize="14px"
             lineHeight="14px"
-            mb={4}
+            my={4}
             fontFamily="Ubuntu Mono"
             display={{ base: "none", md: "block" }}
             width="75%"
@@ -48,6 +49,7 @@ const AppDownload = () => {
             mb={4}
             fontFamily="Ubuntu Mono"
             display={{ base: "block", md: "none" }}
+            width="75%"
           >
             El profundo compromiso se ve reflejado en cada una de nuestras
             obras.

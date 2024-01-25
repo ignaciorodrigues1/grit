@@ -3,10 +3,12 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Image, Text, Heading, Link, Button } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, Link, Button, useMediaQuery } from "@chakra-ui/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const NewsSlider = () => {
+  const [isSm, isMdOrLarger] = useMediaQuery(["(min-width: 40em)", "(min-width: 48em)"]);
+
   const slides = [
     {
       image: "/images/slide1.png",
@@ -53,6 +55,7 @@ const NewsSlider = () => {
       onClick={props.onClick}
       bg="#EBEBEB1A"
       _hover={{ backgroundColor:"#3C463B4D" }}
+      display={{base: "none", md: "block"}}
     >
       <FaChevronLeft />
     </Button>
@@ -71,36 +74,29 @@ const NewsSlider = () => {
       onClick={props.onClick}
       bg="#EBEBEB1A"
       _hover={{ backgroundColor:"#3C463B4D" }}
+      display={{base: "none", md: "block"}}
     >
       <FaChevronRight />
     </Button>
   );
 
+  let slidesToShow = 1;
+  if (isSm) {
+    slidesToShow = 2;
+  } else if (isSm) {
+    slidesToShow = 3;
+  }
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
+    centerMode: isMdOrLarger ? false : true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
   };
-
-  
 
   return (
     <Box backgroundColor="#1D1C1C" py={10} overflowX="hidden">
@@ -115,8 +111,8 @@ const NewsSlider = () => {
       </Heading>
       <Box
         maxW="1280px"
-        mx="auto"
-        paddingX={{ base: "2rem", md: "3rem", xl: "0" }}
+        mx={{base:"0", md:"auto"}}
+        paddingX={{ md: "3rem", xl: "0" }}
       >
         <Slider {...settings}>
           {slides.map((slide, index) => (
