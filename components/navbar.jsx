@@ -35,7 +35,7 @@ const Navbar = () => {
       w="100%"
       h="auto"
       position="fixed"
-      zIndex={99999}
+      zIndex={9}
       maxW="1280px"
       top="0"
       left="0"
