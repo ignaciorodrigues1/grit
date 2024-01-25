@@ -1,101 +1,71 @@
-import { Box, Flex, Image, Link } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import { Box, Image, Link, Flex} from "@chakra-ui/react";
+import { AnimatedNavbar } from "./animations/animatedNavbar";
 
 import MobileNavbar from "./mobileNavbar";
+import DesktopNavbar from "./desktopNavbar";
 
 const Navbar = () => {
-  return (
-    <>
-    {/* Desktop navbar */}
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-    <Box maxW="1280px" mx="auto" position='relative' display={{base: "none", md:"block"}} >
-      <Flex
-        as="nav"
-        align="center"
-        justify="space-between"
-        wrap="wrap"
-        paddingX={{base: "2rem", md: "3rem", xl: "0"}}
-        paddingY="2rem"
-        bg="transparent"
-        position="absolute"
-        width="100%"
-        top="0"
-        zIndex="999"
-        overflowX="hidden"
-      >
-        {/* Brand Image */}
-        <Link href="/">
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      setIsNavVisible(
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 70) ||
+          currentScrollPos < 10
+      );
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
+  return (
+    <Box
+      className="NAVBAR"
+      w="100%"
+      h="auto"
+      position="fixed"
+      zIndex={99999}
+      maxW="1280px"
+      top="0"
+      left="0"
+      right="0"
+      mx="auto"
+    >
+      <Flex justify="space-between" py="3rem" px="5rem" align="center">
+        <Link
+          href="/"
+          transition="transform 0.3s ease-in-out"
+          transform={isNavVisible ? "translateY(0)" : "translateY(-300%)"}
+        >
           <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
         </Link>
 
-        {/* Blurred Section for Sections and Button */}
-        <Flex
-          backgroundColor="#3C463B4D"
-          backdropFilter="blur(20px)"
-          paddingY="8px"
-          paddingX="16px"
-          borderRadius="8px"
-          align="center"
-        >
-          {/* Sections */}
-          <Box
-            marginRight="4"
-            textColor="white"
-            fontFamily="Ubuntu Mono"
-            fontSize="16px"
-          >
-            <Link href="/proyectos" _hover={{ textDecoration: "none" }}>
-              Proyectos
-            </Link>
-          </Box>
-          <Box
-            marginRight="4"
-            textColor="white"
-            fontFamily="Ubuntu Mono"
-            fontSize="16px"
-          >
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              La Empresa
-            </Link>
-          </Box>
-          <Box
-            marginRight="4"
-            textColor="white"
-            fontFamily="Ubuntu Mono"
-            fontSize="16px"
-          >
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              Aplicación
-            </Link>
+        <AnimatedNavbar>
+          {/* Mobile navbar */}
+
+          <Box display={{ base: "block", md: "none" }}>
+            <MobileNavbar />
           </Box>
 
-          {/* Login Link */}
-          <Link
-            href="#"
-            bg="white"
-            textColor="#3C463B"
-            _hover="none"
-            ml="9"
-            py="8px"
-            px="24px"
-            fontSize="14px"
-            fontWeight="700"
-            borderRadius="4px"
-            fontFamily="Travels"
-          >
-            INGRESAR
-          </Link>
-        </Flex>
+          {/* Desktop navbar */}
+
+          <Box display={{ base: "none", md: "block" }}>
+            <DesktopNavbar />
+          </Box>
+        </AnimatedNavbar>
       </Flex>
     </Box>
-
-    {/* Mobile navbar */}
-
-    <Box display={{ base: "block", md: "none" }}>
-      <MobileNavbar />
-    </Box>
-
-
-    </>
   );
 };
 

@@ -10,12 +10,11 @@ import {
 } from "@chakra-ui/react";
 
 const WavyGrid = () => {
-
   const isGradientEnabled = useBreakpointValue({ base: false, xl: true });
 
   return (
     <Box bgColor="#1D1C1C" overflowX="hidden">
-            <Box
+      <Box
         maxW="1280px"
         mx="auto"
         position="relative"
@@ -46,16 +45,17 @@ const WavyGrid = () => {
       >
         {/* Responsive Grid */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-
           <Box
             color="white"
-            p={{ base: "3rem", md:"1.2rem", lg:"3rem" }}
+            p={{ base: "3rem", md: "1.2rem", lg: "3rem" }}
             mx="auto"
             gridColumn={{ base: "span 2", md: "span 3" }}
             maxH="320px"
+            className="HOLA"
+            my="auto"
           >
-            <Flex align="center" justify="center">
-              <Box
+            <Flex flexDirection="column" >
+              <Text
                 color="#EBEBEB"
                 fontFamily="Travels"
                 fontWeight="700"
@@ -66,14 +66,19 @@ const WavyGrid = () => {
                 UN CAMINO DE{" "}
                 <Box as="span" color="#9EAC8E" fontWeight="900">
                   TRANSFORMACIÓN
-                </Box>{" "}
-              </Box>
+                </Box>
+              </Text>
+              <Text
+                color="#EBEBEB"
+                fontSize="14px"
+                fontFamily="Ubuntu Mono"
+                maxWidth={{ base: "100%", md: "90%", lg: "75%", xl:"60%" }}
+              >
+                El profundo compromiso se ve reflejado en cada una de nuestras
+                obras, las cuales se distinguen por su calidad, cuidado del
+                medio ambiente e integración con la comunidad.
+              </Text>
             </Flex>
-            <Text color="#EBEBEB" fontSize="14px" fontFamily="Ubuntu Mono">
-              El profundo compromiso se ve reflejado en cada una de nuestras
-              obras, las cuales se distinguen por su calidad, cuidado del medio
-              ambiente e integración con la comunidad.{" "}
-            </Text>
           </Box>
 
           <Box display={{ base: "none", md: "block" }} ml="-10%">
@@ -111,7 +116,6 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            
             <Image src="/images/icono1.png" alt="Icono 1" />
 
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
@@ -141,7 +145,6 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            
             <Image src="/images/icono2.png" alt="Icono 2" />
 
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
@@ -184,7 +187,6 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            
             <Image src="/images/icono3.png" alt="Icono 3" />
 
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
@@ -216,7 +218,6 @@ const WavyGrid = () => {
             alignItems="center"
             flexDirection="column"
           >
-            
             <Image src="/images/icono4.png" alt="Icono 4" />
 
             <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
@@ -250,7 +251,7 @@ const WavyGrid = () => {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
           {/* First Row/Column */}
-          <Box position="relative" mr={{base: "", md: "-5.5%"}}>
+          <Box position="relative" mr={{ base: "", md: "-5.5%" }}>
             <Image
               src="/images/image6.png"
               alt="Image 6"
@@ -318,7 +319,7 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Row/Column */}
-          <Box position="relative" ml={{base: "", md: "-5.5%"}}>
+          <Box position="relative" ml={{ base: "", md: "-5.5%" }}>
             <Image
               src="/images/image7.png"
               alt="Image 7"

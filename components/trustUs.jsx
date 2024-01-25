@@ -20,7 +20,7 @@ const TrustUs = () => {
     <Box
       backgroundColor="#1D1C1C"
       maxW="100vw"
-      position="relative"
+      position=""
     >
       <Box
         maxW="1280px"

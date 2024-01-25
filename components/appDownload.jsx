@@ -24,6 +24,7 @@ const AppDownload = () => {
             fontWeight="900"
             fontSize={{ base: "32px", md: "72px" }}
             lineHeight={{ base: "31px", md: "62px" }}
+            width="75%"
           >
             Invertí en tu futuro
           </Text>
@@ -34,6 +35,7 @@ const AppDownload = () => {
             mb={4}
             fontFamily="Ubuntu Mono"
             display={{ base: "none", md: "block" }}
+            width="75%"
           >
             El profundo compromiso se ve reflejado en cada una de nuestras
             obras, las cuales se distinguen por su calidad, cuidado del medio

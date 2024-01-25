@@ -1,9 +1,7 @@
 "use client";
 
 import {
-  Box,
   Flex,
-  Image,
   IconButton,
   Drawer,
   DrawerBody,
@@ -21,24 +19,8 @@ const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex
-      position="fixed"
-      top="2rem"
-      mx="auto"
-      px="2rem"
-      w="100vw"
-      alignItems="center"
-      justifyContent="space-between"
-      zIndex="99"
-      overflowX="hidden"
-    >
-      <Box>
-        <Link href="/">
-          <Image src="/images/brand.png" alt="Brand Logo" boxSize="85px" />
-        </Link>
-      </Box>
-
-      <Flex>
+    <Flex maxW="1280px" mx="auto" position="relative">
+      <Flex as="nav" width="100%" zIndex="999">
         <IconButton
           backgroundColor="#3C463B4D"
           backdropFilter="blur(20px)"
