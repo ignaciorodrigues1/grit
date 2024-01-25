@@ -42,7 +42,7 @@ const Navbar = () => {
       right="0"
       mx="auto"
     >
-      <Flex justify="space-between" py={{base: "1rem", md: "3rem"}} px={{base: "5rem", md: "5rem", xl: "0"}} align="center">
+      <Flex justify="space-between" py={{base: "1rem", md: "3rem"}} px={{base: "2rem", md: "5rem", xl: "0"}} align="center">
         <Link
           href="/"
           transition="transform 0.3s ease-in-out"
