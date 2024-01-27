@@ -54,7 +54,7 @@ const WavyGrid = () => {
             className="HOLA"
             my="auto"
           >
-            <Flex flexDirection="column" >
+            <Flex flexDirection="column">
               <Text
                 color="#EBEBEB"
                 fontFamily="Travels"
@@ -72,7 +72,7 @@ const WavyGrid = () => {
                 color="#EBEBEB"
                 fontSize="14px"
                 fontFamily="Ubuntu Mono"
-                maxWidth={{ base: "100%", md: "90%", lg: "75%", xl:"60%" }}
+                maxWidth={{ base: "100%", md: "90%", lg: "75%", xl: "60%" }}
               >
                 El profundo compromiso se ve reflejado en cada una de nuestras
                 obras, las cuales se distinguen por su calidad, cuidado del
@@ -319,13 +319,22 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Row/Column */}
-          <Box position="relative" ml={{ base: "", md: "-5.5%" }}>
+          <Box
+            position="relative"
+            ml={{ base: "", md: "-5.5%" }}
+            _hover={{
+              "& .image7": {
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
+              },
+            }}
+          >
             <Image
               src="/images/image7.png"
               alt="Image 7"
               display={{ base: "none", md: "block" }}
               width="100%"
               maxW="100vw"
+              className="image7"
             />
             <Image
               src="/images/image7M.png"
@@ -339,6 +348,7 @@ const WavyGrid = () => {
               bottom="0"
               left="0"
               flexDirection="column"
+              zIndex={2}
             >
               <Text
                 color="white"

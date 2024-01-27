@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
+import { ImageCarousel } from "./animations/imageWithMotion";
+
 const ContactForm = () => {
   const { register, handleSubmit } = useForm();
 
@@ -29,14 +31,8 @@ const ContactForm = () => {
       zIndex="-1"
     >
       {/* Contact Vector Image */}
-      <Box
-        backgroundImage="url('/images/contactVector.png')"
-        backgroundSize="cover"
-        backgroundPosition="center"
-        alt="Contact Vector"
-        position="absolute"
-        inset={0}
-      />
+
+      <ImageCarousel />
 
       <Box
         position="relative"
@@ -49,7 +45,7 @@ const ContactForm = () => {
         mx="auto"
         pt={8}
         alignItems="center"
-        zIndex="1"
+        zIndex="5"
       >
         {/* Company Logo */}
         <Flex justify="center" mb={4}>
