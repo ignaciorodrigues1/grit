@@ -44,8 +44,9 @@ export const ImageCarousel = () => {
           h="100%"
           zIndex={index === currentImageIndex ? "2" : "1"}
           justify="center"
+          overflow="hidden"
         >
-          <ImageWithMotion src={src} index={index} height={`${35 + index * 12}%`} />
+          <ImageWithMotion src={src} index={index} height={`${40 + index * 15}%`} />
         </Flex>
       ))}
     </AnimatePresence>
