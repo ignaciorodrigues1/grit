@@ -1,18 +1,21 @@
-import { Image, Heading, Flex, SimpleGrid } from "@chakra-ui/react";
+import { Image, Box, Flex, SimpleGrid, Heading } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <>
-      <Flex
-        backgroundImage={{
-          base: "url('/images/heroMobile.png')",
-          md: "url('/images/heroDesktop.png')",
-        }}
-        backgroundSize="cover"
-        backgroundPosition="center"
-        minH="70vh"
-        position="relative"
-      >
+    <Box
+      bgColor="#1D1C1C"
+      overflowX="hidden"
+      backgroundImage={{
+        base: "url('/images/heroMobile.png')",
+        md: "url('/images/heroDesktop.png')",
+      }}
+      backgroundSize="cover"
+      backgroundPosition="center"
+      h="700px"
+      position="relative"
+      zIndex="0"
+    >
+      <Box maxW="1280px" mx="auto">
         <Flex
           maxW="1280px"
           mx="auto"
@@ -20,9 +23,9 @@ const Hero = () => {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
-          position="relative"
           paddingX={{ base: "2rem", md: "3rem", xl: "0" }}
           py={10}
+          position="absolute"
         >
           <Image
             src="/images/brand.png"
@@ -44,11 +47,49 @@ const Hero = () => {
             Desarrollamos comunidades sustentables
           </Heading>
         </Flex>
-      </Flex>
-      <SimpleGrid columns={{ base: 0, md: 4 }} display={{ base: "none", md: "block" }} spacing={0} position="absolute" inset="0">
 
-      </SimpleGrid>
-    </>
+        <SimpleGrid
+          columns={{ base: 2, md: 4 }}
+          spacing={0}
+          zIndex="5"
+          position="absolute"
+          inset={0}
+          maxW="1280px"
+          mx="auto"
+        >
+          <Box display={{ base: "block", md: "none" }}></Box>
+
+          <Box display="block" ml="-34px">
+            <Image
+              src="/images/vectorL-R.png"
+              display={{ base: "block", md: "none" }}
+              alt="Image 1"
+              h="700px"
+            />
+          </Box>
+
+          <Box display={{ base: "none", md: "block" }}>
+            <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
+          </Box>
+
+          <Box
+            display={{ base: "none", md: "block" }}
+            left="0"
+            ml={{ md: "-34px" }}
+          >
+            <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
+          </Box>
+
+          <Box
+            display={{ base: "none", md: "block" }}
+            left="0"
+            ml={{ md: "-34px" }}
+          >
+            <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
+          </Box>
+        </SimpleGrid>
+      </Box>
+    </Box>
   );
 };
 
