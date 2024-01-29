@@ -11,19 +11,19 @@ const images = [
   "/images/vectorBg4.png",
 ];
 
-const ImageMotion = ({ src, height, index }) => (
+const ImageWithMotion = ({ src, width, index }) => (
   <motion.div
-    initial={{ scale: 1 }}
+    initial={{ scale: 0.9 }}
     animate={{
       scale: [1, 1.1, 1],
-      transition: { duration: 3, repeat: Infinity, delay: index * 0.2 },
+      transition: { duration: 4, repeat: Infinity, delay: index * 0.3 },
     }}
   >
-    <Image src={src} h={height} display={{base: "none", md: "block"}}/>
+    <Image src={src} w={width} display={{base: "block", md: "none"}} mx="auto"/>
   </motion.div>
 );
 
-export const ImageWithMotion = () => {
+export const ImageWithMotionMobile = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export const ImageWithMotion = () => {
           justify="center"
           overflow="hidden"
         >
-          <ImageMotion src={src} index={index} height={`${40 + index * 15}%`} />
+          <ImageWithMotion src={src} index={index} width={`${60 + index * 10}%`} />
         </Flex>
       ))}
     </AnimatePresence>

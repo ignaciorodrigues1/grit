@@ -11,7 +11,7 @@ const Hero = () => {
       }}
       backgroundSize="cover"
       backgroundPosition="center"
-      h="700px"
+      h={{base:"75vh", md:"700px"}}
       position="relative"
       zIndex="0"
     >
@@ -19,6 +19,7 @@ const Hero = () => {
         <Flex
           maxW="1280px"
           mx="auto"
+          bottom="0"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
@@ -57,16 +58,7 @@ const Hero = () => {
           maxW="1280px"
           mx="auto"
         >
-          <Box display={{ base: "block", md: "none" }}></Box>
-
-          <Box display="block" ml="-34px">
-            <Image
-              src="/images/vectorL-R.png"
-              display={{ base: "block", md: "none" }}
-              alt="Image 1"
-              h="700px"
-            />
-          </Box>
+          <Box/>
 
           <Box display={{ base: "none", md: "block" }}>
             <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
