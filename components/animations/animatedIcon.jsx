@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const AnimatedIcon = ({ children }) => {
   const transitionValues = {
-    duration: 3,
+    duration: 2,
     repeat: Infinity,
     repeatType: 'mirror',
   };

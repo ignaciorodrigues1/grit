@@ -11,7 +11,6 @@ const ProyectosPage = () => {
     <Box>
       <WavyGridProyects />
       <TrustUs />
-      <ContactForm />
     </Box>
   );
 };

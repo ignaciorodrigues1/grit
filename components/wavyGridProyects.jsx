@@ -27,7 +27,7 @@ const WavyGridProyects = () => {
             <Image
               src="/images/proyect1vector.png"
               alt="Image 3"
-              width="100%"
+              minW="100%"
               h="700px"
               maxH="90vh"
             />
@@ -96,7 +96,7 @@ const WavyGridProyects = () => {
             <Image
               src="/images/proyect2vector.png"
               alt="Image 3"
-              width="100%"
+              minW="100%"
               h="700px"
               maxH="90vh"
             />
