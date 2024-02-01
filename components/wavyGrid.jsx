@@ -100,9 +100,9 @@ const WavyGrid = () => {
               w="100%"
             />
           </Box>
-          <Box display={{ base: "none", md: "block" }} mr="-10%">
+          <Box display={{ base: "none", md: "block" }} mr="-10%" backgroundImage="url('/images/bgPattern.png')">
             <Image
-              src="/images/image2.png"
+              src="/images/frameTest.png"
               alt="Image 3"
               maxH="320px"
               width="100%"

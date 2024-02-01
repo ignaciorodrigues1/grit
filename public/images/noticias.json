@@ -1,0 +1,49 @@
+{
+  "pages": 1,
+  "totalElements": 2,
+  "pageSize": 10,
+  "itemsOnPage": 2,
+  "elements": [
+    {
+      "title": "Nuevo barrio Las Sierras",
+      "content": null,
+      "imgCard": "https://api-grit-dev.tercerpiso.tech/api/image/65b8f8711f6b5a044309a23a",
+      "descriptionCard": "Contruccion del nuevo barrio de Las Sierras",
+      "idNews": "65b8f8721f6b5a044309a23b",
+      "createdBy": "admin@grit.net",
+      "updatedBy": null,
+      "created": 1706621042134,
+      "updated": null,
+      "viewApp": false,
+      "viewWeb": true
+    },
+    {
+      "title": "Urbanización",
+      "content": null,
+      "imgCard": "https://api-grit-dev.tercerpiso.tech/api/image/65b7ae307ebc9947d40aafab",
+      "descriptionCard": "¿ Que es la urbanización?",
+      "idNews": "65b7ae317ebc9947d40aafac",
+      "createdBy": null,
+      "updatedBy": null,
+      "created": 1706536497044,
+      "updated": null,
+      "viewApp": true,
+      "viewWeb": true
+    }
+  ]
+}
+
+
+{
+  "title": "Urbanización",
+  "content": "<div class=\"wDYxhc\" lang=\"es-419\" data-md=\"61\">\n<div class=\"LGOjhe\" role=\"heading\" data-attrid=\"wa:/description\" aria-level=\"3\" data-hveid=\"CCMQAA\"><span class=\"ILfuVd\" lang=\"es\"><span class=\"hgKElc\">La urbanizaci&oacute;n es el&nbsp;<strong>aumento de la proporci&oacute;n de la poblaci&oacute;n que reside en zonas urbanas, o el proceso de traslado de personas hacia las ciudades u otras &aacute;reas densamente pobladas</strong>. La distribuci&oacute;n de la poblaci&oacute;n se relaciona con los patrones de asentamiento y dispersi&oacute;n de la poblaci&oacute;n en un pa&iacute;s u otras &aacute;reas.</span></span></div>\n<div class=\"LGOjhe\" role=\"heading\" data-attrid=\"wa:/description\" aria-level=\"3\" data-hveid=\"CCMQAA\">&nbsp;</div>\n<div class=\"LGOjhe\" role=\"heading\" data-attrid=\"wa:/description\" aria-level=\"3\" data-hveid=\"CCMQAA\"><span class=\"ILfuVd\" lang=\"es\"><span class=\"hgKElc\"><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Suburbia_by_David_Shankbone.jpg/640px-Suburbia_by_David_Shankbone.jpg\" alt=\"Urbanizaci&oacute;n - Wikipedia, la enciclopedia libre\" width=\"776\" height=\"582\"></span></span></div>\n</div>\n<div class=\"g\">\n<div lang=\"es\" data-hveid=\"CBMQAA\" data-ved=\"2ahUKEwj32s6k34KEAxWWqJUCHS_mB5EQFSgAegQIExAA\">\n<div class=\"tF2Cxc\">\n<div class=\"yuRUbf\">&nbsp;</div>\n<div class=\"yuRUbf\">\n<p>En arquitectura la urbanizaci&oacute;n se refiere a la planificaci&oacute;n y posterior construcci&oacute;n de v&iacute;as de comunicaci&oacute;n, calles, plazas, edificios -ya sean viviendas, edificios p&uacute;blicos o pol&iacute;gonos industriales- que convierten un espacio rural y deshabitado en un espacio construido y habitado o intensamente utilizado.</p>\n</div>\n</div>\n</div>\n</div>",
+  "imgCard": "https://api-grit-dev.tercerpiso.tech/api/image/65b7ae307ebc9947d40aafab",
+  "descriptionCard": "¿ Que es la urbanización?",
+  "idNews": "65b7ae317ebc9947d40aafac",
+  "createdBy": "65afe146efa68631bed68dd3",
+  "updatedBy": null,
+  "created": 1706536497044,
+  "updated": null,
+  "viewApp": true,
+  "viewWeb": true
+}
