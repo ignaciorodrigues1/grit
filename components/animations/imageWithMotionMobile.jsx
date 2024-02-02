@@ -19,7 +19,7 @@ const ImageWithMotion = ({ src, width, index }) => (
       transition: { duration: 4, repeat: Infinity, delay: index * 0.3 },
     }}
   >
-    <Image src={src} w={width} display={{base: "block", md: "none"}} mx="auto"/>
+    <Image src={src} w={width} display={{base: "block", md: "none"}} mx="auto" alt=""/>
   </motion.div>
 );
 
