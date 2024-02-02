@@ -10,8 +10,8 @@ import {
 
 const Info = () => {
   return (
-    <Box minH="80vh" bgColor="#4038C5">
-      <Box maxW="1280px" mx="auto">
+    <Box  bgColor="#4038C5">
+      <Box maxW="1280px" mx="auto" w={{md: "95%"}}>
         <SimpleGrid
           columns={{ base: "1", md: "3" }}
           spacing={{ base: "0", md: "1" }}
@@ -20,7 +20,7 @@ const Info = () => {
           <AspectRatio ratio={{ base: 2 / 1, md: 1 / 2 }}>
             <Flex
               direction={{ base: "row", md: "column" }}
-              mt={{ base: "", md: "-60%" }}
+              mt={{ base: "0", md: "-60%" }}
             >
               <Box
                 w="100%"
@@ -37,7 +37,7 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
@@ -45,11 +45,11 @@ const Info = () => {
                     fontFamily="Travels"
                     fontWeight="700"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción
                   </Text>
                 </Flex>
               </Center>
@@ -57,7 +57,7 @@ const Info = () => {
           </AspectRatio>
           <AspectRatio ratio={{ base: 2 / 1, md: 1 / 2 }}>
             <Flex
-              direction={{ base: "row", md: "column" }}
+              direction={{ base: "row-reverse", md: "column" }}
               mt={{ base: "", md: "-40%" }}
             >
               <Box
@@ -75,19 +75,20 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
                     fontSize="lg"
                     fontFamily="Travels"
                     fontWeight="700"
+                    textTransform="uppercase"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción.
                   </Text>
                 </Flex>
               </Center>
@@ -113,19 +114,20 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
                     fontSize="lg"
                     fontFamily="Travels"
                     fontWeight="700"
+                    textTransform="uppercase"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción
                   </Text>
                 </Flex>
               </Center>
@@ -133,7 +135,7 @@ const Info = () => {
           </AspectRatio>
           <AspectRatio ratio={{ base: 2 / 1, md: 1 / 2 }}>
             <Flex
-              direction={{ base: "row", md: "column" }}
+              direction={{ base: "row-reverse", md: "column" }}
               mt={{ base: "", md: "-60%" }}
             >
               <Box
@@ -151,19 +153,20 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
                     fontSize="lg"
                     fontFamily="Travels"
                     fontWeight="700"
+                    textTransform="uppercase"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción
                   </Text>
                 </Flex>
               </Center>
@@ -189,19 +192,20 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
                     fontSize="lg"
                     fontFamily="Travels"
                     fontWeight="700"
+                    textTransform="uppercase"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción
                   </Text>
                 </Flex>
               </Center>
@@ -209,7 +213,7 @@ const Info = () => {
           </AspectRatio>
           <AspectRatio ratio={{ base: 2 / 1, md: 1 / 2 }}>
             <Flex
-              direction={{ base: "row", md: "column" }}
+              direction={{ base: "row-reverse", md: "column" }}
               mt={{ base: "", md: "-20%" }}
             >
               <Box
@@ -227,19 +231,20 @@ const Info = () => {
                 bgColor="#4A42C8"
               >
                 <Flex color="white" alignItems="center" flexDirection="column">
-                  <Image src="/images/icono1.png" alt="Icono 1" />
+                  <Image src="/images/present.png" alt="Icono 1" />
 
                   <Text
                     mt="2"
                     fontSize="lg"
                     fontFamily="Travels"
                     fontWeight="700"
+                    textTransform="uppercase"
                   >
-                    +30K
+                    SERVICIO
                   </Text>
 
                   <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                    árboles
+                    Descripción
                   </Text>
                 </Flex>
               </Center>

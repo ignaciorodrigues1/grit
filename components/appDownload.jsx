@@ -22,10 +22,9 @@ const AppDownload = () => {
             textTransform="uppercase"
             fontFamily="Travels"
             fontWeight="900"
-            fontSize={{ base: "18px", sm: "32px", md: "72px" }}
+            fontSize={{ base: "18px", sm: "32px", md: "47px", lg: "72px" }}
             lineHeight={{ base: "31px", md: "62px" }}
             width="75%"
-            
           >
             Invertí en tu futuro
           </Text>

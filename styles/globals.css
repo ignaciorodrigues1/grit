@@ -5,3 +5,28 @@ body,
 }
 
 
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  width: 100%;
+  padding: 0 10px;
+  perspective: 1000px;
+}
+
+.slider3dImage {
+  width: 100%;
+  height: auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.slick-center .slider3dImage {
+  transform: scale(1);
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px;
+}

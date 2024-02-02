@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Subtitle from "./components/subtitle";
 import Info from "./components/info";
 import AppDownload from "../../../components/appDownload";
+import Images from "./components/images";
 
 const NeanderPage = () => {
 
@@ -12,6 +13,7 @@ const NeanderPage = () => {
       <Hero />
       <Subtitle />
       <Info />
+      <Images />
       <AppDownload />
     </Box>
   );

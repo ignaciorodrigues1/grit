@@ -41,6 +41,7 @@ const Hero = () => {
       {/* Centered Content */}
       <Flex
         maxW="1280px"
+        w="95%"
         textAlign="center"
         color="white"
         flexDirection="column"
@@ -58,7 +59,6 @@ const Hero = () => {
           maxH="130px"
           mx="auto"
           my={4}
-          px={5}
         />
 
         {/* Subtitle */}
@@ -85,7 +85,7 @@ const Hero = () => {
         </Flex>
 
         {/* Additional Image */}
-        <Box maxH="700px" maxW="90%" mx="auto" position="relative">
+        <Box maxH="700px" mx="auto" position="relative">
           <Image
             src="/images/neanderPreview.png"
             alt="Additional Image"
