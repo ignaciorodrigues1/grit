@@ -19,7 +19,7 @@ const ImageMotion = ({ src, height, index }) => (
       transition: { duration: 3, repeat: Infinity, delay: index * 0.2 },
     }}
   >
-    <Image src={src} h={height} display={{base: "none", md: "block"}}/>
+    <Image src={src} h={height} display={{base: "none", md: "block"}} alt=""/>
   </motion.div>
 );
 
