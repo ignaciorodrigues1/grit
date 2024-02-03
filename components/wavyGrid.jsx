@@ -170,7 +170,7 @@ const WavyGrid = () => {
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          {/* First Image-Information Pair */}
+
           <Box display={{ base: "block", md: "none" }} mr="-10%">
             <Image
               src="/images/image4M.png"

@@ -69,7 +69,7 @@ const ContactForm = () => {
         {/* Form */}
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Name and Company */}
-          <Flex mb={4}>
+          <Flex mb={4} direction={{base: "column", md: "row"}}>
             <Input
               {...register("name", { required: "Campo requerido" })}
               placeholder="Nombre"
@@ -79,6 +79,7 @@ const ContactForm = () => {
               borderRadius="4px"
               border="1px solid rgba(255, 255, 255, 0.80)"
               background="rgba(255, 255, 255, 0.10)"
+              mb={{base: "4", md: ""}}
             />
             <Input
               {...register("company")}
