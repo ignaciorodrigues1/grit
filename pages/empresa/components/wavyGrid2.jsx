@@ -199,9 +199,11 @@ const WavyGrid2 = () => {
           </Flex>
         </SimpleGrid>
 
+        
+
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0} alignItems="center">
           {/* First Row/Column */}
-          <Box position="relative" mr={{ base: "0", md: "-7%", lg: "-6%", xl: "-5% " }}>
+          <Box position="relative" h="100%" mr={{ md: "-5.5%" }} >
             <Image
               src="/images/empresa/image1.png"
               alt="Image 6"
@@ -215,6 +217,8 @@ const WavyGrid2 = () => {
               width="100%"
             />
           </Box>
+
+          
 
           {/* Second Row/Column */}
           <Box position="relative">
@@ -293,6 +297,9 @@ const WavyGrid2 = () => {
             </Text>
           </Box>
         </SimpleGrid>
+
+          
+
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0} alignItems="center">
           {/* First Row/Column */}

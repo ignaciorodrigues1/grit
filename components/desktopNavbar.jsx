@@ -39,7 +39,7 @@ const DesktopNavbar = () => {
           fontFamily="Ubuntu Mono"
           fontSize="16px"
         >
-          <Link href="#" _hover={{ textDecoration: "none" }}>
+          <Link href="/app" _hover={{ textDecoration: "none" }}>
             Aplicación
           </Link>
         </Box>
