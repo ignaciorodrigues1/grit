@@ -3,11 +3,23 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Image, Text, Heading, Link, Button, useMediaQuery } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Text,
+  Flex,
+  Heading,
+  Link,
+  Button,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const NewsSlider = () => {
-  const [isSm, isMdOrLarger] = useMediaQuery(["(min-width: 40em)", "(min-width: 48em)"]);
+  const [isSm, isMdOrLarger] = useMediaQuery([
+    "(min-width: 40em)",
+    "(min-width: 48em)",
+  ]);
 
   const slides = [
     {
@@ -46,7 +58,7 @@ const NewsSlider = () => {
     <Button
       position="absolute"
       top="30%"
-      left={{base: "-9%", md: "-5%"}}
+      left={{ base: "-9%", md: "-5%" }}
       my="auto"
       fontSize="24px"
       color="white"
@@ -54,18 +66,18 @@ const NewsSlider = () => {
       borderRadius="full"
       onClick={props.onClick}
       bg="#EBEBEB1A"
-      _hover={{ backgroundColor:"#3C463B4D" }}
-      display={{base: "none", md: "block"}}
+      _hover={{ backgroundColor: "#3C463B4D" }}
+      display={{ base: "none", md: "block" }}
     >
       <FaChevronLeft />
     </Button>
   );
-  
+
   const NextArrow = (props) => (
     <Button
       position="absolute"
       top="30%"
-      right={{base: "-9%", md: "-5%"}}
+      right={{ base: "-9%", md: "-5%" }}
       my="auto"
       fontSize="24px"
       color="white"
@@ -73,8 +85,8 @@ const NewsSlider = () => {
       borderRadius="full"
       onClick={props.onClick}
       bg="#EBEBEB1A"
-      _hover={{ backgroundColor:"#3C463B4D" }}
-      display={{base: "none", md: "block"}}
+      _hover={{ backgroundColor: "#3C463B4D" }}
+      display={{ base: "none", md: "block" }}
     >
       <FaChevronRight />
     </Button>
@@ -111,7 +123,7 @@ const NewsSlider = () => {
       </Heading>
       <Box
         maxW="1280px"
-        mx={{base:"0", md:"auto"}}
+        mx={{ base: "0", md: "auto" }}
         paddingX={{ md: "3rem", xl: "0" }}
       >
         <Slider {...settings}>
@@ -139,6 +151,23 @@ const NewsSlider = () => {
           ))}
         </Slider>
       </Box>
+      <Flex justifyContent="center">
+        <Link href="/noticias">
+          <Button
+            mt="5"
+            type="link"
+            textAlign="center"
+            color="white"
+            textTransform="uppercase"
+            fontFamily="Travels"
+            bgColor="#EC6E44"
+            h="36px"
+            _hover={{ bgColor: "#9EAC8E" }}
+          >
+            Ver Noticias
+          </Button>
+        </Link>
+      </Flex>
     </Box>
   );
 };

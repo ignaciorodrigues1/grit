@@ -86,7 +86,7 @@ const TrustUs = () => {
           align="center"
           justify="center"
           mt={8}
-          mb={{ base: 10, md: 20 }}
+          mb="10"
           mx="auto"
           maxW="100%"
           overflowX="hidden"

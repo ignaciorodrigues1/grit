@@ -14,35 +14,7 @@ const WavyGrid = () => {
 
   return (
     <Box bgColor="#1D1C1C" overflowX="hidden">
-      <Box
-        maxW="1280px"
-        mx="auto"
-        position="relative"
-        _before={{
-          content: '""',
-          position: "absolute",
-          zIndex: "99",
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: "97%",
-          background: isGradientEnabled
-            ? "linear-gradient(to left, rgba(29, 28, 28, 0), #1D1C1C)"
-            : "transparent",
-        }}
-        _after={{
-          content: '""',
-          position: "absolute",
-          zIndex: "99",
-          top: 0,
-          bottom: 0,
-          right: 0,
-          left: "97%",
-          background: isGradientEnabled
-            ? "linear-gradient(to right, rgba(29, 28, 28, 0), #1D1C1C)"
-            : "transparent",
-        }}
-      >
+      <Box maxW="1280px" mx="auto" position="relative">
         {/* Responsive Grid */}
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           <Box
@@ -100,9 +72,15 @@ const WavyGrid = () => {
               w="100%"
             />
           </Box>
-          <Box display={{ base: "none", md: "block" }} mr="-10%" backgroundImage="url('/images/bgPattern.png')">
+          <Box
+            display={{ base: "none", md: "block" }}
+            mr="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+          >
             <Image
-              src="/images/frameTest.png"
+              src="/images/frameL.png"
               alt="Image 3"
               maxH="320px"
               width="100%"
@@ -170,12 +148,17 @@ const WavyGrid = () => {
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-
-          <Box display={{ base: "block", md: "none" }} mr="-10%">
+        <Box
+            display={{ base: "block", md: "none" }}
+            mr="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+          >
             <Image
-              src="/images/image4M.png"
+              src="/images/frameL.png"
               alt="Image 3"
-              maxH="250px"
+              maxH="320px"
               width="100%"
             />
           </Box>

@@ -1,4 +1,5 @@
 import { Image, Box, Flex, SimpleGrid, Heading } from "@chakra-ui/react";
+import ImageAnimation from "./animations/linesFromTop";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
       }}
       backgroundSize="cover"
       backgroundPosition="center"
-      h={{base:"75vh", md:"700px"}}
+      h={{ base: "75vh", md: "700px" }}
       position="relative"
       zIndex="0"
     >
@@ -58,27 +59,33 @@ const Hero = () => {
           maxW="1280px"
           mx="auto"
         >
-          <Box/>
+          <Box />
 
-          <Box display={{ base: "none", md: "block" }}>
-            <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
-          </Box>
+          <ImageAnimation delay={1}>
+            <Box display={{ base: "none", md: "block" }}>
+              <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
+            </Box>
+          </ImageAnimation>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            left="0"
-            ml={{ md: "-34px" }}
-          >
-            <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
-          </Box>
+          <ImageAnimation delay={1.3}>
+            <Box
+              display={{ base: "none", md: "block" }}
+              left="0"
+              ml={{ md: "-34px" }}
+            >
+              <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
+            </Box>
+          </ImageAnimation>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            left="0"
-            ml={{ md: "-34px" }}
-          >
-            <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
-          </Box>
+          <ImageAnimation delay={1.6}>
+            <Box
+              display={{ base: "none", md: "block" }}
+              left="0"
+              ml={{ md: "-34px" }}
+            >
+              <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
+            </Box>
+          </ImageAnimation>
         </SimpleGrid>
       </Box>
     </Box>
