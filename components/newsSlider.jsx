@@ -58,9 +58,8 @@ const NewsSlider = () => {
     <Button
       position="absolute"
       top="30%"
-      left={{ base: "-9%", md: "-5%" }}
+      left={{ md: "-4vw" }}
       my="auto"
-      fontSize="24px"
       color="white"
       boxSize="40px"
       borderRadius="full"
@@ -69,7 +68,9 @@ const NewsSlider = () => {
       _hover={{ backgroundColor: "#3C463B4D" }}
       display={{ base: "none", md: "block" }}
     >
-      <FaChevronLeft />
+      <Flex>
+        <FaChevronLeft />
+      </Flex>
     </Button>
   );
 
@@ -77,9 +78,8 @@ const NewsSlider = () => {
     <Button
       position="absolute"
       top="30%"
-      right={{ base: "-9%", md: "-5%" }}
+      right={{ md: "-4vw" }}
       my="auto"
-      fontSize="24px"
       color="white"
       boxSize="40px"
       borderRadius="full"
@@ -88,7 +88,9 @@ const NewsSlider = () => {
       _hover={{ backgroundColor: "#3C463B4D" }}
       display={{ base: "none", md: "block" }}
     >
-      <FaChevronRight />
+      <Flex>
+        <FaChevronRight />
+      </Flex>
     </Button>
   );
 
@@ -124,7 +126,7 @@ const NewsSlider = () => {
       <Box
         maxW="1280px"
         mx={{ base: "0", md: "auto" }}
-        paddingX={{ md: "3rem", xl: "0" }}
+        paddingX={{ md: "4rem", xl: "5rem" }}
       >
         <Slider {...settings}>
           {slides.map((slide, index) => (

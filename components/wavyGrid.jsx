@@ -53,9 +53,16 @@ const WavyGrid = () => {
             </Flex>
           </Box>
 
-          <Box display={{ base: "none", md: "block" }} ml="-10%">
+          <Box
+            display={{ base: "none", md: "block" }}
+            ml="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h= "100%"
+          >
             <Image
-              src="/images/image1.png"
+              src="/images/frameR.png"
               alt="Image 1"
               maxH="320px"
               width="100%"
@@ -64,25 +71,17 @@ const WavyGrid = () => {
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          <Box display={{ base: "block", md: "none" }} mr="-10%">
-            <Image
-              src="/images/image2M.png"
-              alt="Image 3"
-              maxH="250px"
-              w="100%"
-            />
-          </Box>
           <Box
-            display={{ base: "none", md: "block" }}
             mr="-10%"
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
+            h="100%"
           >
             <Image
               src="/images/frameL.png"
-              alt="Image 3"
-              maxH="320px"
+              alt="Image 2"
+              h="100%"
               width="100%"
             />
           </Box>
@@ -107,9 +106,17 @@ const WavyGrid = () => {
 
           {/* Second Image-Information Pair */}
 
-          <Box display={{ base: "none", md: "block" }} mr="-10%" ml="-10%">
+          <Box
+            ml="-12%"
+            mr="-11%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h="100%"
+            display={{base: "none", md: "block"}}
+          >
             <Image
-              src="/images/image3.png"
+              src="/images/frameC.png"
               alt="Image 3"
               maxH="320px"
               width="100%"
@@ -137,23 +144,32 @@ const WavyGrid = () => {
             </Text>
           </Flex>
 
-          <Box display={{ base: "block", md: "none" }} ml="-10%">
+          <Box
+            ml="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h="100%"
+            display={{base: "block", md: "none"}}
+          >
             <Image
-              src="/images/image3M.png"
-              alt="Image 3"
-              maxH="250px"
+              src="/images/frameR.png"
+              alt="Image 2"
+              maxH="320px"
               width="100%"
             />
           </Box>
+
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-        <Box
+          <Box
             display={{ base: "block", md: "none" }}
             mr="-10%"
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
+            h="100%"
           >
             <Image
               src="/images/frameL.png"
@@ -184,16 +200,27 @@ const WavyGrid = () => {
             </Text>
           </Flex>
 
-          <Box display={{ base: "none", md: "block" }} mr="-10%" ml="-10%">
+          <Box
+            ml="-10%"
+            mr="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h="100%"
+            display={{base: "none", md: "block"}}
+          >
             <Image
-              src="/images/image4.png"
-              alt="Image 3"
+              src="/images/frameC.png"
+              alt="Image 2"
               maxH="320px"
               width="100%"
             />
           </Box>
 
           {/* Second Image-Information Pair */}
+
+          
+
           <Flex
             color="white"
             my="auto"
@@ -214,22 +241,42 @@ const WavyGrid = () => {
               contentas
             </Text>
           </Flex>
-          <Box display={{ base: "block", md: "none" }} ml="-10%">
+
+          <Box
+            ml="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h= "100%"
+            display={{base: "block", md: "none"}}
+          >
             <Image
-              src="/images/image5M.png"
-              alt="Image 5"
-              maxH="250px"
-              width="100%"
-            />
-          </Box>
-          <Box display={{ base: "none", md: "block" }} ml="-10%">
-            <Image
-              src="/images/image5.png"
-              alt="Image 5"
+              src="/images/frameR.png"
+              alt="Image 2"
               maxH="320px"
               width="100%"
             />
           </Box>
+
+          <Box
+            display={{ base: "none", md: "block" }}
+            ml="-10%"
+            backgroundImage="url('/images/image2s.png')"
+            backgroundSize="cover"
+            backgroundPosition="center"
+            h= "100%"
+          >
+            <Image
+              src="/images/frameR.png"
+              alt="Image 3"
+              maxH="320px"
+              width="100%"
+              h="100%"
+            />
+          </Box>
+
+          
+
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
@@ -305,11 +352,6 @@ const WavyGrid = () => {
           <Box
             position="relative"
             ml={{ base: "", md: "-5.5%" }}
-            _hover={{
-              "& .image7": {
-                boxShadow: "0 0 20px rgba(0, 0, 0, 0.5)",
-              },
-            }}
           >
             <Image
               src="/images/image7.png"
