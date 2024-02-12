@@ -6,12 +6,11 @@ import {
   Image,
   Flex,
   Link,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 
-const WavyGrid = () => {
-  const isGradientEnabled = useBreakpointValue({ base: false, xl: true });
+import FadeInFrom from "./animations/fadeInFromDirection";
 
+const WavyGrid = () => {
   return (
     <Box bgColor="#1D1C1C" overflowX="hidden">
       <Box maxW="1280px" mx="auto" position="relative">
@@ -52,22 +51,25 @@ const WavyGrid = () => {
               </Text>
             </Flex>
           </Box>
-
+          <FadeInFrom direction="right">
           <Box
             display={{ base: "none", md: "block" }}
             ml="-10%"
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
-            h= "100%"
+            h="100%"
           >
-            <Image
-              src="/images/frameR.png"
-              alt="Image 1"
-              maxH="320px"
-              width="100%"
-            />
+            
+              <Image
+                src="/images/frameR.png"
+                alt="Image 1"
+                maxH="320px"
+                width="100%"
+              />
+            
           </Box>
+          </FadeInFrom>
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
@@ -113,7 +115,7 @@ const WavyGrid = () => {
             backgroundSize="cover"
             backgroundPosition="center"
             h="100%"
-            display={{base: "none", md: "block"}}
+            display={{ base: "none", md: "block" }}
           >
             <Image
               src="/images/frameC.png"
@@ -150,7 +152,7 @@ const WavyGrid = () => {
             backgroundSize="cover"
             backgroundPosition="center"
             h="100%"
-            display={{base: "block", md: "none"}}
+            display={{ base: "block", md: "none" }}
           >
             <Image
               src="/images/frameR.png"
@@ -159,7 +161,6 @@ const WavyGrid = () => {
               width="100%"
             />
           </Box>
-
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
@@ -207,7 +208,7 @@ const WavyGrid = () => {
             backgroundSize="cover"
             backgroundPosition="center"
             h="100%"
-            display={{base: "none", md: "block"}}
+            display={{ base: "none", md: "block" }}
           >
             <Image
               src="/images/frameC.png"
@@ -218,8 +219,6 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Image-Information Pair */}
-
-          
 
           <Flex
             color="white"
@@ -247,8 +246,8 @@ const WavyGrid = () => {
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
-            h= "100%"
-            display={{base: "block", md: "none"}}
+            h="100%"
+            display={{ base: "block", md: "none" }}
           >
             <Image
               src="/images/frameR.png"
@@ -264,7 +263,7 @@ const WavyGrid = () => {
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
-            h= "100%"
+            h="100%"
           >
             <Image
               src="/images/frameR.png"
@@ -274,9 +273,6 @@ const WavyGrid = () => {
               h="100%"
             />
           </Box>
-
-          
-
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
@@ -349,10 +345,7 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Row/Column */}
-          <Box
-            position="relative"
-            ml={{ base: "", md: "-5.5%" }}
-          >
+          <Box position="relative" ml={{ base: "", md: "-5.5%" }}>
             <Image
               src="/images/image7.png"
               alt="Image 7"
