@@ -8,7 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import FadeInFrom from "./animations/fadeInFromDirection";
+import FadeInFrom from "./animations/fadeInFrom";
 
 const WavyGrid = () => {
   return (
@@ -51,40 +51,41 @@ const WavyGrid = () => {
               </Text>
             </Flex>
           </Box>
-          <FadeInFrom direction="right">
-            <Box
-              display={{ base: "none", md: "block" }}
-              ml="-10%"
-              backgroundImage="url('/images/image2s.png')"
-              backgroundSize="cover"
-              backgroundPosition="center"
-              h="100%"
-            >
-              <Image
-                src="/images/frameR.png"
-                alt="Image 1"
-                maxH="320px"
-                width="100%"
-              />
-            </Box>
-          </FadeInFrom>
-        </SimpleGrid>
 
-        <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           <Box
-            mr="-10%"
+            display={{ base: "none", md: "block" }}
+            ml="-10%"
             backgroundImage="url('/images/image2s.png')"
             backgroundSize="cover"
             backgroundPosition="center"
             h="100%"
           >
             <Image
-              src="/images/frameL.png"
-              alt="Image 2"
-              h="100%"
+              src="/images/frameR.png"
+              alt="Image 1"
+              maxH="320px"
               width="100%"
             />
           </Box>
+        </SimpleGrid>
+
+        <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
+          <FadeInFrom id="gridImage" direction="left">
+            <Box
+              mr="-10%"
+              backgroundImage="url('/images/image2s.png')"
+              backgroundSize="cover"
+              backgroundPosition="center"
+              h="100%"
+            >
+              <Image
+                src="/images/frameL.png"
+                alt="Image 2"
+                h="100%"
+                width="100%"
+              />
+            </Box>
+          </FadeInFrom>
 
           <Flex
             color="white"
@@ -106,21 +107,24 @@ const WavyGrid = () => {
 
           {/* Second Image-Information Pair */}
 
-          <Box
-            ml="-12%"
-            mr="-11%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-            display={{ base: "none", md: "block" }}
-          >
-            <Image
-              src="/images/frameC.png"
-              alt="Image 3"
-              maxH="320px"
-              width="100%"
-            />
+          <Box display={{ base: "none", md: "block" }}>
+            <FadeInFrom id="gridImage" direction="scale">
+              <Box
+                ml="-12%"
+                mr="-11%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameC.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
 
           <Flex
@@ -144,38 +148,48 @@ const WavyGrid = () => {
             </Text>
           </Flex>
 
-          <Box
-            ml="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-            display={{ base: "block", md: "none" }}
-          >
-            <Image
-              src="/images/frameR.png"
-              alt="Image 2"
-              maxH="320px"
-              width="100%"
-            />
+          <Box display={{ base: "block", md: "none" }}>
+            <FadeInFrom id="gridImage" direction="right">
+              <Box
+                ml="-12%"
+                mr="-11%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameC.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
+
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          <Box
-            display={{ base: "block", md: "none" }}
-            mr="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-          >
-            <Image
-              src="/images/frameL.png"
-              alt="Image 3"
-              maxH="320px"
-              width="100%"
-            />
+
+          <Box display={{ base: "block", md: "none" }}>
+            <FadeInFrom id="gridImage" direction="left">
+              <Box
+                ml="-12%"
+                mr="-11%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameC.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
 
           <Flex
@@ -199,21 +213,24 @@ const WavyGrid = () => {
             </Text>
           </Flex>
 
-          <Box
-            ml="-10%"
-            mr="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-            display={{ base: "none", md: "block" }}
-          >
-            <Image
-              src="/images/frameC.png"
-              alt="Image 2"
-              maxH="320px"
-              width="100%"
-            />
+          <Box display={{ base: "none", md: "block" }}>
+            <FadeInFrom id="gridImage" direction="scale">
+              <Box
+                ml="-12%"
+                mr="-11%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameC.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
 
           {/* Second Image-Information Pair */}
@@ -239,20 +256,24 @@ const WavyGrid = () => {
             </Text>
           </Flex>
 
-          <Box
-            ml="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-            display={{ base: "block", md: "none" }}
-          >
-            <Image
-              src="/images/frameR.png"
-              alt="Image 2"
-              maxH="320px"
-              width="100%"
-            />
+          <Box display={{ base: "block", md: "none" }}>
+            <FadeInFrom id="gridImage" direction="right">
+              <Box
+                ml="-12%"
+                mr="-11%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameC.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
 
           <Box
