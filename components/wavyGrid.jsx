@@ -52,23 +52,21 @@ const WavyGrid = () => {
             </Flex>
           </Box>
           <FadeInFrom direction="right">
-          <Box
-            display={{ base: "none", md: "block" }}
-            ml="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-          >
-            
+            <Box
+              display={{ base: "none", md: "block" }}
+              ml="-10%"
+              backgroundImage="url('/images/image2s.png')"
+              backgroundSize="cover"
+              backgroundPosition="center"
+              h="100%"
+            >
               <Image
                 src="/images/frameR.png"
                 alt="Image 1"
                 maxH="320px"
                 width="100%"
               />
-            
-          </Box>
+            </Box>
           </FadeInFrom>
         </SimpleGrid>
 

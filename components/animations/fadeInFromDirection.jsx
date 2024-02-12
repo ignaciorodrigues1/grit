@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const FadeInFrom = ({ direction, children }) => {
   const ref = useRef();
   const [inView, setInView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.25
   });
 
