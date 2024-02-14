@@ -1,14 +1,15 @@
-"use client"
 
 import { Box } from "@chakra-ui/react";
-import WavyGridProyects from "../../components/wavyGridProyects";
+import Neander from "./components/neander";
 import TrustUs from "../../components/trustUs";
+import LosPinos from "./components/losPinos";
 
 const ProyectosPage = () => {
 
   return (
     <Box>
-      <WavyGridProyects />
+      <Neander />
+      <LosPinos />
       <TrustUs />
     </Box>
   );

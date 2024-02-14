@@ -5,7 +5,6 @@ import {
   ModalOverlay,
   ModalContent,
   ModalBody,
-  ModalCloseButton,
 } from "@chakra-ui/react";
 
 
@@ -31,7 +30,7 @@ const PanoramicImage = ({ isOpen, onClose, imageUrl }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="full">
       <ModalOverlay />
-      <ModalContent bg="rgba(0, 0, 0, 0.9)">
+      <ModalContent bg="rgba(0, 0, 0, 0.6)">
         <ModalBody p={0} h="100vh">
           <div
             style={{
@@ -39,8 +38,8 @@ const PanoramicImage = ({ isOpen, onClose, imageUrl }) => {
               top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
-              width: "80%",
-              height: "80%",
+              width: "100%",
+              height: "100%",
             }}
           >
             <ReactPhotoSphereViewer
@@ -64,7 +63,6 @@ const PanoramicImage = ({ isOpen, onClose, imageUrl }) => {
             </button>
           </div>
         </ModalBody>
-        <ModalCloseButton color="white" />
       </ModalContent>
     </Modal>
   );

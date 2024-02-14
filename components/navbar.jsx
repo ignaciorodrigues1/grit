@@ -35,12 +35,13 @@ const Navbar = () => {
       w="100%"
       h="auto"
       position="fixed"
-      zIndex={9}
+      zIndex="9999"
       maxW="1280px"
       top="0"
       left="0"
       right="0"
       mx="auto"
+      px={{xl: "1%"}}
     >
       <Flex justify="space-between" py={{base: "1rem", md: "3rem"}} px={{base: "2rem", md: "5rem", xl: "0"}} align="center">
         <Link

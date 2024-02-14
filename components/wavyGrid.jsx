@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import {
   Box,
   SimpleGrid,
@@ -11,6 +13,9 @@ import {
 import FadeInFrom from "./animations/fadeInFrom";
 
 const WavyGrid = () => {
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
   return (
     <Box bgColor="#1D1C1C" overflowX="hidden">
       <Box maxW="1280px" mx="auto" position="relative">
@@ -52,25 +57,28 @@ const WavyGrid = () => {
             </Flex>
           </Box>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            ml="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-          >
-            <Image
-              src="/images/frameR.png"
-              alt="Image 1"
-              maxH="320px"
-              width="100%"
-            />
+          <Box display={{ base: "none", md: "block" }}>
+            <FadeInFrom id="gridImage1" direction="right">
+              <Box
+                ml="-10%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameR.png"
+                  alt="Image 1"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-          <FadeInFrom id="gridImage" direction="left">
+          <FadeInFrom id="gridImage2" direction="left">
             <Box
               mr="-10%"
               backgroundImage="url('/images/image2s.png')"
@@ -108,9 +116,9 @@ const WavyGrid = () => {
           {/* Second Image-Information Pair */}
 
           <Box display={{ base: "none", md: "block" }}>
-            <FadeInFrom id="gridImage" direction="scale">
+            <FadeInFrom id="gridImage3" direction="scale">
               <Box
-                ml="-12%"
+                ml="-11%"
                 mr="-11%"
                 backgroundImage="url('/images/image2s.png')"
                 backgroundSize="cover"
@@ -149,7 +157,7 @@ const WavyGrid = () => {
           </Flex>
 
           <Box display={{ base: "block", md: "none" }}>
-            <FadeInFrom id="gridImage" direction="right">
+            <FadeInFrom id="gridImage3m" direction="right">
               <Box
                 ml="-12%"
                 mr="-11%"
@@ -167,13 +175,11 @@ const WavyGrid = () => {
               </Box>
             </FadeInFrom>
           </Box>
-
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
-
           <Box display={{ base: "block", md: "none" }}>
-            <FadeInFrom id="gridImage" direction="left">
+            <FadeInFrom id="gridImage4m" direction="left">
               <Box
                 ml="-12%"
                 mr="-11%"
@@ -184,7 +190,7 @@ const WavyGrid = () => {
               >
                 <Image
                   src="/images/frameC.png"
-                  alt="Image 3"
+                  alt="Image 4"
                   maxH="320px"
                   width="100%"
                 />
@@ -214,9 +220,9 @@ const WavyGrid = () => {
           </Flex>
 
           <Box display={{ base: "none", md: "block" }}>
-            <FadeInFrom id="gridImage" direction="scale">
+            <FadeInFrom id="gridImage4" direction="scale">
               <Box
-                ml="-12%"
+                ml="-11%"
                 mr="-11%"
                 backgroundImage="url('/images/image2s.png')"
                 backgroundSize="cover"
@@ -225,7 +231,7 @@ const WavyGrid = () => {
               >
                 <Image
                   src="/images/frameC.png"
-                  alt="Image 3"
+                  alt="Image 4"
                   maxH="320px"
                   width="100%"
                 />
@@ -257,7 +263,7 @@ const WavyGrid = () => {
           </Flex>
 
           <Box display={{ base: "block", md: "none" }}>
-            <FadeInFrom id="gridImage" direction="right">
+            <FadeInFrom id="gridImage5m" direction="right">
               <Box
                 ml="-12%"
                 mr="-11%"
@@ -268,7 +274,7 @@ const WavyGrid = () => {
               >
                 <Image
                   src="/images/frameC.png"
-                  alt="Image 3"
+                  alt="Image 5"
                   maxH="320px"
                   width="100%"
                 />
@@ -276,27 +282,34 @@ const WavyGrid = () => {
             </FadeInFrom>
           </Box>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            ml="-10%"
-            backgroundImage="url('/images/image2s.png')"
-            backgroundSize="cover"
-            backgroundPosition="center"
-            h="100%"
-          >
-            <Image
-              src="/images/frameR.png"
-              alt="Image 3"
-              maxH="320px"
-              width="100%"
-              h="100%"
-            />
+          <Box display={{ base: "none", md: "block" }}>
+            <FadeInFrom id="gridImage5" direction="right">
+              <Box
+                ml="-10%"
+                backgroundImage="url('/images/image2s.png')"
+                backgroundSize="cover"
+                backgroundPosition="center"
+                h="100%"
+              >
+                <Image
+                  src="/images/frameR.png"
+                  alt="Image 3"
+                  maxH="320px"
+                  width="100%"
+                />
+              </Box>
+            </FadeInFrom>
           </Box>
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
           {/* First Row/Column */}
-          <Box position="relative" mr={{ base: "", md: "-5.5%" }}>
+          <Box
+            position="relative"
+            mr={{ base: "", md: "-5.5%" }}
+            onMouseEnter={() => setIsHovered1(true)}
+            onMouseLeave={() => setIsHovered1(false)}
+          >
             <Image
               src="/images/image6.png"
               alt="Image 6"
@@ -311,11 +324,17 @@ const WavyGrid = () => {
               w="100%"
             />
             <Flex
-              p="20"
               position="absolute"
-              bottom="0"
-              left="0"
+              bottom="15%"
+              left={{ base: "7%", md: "15%" }}
               flexDirection="column"
+              bg={isHovered1 ? "#3C463B4D" : "transparent"}
+              backdropFilter={isHovered1 ? "blur(5px)" : "none"}
+              transition="background-color 0.8s ease"
+              zIndex="1"
+              width="70%"
+              p="2"
+              borderRadius="2%"
             >
               <Text
                 color="white"
@@ -364,7 +383,12 @@ const WavyGrid = () => {
           </Box>
 
           {/* Second Row/Column */}
-          <Box position="relative" ml={{ base: "", md: "-5.5%" }}>
+          <Box
+            position="relative"
+            ml={{ base: "", md: "-5.5%" }}
+            onMouseEnter={() => setIsHovered2(true)}
+            onMouseLeave={() => setIsHovered2(false)}
+          >
             <Image
               src="/images/image7.png"
               alt="Image 7"
@@ -380,12 +404,17 @@ const WavyGrid = () => {
               w="100%"
             />
             <Flex
-              p="20"
               position="absolute"
-              bottom="0"
-              left="0"
+              bottom="15%"
+              left={{ base: "7%", md: "15%" }}
               flexDirection="column"
-              zIndex={2}
+              bg={isHovered2 ? "#3C463B4D" : "transparent"}
+              backdropFilter={isHovered2 ? "blur(5px)" : "none"}
+              transition="background-color 0.8s ease"
+              zIndex="1"
+              width="70%"
+              p="2"
+              borderRadius="2%"
             >
               <Text
                 color="white"
@@ -402,7 +431,7 @@ const WavyGrid = () => {
                 textTransform="uppercase"
                 fontSize={{ base: "25px", md: "32px" }}
               >
-                Los Pinos 4
+                Los pinos 4
               </Text>
               <Box my="3">
                 <hr />
@@ -415,7 +444,7 @@ const WavyGrid = () => {
               >
                 Respirá, tenés opciones
               </Text>
-              <Link href="/proyectos/lospinos4">
+              <Link href="/proyectos/neander">
                 <Button
                   mt="5"
                   type="link"
