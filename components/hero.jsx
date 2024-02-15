@@ -42,6 +42,7 @@ const Hero = () => {
         left="0"
         zIndex="-1"
         playbackRate={0.5}
+        className="fadeIn"
       />
 
       <Flex
