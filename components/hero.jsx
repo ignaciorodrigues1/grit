@@ -55,6 +55,8 @@ const Hero = () => {
         paddingX={{ base: "2rem", md: "3rem", xl: "0" }}
         py={10}
         position="absolute"
+        left="0"
+        right="0"
       >
         <Image
           src="/images/brand.png"
