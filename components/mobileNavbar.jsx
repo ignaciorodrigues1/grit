@@ -88,7 +88,7 @@ const MobileNavbar = () => {
                       fontFamily="Travels"
                       fontWeight="900"
                       _hover={{ textDecoration: "none" }}
-                      href="/aplicacion"
+                      href="/app"
                     >
                       APLICACIÓN
                     </Link>
