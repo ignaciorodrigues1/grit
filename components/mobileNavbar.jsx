@@ -13,10 +13,14 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const toggleIcon = () => {
+    return isOpen ? <FaTimes /> : <FaBars />;
+  };
 
   return (
     <Flex maxW="1280px" mx="auto" position="relative">
@@ -29,7 +33,11 @@ const MobileNavbar = () => {
           fontSize="25px"
           _hover={{ textDecoration: "none" }}
           onClick={isOpen ? onClose : onOpen}
-          icon={<FaBars />}
+          icon={toggleIcon()}
+          css={{
+            transition: "transform 0.2s",
+            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+          }}
         />
 
         <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="full">
@@ -39,14 +47,7 @@ const MobileNavbar = () => {
               backdropFilter="blur(20px)"
               color="white"
             >
-              <DrawerCloseButton
-                color="white"
-                zIndex="2"
-                position="absolute"
-                right="2rem"
-                top="4rem"
-                fontSize="25px"
-              />
+              
               <DrawerBody>
                 <Flex
                   flexDirection="column"
