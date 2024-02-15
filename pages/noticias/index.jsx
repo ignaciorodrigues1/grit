@@ -6,7 +6,7 @@ const Noticias = () => {
   return (
     <Box>
       <Hero />
-      <NoticiasGrid />
+
     </Box>
   )
 }
