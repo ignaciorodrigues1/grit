@@ -18,9 +18,9 @@ const Images = () => {
             pb={{ md: "5%" }}
           >
             <Text
-              fontSize="72px"
+              fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
+              lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
               fontWeight="900"
-              lineHeight="62px"
               fontFamily="Travels"
               textTransform="uppercase"
               align="center"
@@ -31,7 +31,8 @@ const Images = () => {
             </Text>
             <Text
               pb="5"
-              fontSize="32px"
+              fontSize={{ base: "20px", sm: "4vw", md: "35px", lg: "42px" }}
+              lineHeight={{ base: "30px", sm: "6vw", md: "35px", lg: "47px" }}
               fontFamily="Travels"
               fontWeight="900"
               align="center"

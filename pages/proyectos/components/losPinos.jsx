@@ -70,7 +70,7 @@ const LosPinos = () => {
             color="#EBEBEB"
             fontSize="14px"
             fontFamily="Ubuntu Mono"
-            maxWidth={{ md: "60%" }}
+            maxWidth="60%"
           >
             El profundo compromiso se ve reflejado en cada una de nuestras
             obras, las cuales se distinguen por su calidad, cuidado del medio
