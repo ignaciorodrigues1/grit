@@ -56,7 +56,7 @@ const Neander = () => {
           </Text>
           <Heading
             color="white"
-            fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
+            fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
             fontWeight="bold"
             fontFamily="Travels"
             textTransform="uppercase"
