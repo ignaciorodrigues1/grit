@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Image, Center } from "@chakra-ui/react";
+import { Box, Image, Center, Flex } from "@chakra-ui/react";
 
 const images = [
   "/images/app/Home.png",
@@ -29,7 +29,8 @@ const App = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
         />
-        <Center pb="20" pt="10" display={{ base: "none", md: "center" }}>
+
+        <Flex justifyContent="center" alignItems="center" pb="20" pt="10" display={{ base: "none", md: "flex" }}>
           <Image
             src="/images/app/Home.png"
             alt="Home"
@@ -66,7 +67,7 @@ const App = () => {
             ml="-7%"
             zIndex="999"
           />
-        </Center>
+        </Flex>
 
         <Center pb="20" pt="10" display={{ base: "center", md: "none" }}>
           {images.map((image, index) => (
@@ -83,10 +84,11 @@ const App = () => {
               mr={index === 0 ? "-6%" : index === 2 ? "-7%" : undefined}
               mb="-10%"
               ml={index === 2 ? "-7%" : undefined}
-              zIndex="999"
+              
             />
           ))}
         </Center>
+
       </Box>
     </Box>
   );
