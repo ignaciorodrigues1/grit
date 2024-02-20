@@ -338,10 +338,17 @@ const WavyGrid = () => {
             onMouseEnter={() => setIsHovered1(true)}
             onMouseLeave={() => setIsHovered1(false)}
           >
+          <Image
+              src="/images/image6test.png"
+              alt="Image 6"
+              display={{ base: "none", xl: "block" }}
+              width="100%"
+              maxW="100vw"
+            />
             <Image
               src="/images/image6.png"
               alt="Image 6"
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", md: "block", xl:"none" }}
               width="100%"
               maxW="100vw"
             />
@@ -418,12 +425,18 @@ const WavyGrid = () => {
             onMouseLeave={() => setIsHovered2(false)}
           >
             <Image
-              src="/images/image7.png"
+              src="/images/image7test.png"
               alt="Image 7"
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", xl: "block" }}
               width="100%"
               maxW="100vw"
-              className="image7"
+            />
+            <Image
+              src="/images/image7.png"
+              alt="Image 7"
+              display={{ base: "none", md: "block", xl:"none" }}
+              width="100%"
+              maxW="100vw"
             />
             <Image
               src="/images/image7M.png"
