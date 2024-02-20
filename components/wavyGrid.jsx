@@ -67,9 +67,18 @@ const WavyGrid = () => {
                 h="100%"
               >
                 <Image
+                  display={{ base: "block", xl: "none" }}
                   src="/images/frameR.png"
-                  alt="Image 1"
-                  maxH="320px"
+                  alt="Frame L"
+                  h="100%"
+                  width="100%"
+                />
+
+                <Image
+                  display={{ base: "none", xl: "block" }}
+                  src="/images/frameC.png"
+                  alt="Frame C"
+                  h="100%"
                   width="100%"
                 />
               </Box>
@@ -87,8 +96,17 @@ const WavyGrid = () => {
               h="100%"
             >
               <Image
+                display={{ base: "block", xl: "none" }}
                 src="/images/frameL.png"
-                alt="Image 2"
+                alt="Frame L"
+                h="100%"
+                width="100%"
+              />
+
+              <Image
+                display={{ base: "none", xl: "block" }}
+                src="/images/frameC.png"
+                alt="Frame C"
                 h="100%"
                 width="100%"
               />
@@ -270,21 +288,21 @@ const WavyGrid = () => {
                 backgroundImage="url('/images/image2s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
-                h="100%"
+                
               >
                 <Image
-                  src="/images/frameC.png"
+                  src="/images/frameR.png"
                   alt="Image 5"
-                  maxH="320px"
+                  h="100%"
                   width="100%"
                 />
               </Box>
             </FadeInFrom>
           </Box>
 
-          <Box display={{ base: "none", md: "block" }}>
+          <Box display={{ base: "none", md: "flex" }}>
             <FadeInFrom id="gridImage5" direction="right">
-              <Box
+            <Box
                 ml="-10%"
                 backgroundImage="url('/images/image2s.png')"
                 backgroundSize="cover"
@@ -292,9 +310,19 @@ const WavyGrid = () => {
                 h="100%"
               >
                 <Image
+                  display={{ base: "block", xl: "none" }}
                   src="/images/frameR.png"
-                  alt="Image 3"
-                  maxH="320px"
+                  alt="Frame L"
+                  minHeight="213px"
+                  h="100%"
+                  width="100%"
+                />
+
+                <Image
+                  display={{ base: "none", xl: "block" }}
+                  src="/images/frameC.png"
+                  alt="Frame C"
+                  h="100%"
                   width="100%"
                 />
               </Box>

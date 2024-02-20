@@ -19,30 +19,6 @@ const WavyGrid2 = () => {
         maxW="1280px"
         mx="auto"
         position="relative"
-        _before={{
-          content: '""',
-          position: "absolute",
-          zIndex: "99",
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: "97%",
-          background: isGradientEnabled
-            ? "linear-gradient(to left, rgba(29, 28, 28, 0), #1D1C1C)"
-            : "transparent",
-        }}
-        _after={{
-          content: '""',
-          position: "absolute",
-          zIndex: "99",
-          top: 0,
-          bottom: 0,
-          right: 0,
-          left: "97%",
-          background: isGradientEnabled
-            ? "linear-gradient(to right, rgba(29, 28, 28, 0), #1D1C1C)"
-            : "transparent",
-        }}
       >
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={0}>
           <Flex
@@ -203,11 +179,17 @@ const WavyGrid2 = () => {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0} alignItems="center">
           {/* First Row/Column */}
-          <Box position="relative" h="100%" mr={{ md: "-5.5%" }} >
+          <Box position="relative" h="100%" mr={{ md: "-5.5%", xl:"-4.8%" }} >
             <Image
               src="/images/empresa/image1.png"
               alt="Image 6"
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", md: "block", xl:"none" }}
+              width="100%"
+            />
+            <Image
+              src="/images/empresa/imageTest.png"
+              alt="Image 6"
+              display={{ base: "none", xl: "block" }}
               width="100%"
             />
             <Image
@@ -346,7 +328,13 @@ const WavyGrid2 = () => {
             <Image
               src="/images/empresa/image2.png"
               alt="Image 6"
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", md: "block", xl: "none" }}
+              width="100%"
+            />
+            <Image
+              src="/images/empresa/imageTest2.png"
+              alt="Image 6"
+              display={{ base: "none", xl: "block" }}
               width="100%"
             />
             <Image
