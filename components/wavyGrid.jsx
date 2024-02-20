@@ -61,7 +61,7 @@ const WavyGrid = () => {
             <FadeInFrom id="gridImage1" direction="right">
               <Box
                 ml="-10%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image1s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
@@ -138,7 +138,7 @@ const WavyGrid = () => {
               <Box
                 ml="-11%"
                 mr="-11%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image3s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
@@ -179,7 +179,7 @@ const WavyGrid = () => {
               <Box
                 ml="-12%"
                 mr="-11%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image3s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
@@ -201,7 +201,7 @@ const WavyGrid = () => {
               <Box
                 ml="-12%"
                 mr="-11%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image4s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
@@ -242,7 +242,7 @@ const WavyGrid = () => {
               <Box
                 ml="-11%"
                 mr="-11%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image4s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
@@ -285,7 +285,7 @@ const WavyGrid = () => {
               <Box
                 ml="-12%"
                 mr="-11%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image5s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 
@@ -304,7 +304,7 @@ const WavyGrid = () => {
             <FadeInFrom id="gridImage5" direction="right">
             <Box
                 ml="-10%"
-                backgroundImage="url('/images/image2s.png')"
+                backgroundImage="url('/images/image5s.png')"
                 backgroundSize="cover"
                 backgroundPosition="center"
                 h="100%"
