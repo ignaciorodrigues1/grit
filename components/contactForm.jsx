@@ -31,9 +31,8 @@ const ContactForm = () => {
       justifyContent="center"
       zIndex="-1"
     >
-      {/* Contact Vector Image */}
-
-      <Flex
+      {/* ImageWithMotion Container */}
+      <Box
         position="absolute"
         top="0"
         left="0"
@@ -45,8 +44,9 @@ const ContactForm = () => {
       >
         <ImageWithMotion />
         <ImageWithMotionMobile />
-      </Flex>
+      </Box>
 
+      {/* Form Container */}
       <Box
         position="relative"
         backgroundColor="#3C463B4D"
