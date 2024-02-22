@@ -25,6 +25,7 @@ const LosPinos = () => {
         backgroundPosition="center"
         maxH="90vh"
         minH="450px"
+        overflowY="hidden"
       >
         <Image
           src="/images/proyectos/bg2.png"
