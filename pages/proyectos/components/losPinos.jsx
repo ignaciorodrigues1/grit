@@ -23,16 +23,15 @@ const LosPinos = () => {
         }}
         backgroundSize="cover"
         backgroundPosition="center"
-        maxH="90vh"
-        minH="450px"
+        minH="85vh"
         overflowY="hidden"
       >
         <Image
           src="/images/proyectos/bg2.png"
           alt="Image 3"
-          minW="100%"
+          w="100%"
           h="100%"
-          minH="450px"
+          minH="85vh"
         />
 
         <Flex

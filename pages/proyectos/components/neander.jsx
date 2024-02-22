@@ -23,8 +23,7 @@ const Neander = () => {
         }}
         backgroundSize="cover"
         backgroundPosition="center"
-        maxH="90vh"
-        minH="450px"
+        minH="85vh"
         overflowY="hidden"
       >
         <Image
@@ -32,7 +31,7 @@ const Neander = () => {
           alt="Image 3"
           w="100%"
           h="100%"
-          minH="450px"
+          minH="85vh"
         />
 
         <Flex
