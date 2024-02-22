@@ -16,7 +16,7 @@ const AppDownload = () => {
         mx="auto"
         paddingX={{ base: "1rem", md: "3rem", xl: "0" }}
       >
-        <Flex flex="1" flexDirection="column" pr={6} color="#ffffff" mt="25%">
+        <Flex flex="1" flexDirection="column" pr={6} color="#ffffff" mt="25%" w="100%">
           <Text
             mb={2}
             textTransform="uppercase"
