@@ -33,8 +33,19 @@ const ContactForm = () => {
     >
       {/* Contact Vector Image */}
 
-      <ImageWithMotion />
-      <ImageWithMotionMobile />
+      <Flex
+        position="absolute"
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
+        justifyContent="center"
+        alignItems="center"
+        zIndex="0"
+      >
+        <ImageWithMotion />
+        <ImageWithMotionMobile />
+      </Flex>
 
       <Box
         position="relative"
