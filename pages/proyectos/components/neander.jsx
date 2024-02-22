@@ -25,11 +25,12 @@ const Neander = () => {
         backgroundPosition="center"
         maxH="90vh"
         minH="450px"
+        overflowY="hidden"
       >
         <Image
           src="/images/proyectos/bg1.png"
           alt="Image 3"
-          minW="100%"
+          w="100%"
           h="100%"
           minH="450px"
         />
@@ -43,6 +44,7 @@ const Neander = () => {
           paddingX={{ base: "2rem", md: "3rem", xl: "5%" }}
           py={10}
           position="absolute"
+          
         >
           <Text
             color="white"
