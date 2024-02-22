@@ -15,6 +15,7 @@ const AppDownload = () => {
         maxW="1280px"
         mx="auto"
         paddingX={{ base: "1rem", md: "3rem", xl: "0" }}
+        alignItems="center"
       >
         <Flex flex="1" flexDirection="column" pr={6} color="#ffffff" mt="25%" w="100%">
           <Text
@@ -24,7 +25,8 @@ const AppDownload = () => {
             fontWeight="900"
             fontSize={{ base: "18px", sm: "32px", md: "47px", lg: "72px" }}
             lineHeight={{ base: "31px", md: "62px" }}
-            width="75%"
+            maxWidth="75%"
+            flexShrink="0"
           >
             Invertí en tu futuro
           </Text>
@@ -35,7 +37,8 @@ const AppDownload = () => {
             my={4}
             fontFamily="Ubuntu Mono"
             display={{ base: "none", md: "block" }}
-            width="75%"
+            maxWidth="75%"
+            flexShrink="0"
           >
             El profundo compromiso se ve reflejado en cada una de nuestras
             obras, las cuales se distinguen por su calidad, cuidado del medio
@@ -48,7 +51,8 @@ const AppDownload = () => {
             mb={4}
             fontFamily="Ubuntu Mono"
             display={{ base: "block", md: "none" }}
-            width="75%"
+            maxWidth="75%"
+            flexShrink="0"
           >
             El profundo compromiso se ve reflejado en cada una de nuestras
             obras.
@@ -72,6 +76,7 @@ const AppDownload = () => {
               alt="App Image"
               w="auto"
               maxH={{ base: "310px", md: "620px" }}
+              flexShrink="0"
             />
           </AnimatedIcon>
         </Flex>
