@@ -70,7 +70,7 @@ const AppDownload = () => {
             <Image
               src="/images/appImage.png"
               alt="App Image"
-              w="100%"
+              w="auto"
               maxH={{ base: "310px", md: "620px" }}
             />
           </AnimatedIcon>
