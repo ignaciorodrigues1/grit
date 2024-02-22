@@ -18,8 +18,13 @@ const ImageMotion = ({ src, height, index }) => (
       scale: [1, 1.1, 1],
       transition: { duration: 3, repeat: Infinity, delay: index * 0.2 },
     }}
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      height: "100%",
+    }}
   >
-    <Image src={src} h={height} display={{base: "none", md: "block"}} alt=""/>
+    <Image src={src} height={height} alt="" />
   </motion.div>
 );
 
