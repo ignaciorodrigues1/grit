@@ -20,10 +20,11 @@ const Neander = () => {
         backgroundImage={{
           base: "url('/images/heroMobile.png')",
           md: "url('/images/neanderBg.png')",
+          xl: "",
         }}
         backgroundSize="cover"
         backgroundPosition="center"
-        minH="85vh"
+        minH={{base:"55vh",md:"65vh", xl: "650px"}}
         overflowY="hidden"
       >
         <Image
@@ -31,7 +32,14 @@ const Neander = () => {
           alt="Image 3"
           w="100%"
           h="100%"
-          minH="85vh"
+          minH={{base:"55vh",md:"65vh"}}
+          display={{ base: "block", xl: "none" }}
+        />
+        <Image
+          position="absolute"
+          display={{ base: "none", xl: "block" }}
+          inset="0"
+          src="/images/proyectos/bgTestXlNeander.png"
         />
 
         <Flex
@@ -43,7 +51,6 @@ const Neander = () => {
           paddingX={{ base: "2rem", md: "3rem", xl: "5%" }}
           py={10}
           position="absolute"
-          
         >
           <Text
             color="white"

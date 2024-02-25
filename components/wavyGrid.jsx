@@ -363,9 +363,6 @@ const WavyGrid = () => {
               bottom="15%"
               left={{ base: "7%", md: "15%" }}
               flexDirection="column"
-              bg={isHovered1 ? "#3C463B4D" : "transparent"}
-              backdropFilter={isHovered1 ? "blur(5px)" : "none"}
-              transition="background-color 0.8s ease"
               zIndex="1"
               width="70%"
               p="2"
@@ -449,9 +446,6 @@ const WavyGrid = () => {
               bottom="15%"
               left={{ base: "7%", md: "15%" }}
               flexDirection="column"
-              bg={isHovered2 ? "#3C463B4D" : "transparent"}
-              backdropFilter={isHovered2 ? "blur(5px)" : "none"}
-              transition="background-color 0.8s ease"
               zIndex="1"
               width="70%"
               p="2"

@@ -1,5 +1,6 @@
 import { Image, Box, Flex, SimpleGrid, Heading } from "@chakra-ui/react";
 import ImageAnimation from "./animations/linesFromTop";
+import FadeInFrom from "./animations/fadeInFrom";
 
 const Hero = () => {
   return (
@@ -59,65 +60,68 @@ const Hero = () => {
         left="0"
         right="0"
       >
-        <Image
-          src="/images/brand.png"
-          alt="Brand Logo"
-          boxSize={{ base: "120px", md: "180px" }}
-          mt="15%"
-          mb={10}
-        />
-
-        <Heading
-          color="white"
-          fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
-          fontWeight="bold"
-          fontFamily="Travels"
-          textTransform="uppercase"
-          lineHeight={{ base: "25px", sm: "6vw", md: "55px", lg: "67px" }}
-          textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
-        >
-          Desarrollamos comunidades sustentables
-        </Heading>
+        <FadeInFrom id="herotitle" direction="scale">
+          <Image
+            src="/images/brand.png"
+            alt="Brand Logo"
+            boxSize={{ base: "120px", md: "180px" }}
+            mt="15%"
+            mb={10}
+          />
+        </FadeInFrom>
+        <FadeInFrom id="herotitle" direction="scale">
+          <Heading
+            color="white"
+            fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
+            fontWeight="bold"
+            fontFamily="Travels"
+            textTransform="uppercase"
+            lineHeight={{ base: "25px", sm: "6vw", md: "55px", lg: "67px" }}
+            textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
+          >
+            Desarrollamos comunidades sustentables
+          </Heading>
+        </FadeInFrom>
       </Flex>
 
-        <SimpleGrid
-          columns={{ base: 2, md: 4 }}
-          spacing={0}
-          zIndex="5"
-          position="absolute"
-          inset={0}
-          maxW="1280px"
-          mx="auto"
-        >
-          <Box />
+      <SimpleGrid
+        columns={{ base: 2, md: 4 }}
+        spacing={0}
+        zIndex="5"
+        position="absolute"
+        inset={0}
+        maxW="1280px"
+        mx="auto"
+      >
+        <Box />
 
-          <ImageAnimation delay={1}>
-            <Box display={{ base: "none", md: "block" }}>
-              <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
-            </Box>
-          </ImageAnimation>
+        <ImageAnimation delay={1}>
+          <Box display={{ base: "none", md: "block" }}>
+            <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
+          </Box>
+        </ImageAnimation>
 
-          <ImageAnimation delay={1.3}>
-            <Box
-              display={{ base: "none", md: "block" }}
-              left="0"
-              ml={{ md: "-34px" }}
-            >
-              <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
-            </Box>
-          </ImageAnimation>
+        <ImageAnimation delay={1.3}>
+          <Box
+            display={{ base: "none", md: "block" }}
+            left="0"
+            ml={{ md: "-34px" }}
+          >
+            <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
+          </Box>
+        </ImageAnimation>
 
-          <ImageAnimation delay={1.6}>
-            <Box
-              display={{ base: "none", md: "block" }}
-              left="0"
-              ml={{ md: "-34px" }}
-            >
-              <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
-            </Box>
-          </ImageAnimation>
-        </SimpleGrid>
-      </Box>
+        <ImageAnimation delay={1.6}>
+          <Box
+            display={{ base: "none", md: "block" }}
+            left="0"
+            ml={{ md: "-34px" }}
+          >
+            <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
+          </Box>
+        </ImageAnimation>
+      </SimpleGrid>
+    </Box>
   );
 };
 

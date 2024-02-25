@@ -13,11 +13,11 @@ const FadeInFrom = ({ id, direction, children }) => {
   };
 
   useEffect(() => {
+    scrollHandler();
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
   }, []);
 
-  // Definir las variantes de animación según la dirección recibida
   const variants = {
     left: { initial: { x: -100, opacity: 0 }, animate: { x: 0, opacity: 1 } },
     right: { initial: { x: 100, opacity: 0 }, animate: { x: 0, opacity: 1 } },

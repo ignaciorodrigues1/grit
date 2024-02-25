@@ -1,4 +1,6 @@
 import { Image, Box, Flex, SimpleGrid, Heading, Text } from "@chakra-ui/react";
+import FadeInFrom from "../../../components/animations/fadeInFrom";
+import ImageAnimation from "../../../components/animations/linesFromTop";
 
 const Hero = () => {
   return (
@@ -28,28 +30,32 @@ const Hero = () => {
           py={10}
           position="absolute"
         >
-          <Heading
-            color="white"
-            fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
-            lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
-            fontWeight="bold"
-            fontFamily="Travels"
-            textTransform="uppercase"
-            textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
-            pb="5"
-          >
-            SOMOS GRIT
-          </Heading>
-          <Text
-            color="#EBEBEB"
-            fontSize="14px"
-            fontFamily="Ubuntu Mono"
-            maxWidth={{ md: "60%" }}
-          >
-            El profundo compromiso se ve reflejado en cada una de nuestras
-            obras, las cuales se distinguen por su calidad, cuidado del medio
-            ambiente e integración con la comunidad.
-          </Text>
+          <FadeInFrom id="title" direction="left">
+            <Heading
+              color="white"
+              fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
+              lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
+              fontWeight="bold"
+              fontFamily="Travels"
+              textTransform="uppercase"
+              textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
+              pb="5"
+            >
+              SOMOS GRIT
+            </Heading>
+          </FadeInFrom>
+          <FadeInFrom id="title" direction="left">
+            <Text
+              color="#EBEBEB"
+              fontSize="14px"
+              fontFamily="Ubuntu Mono"
+              maxWidth={{ md: "60%" }}
+            >
+              El profundo compromiso se ve reflejado en cada una de nuestras
+              obras, las cuales se distinguen por su calidad, cuidado del medio
+              ambiente e integración con la comunidad.
+            </Text>
+          </FadeInFrom>
         </Flex>
 
         <SimpleGrid
@@ -63,29 +69,35 @@ const Hero = () => {
         >
           <Box />
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            left="0"
-            ml={{ md: "-34px" }}
-          >
-            <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
-          </Box>
+          <ImageAnimation delay={1}>
+            <Box
+              display={{ base: "none", md: "block" }}
+              left="0"
+              ml={{ md: "-34px" }}
+            >
+              <Image src="/images/vectorL-R.png" alt="Image 2" h="700px" />
+            </Box>
+          </ImageAnimation>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            left="0"
-            ml={{ md: "-34px" }}
-          >
-            <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
-          </Box>
+          <ImageAnimation delay={1.3}>
+            <Box
+              display={{ base: "none", md: "block" }}
+              left="0"
+              ml={{ md: "-34px" }}
+            >
+              <Image src="/images/vectorC.png" alt="Image 3" h="700px" />
+            </Box>
+          </ImageAnimation>
 
-          <Box
-            display={{ base: "none", md: "block" }}
-            left="0"
-            ml={{ md: "-34px" }}
-          >
-            <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
-          </Box>
+          <ImageAnimation delay={1.6}>
+            <Box
+              display={{ base: "none", md: "block" }}
+              left="0"
+              ml={{ md: "-34px" }}
+            >
+              <Image src="/images/vectorL-R.png" alt="Image 4" h="700px" />
+            </Box>
+          </ImageAnimation>
         </SimpleGrid>
       </Box>
     </Box>

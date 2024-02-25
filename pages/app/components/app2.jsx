@@ -1,4 +1,5 @@
 import { Box, Center, Flex, Heading, Image } from "@chakra-ui/react";
+import FadeInFrom from "../../../components/animations/fadeInFrom";
 
 const App2 = () => {
   return (
@@ -13,17 +14,24 @@ const App2 = () => {
           <Flex direction="column">
             {/* Título */}
             <Box textAlign="center" p="2">
-              <Heading
-                color="white"
-                fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
-                fontWeight="bold"
-                fontFamily="Travels"
-                textTransform="uppercase"
-                lineHeight={{ base: "25px", sm: "6vw", md: "55px", lg: "67px" }}
-                textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
-              >
-                Construí tu futuro
-              </Heading>
+              <FadeInFrom id="title2" direction="scale">
+                <Heading
+                  color="white"
+                  fontSize={{ base: "20px", sm: "6vw", md: "55px", lg: "72px" }}
+                  fontWeight="bold"
+                  fontFamily="Travels"
+                  textTransform="uppercase"
+                  lineHeight={{
+                    base: "25px",
+                    sm: "6vw",
+                    md: "55px",
+                    lg: "67px",
+                  }}
+                  textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
+                >
+                  Construí tu futuro
+                </Heading>
+              </FadeInFrom>
             </Box>
 
             {/* Imágenes de Play Store y App Store */}
@@ -33,9 +41,11 @@ const App2 = () => {
             </Flex>
 
             {/* Imagen del teléfono */}
-            <Box mx="auto">
-              <Image src="/images/app/phone.png" alt="Teléfono" />
-            </Box>
+            <FadeInFrom id="telephone" direction="bottom">
+              <Box mx="auto">
+                <Image src="/images/app/phone.png" alt="Teléfono" />
+              </Box>
+            </FadeInFrom>
           </Flex>
         </Center>
       </Box>

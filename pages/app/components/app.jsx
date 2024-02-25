@@ -30,46 +30,7 @@ const App = () => {
           backgroundRepeat="no-repeat"
         />
 
-        <Flex justifyContent="center" alignItems="center" pb="20" pt="10" display={{ base: "none", md: "flex" }}>
-          <Image
-            src="/images/app/Home.png"
-            alt="Home"
-            _hover={{
-              transform: "scale(1.1) translateX(-10%)",
-            }}
-            transition="transform 0.3s ease"
-            h="auto"
-            maxW="calc(33.33% - 20px)"
-            mr="-6%"
-            mb="-10%"
-            zIndex="999"
-          />
-          <Image
-            src="/images/app/Login.png"
-            alt="Login"
-            _hover={{
-              transform: "scale(1.1) translateY(-10%)",
-            }}
-            transition="transform 0.3s ease"
-            h="auto"
-            maxW="calc(33.33% - 20px)"
-            zIndex="999"
-          />
-          <Image
-            src="/images/app/Carrito.png"
-            alt="Carrito"
-            _hover={{
-              transform: "scale(1.1) translateX(10%)",
-            }}
-            transition="transform 0.3s ease"
-            h="auto"
-            maxW="calc(33.33% - 20px)"
-            ml="-7%"
-            zIndex="999"
-          />
-        </Flex>
-
-        <Center pb="20" pt="10" display={{ base: "center", md: "none" }}>
+        <Center pt="10" pb="28">
           {images.map((image, index) => (
             <Image
               key={index}
@@ -88,7 +49,6 @@ const App = () => {
             />
           ))}
         </Center>
-
       </Box>
     </Box>
   );

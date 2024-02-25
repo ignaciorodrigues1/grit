@@ -20,10 +20,11 @@ const LosPinos = () => {
         backgroundImage={{
           base: "url('/images/proyectos/losPinos.png')",
           md: "url('/images/neanderBg.png')",
+          xl: "",
         }}
         backgroundSize="cover"
         backgroundPosition="center"
-        minH="85vh"
+        minH={{base:"55vh",md:"65vh", xl: "650px"}}
         overflowY="hidden"
       >
         <Image
@@ -31,7 +32,15 @@ const LosPinos = () => {
           alt="Image 3"
           w="100%"
           h="100%"
-          minH="85vh"
+          minH={{base:"55vh",md:"65vh"}}
+          display={{ base: "block", xl: "none" }}
+        />
+        <Image
+          position="absolute"
+          display={{ base: "none", xl: "block" }}
+          inset="0"
+          right="-20"
+          src="/images/proyectos/bgTestXlLosPinos.png"
         />
 
         <Flex

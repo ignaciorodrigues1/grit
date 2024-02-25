@@ -29,7 +29,7 @@ const ContactForm = () => {
       py="20"
       alignItems="center"
       justifyContent="center"
-      zIndex="-1"
+      zIndex="0"
     >
       {/* ImageWithMotion Container */}
       <Box

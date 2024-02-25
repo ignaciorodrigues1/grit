@@ -5,6 +5,7 @@ import { Box, Image, Text, Flex } from "@chakra-ui/react";
 import PanoramicImage from "../../components/panoramicImage";
 import { AnimatedIcon } from "../../../../components/animations/animatedIcon";
 import { PiCube } from "react-icons/pi";
+import FadeInFrom from "../../../../components/animations/fadeInFrom";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -53,6 +54,7 @@ const Hero = () => {
         pt="40"
       >
         {/* Heading Image */}
+        <FadeInFrom id="heading-image" direction="scale">
         <Image
           src="/images/neanderTittle.png"
           alt="Neander Title"
@@ -60,7 +62,7 @@ const Hero = () => {
           mx="auto"
           my={4}
         />
-
+        </FadeInFrom>
         {/* Subtitle */}
         <Text
           fontSize="32px"
@@ -86,6 +88,7 @@ const Hero = () => {
 
         {/* Additional Image */}
         <Box maxH="700px" mx="auto" position="relative">
+        <FadeInFrom id="heading-image" direction="bottom">
           <Image
             src="/images/neanderPreview.png"
             alt="Additional Image"
@@ -94,6 +97,7 @@ const Hero = () => {
             objectFit="cover"
             mb="-20%"
           />
+          </FadeInFrom>
 
           {/* Cube Icon and Text */}
           <Box
