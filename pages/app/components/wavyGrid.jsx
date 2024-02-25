@@ -4,7 +4,6 @@ import {
   SimpleGrid,
   Text,
   Image,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import FadeInFrom from "../../../components/animations/fadeInFrom";
 

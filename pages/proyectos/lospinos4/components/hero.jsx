@@ -38,7 +38,6 @@ const Hero = () => {
         bgColor="#4038C5"
       />
 
-      {/* Centered Content */}
       <Flex
         maxW="1280px"
         w="95%"
@@ -52,7 +51,7 @@ const Hero = () => {
         position="relative"
         pt="40"
       >
-        {/* Heading Image */}
+
         <Image
           src="/images/neanderTittle.png"
           alt="Neander Title"
@@ -61,7 +60,6 @@ const Hero = () => {
           my={4}
         />
 
-        {/* Subtitle */}
         <Text
           fontSize="32px"
           fontWeight="bold"
@@ -72,7 +70,6 @@ const Hero = () => {
           <span style={{ color: "#A29CE2" }}>Volvé a tu</span> esencia
         </Text>
 
-        {/* Arrow Icon */}
         <Flex justify="center" my={10}>
           <AnimatedIcon>
             <Image
@@ -84,7 +81,6 @@ const Hero = () => {
           </AnimatedIcon>
         </Flex>
 
-        {/* Additional Image */}
         <Box maxH="700px" mx="auto" position="relative">
           <Image
             src="/images/neanderPreview.png"
@@ -95,7 +91,6 @@ const Hero = () => {
             mb="-20%"
           />
 
-          {/* Cube Icon and Text */}
           <Box
             position="absolute"
             bottom="20px"
@@ -109,10 +104,9 @@ const Hero = () => {
             alignItems="center"
             mb="-20%"
           >
-            {/* Cube Icon */}
+
             <PiCube fontSize="35px" />
 
-            {/* Text */}
             <Text fontSize="25px" color="white" fontFamily="Travels" pl="1">
               360°
             </Text>
@@ -120,7 +114,6 @@ const Hero = () => {
         </Box>
       </Flex>
 
-      {/* 360° Photo Sphere Modal */}
       <PanoramicImage
         isOpen={isModalOpen}
         onClose={handleCloseModal}

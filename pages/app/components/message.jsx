@@ -6,7 +6,7 @@ const Message = () => {
   return (
     <Box backgroundColor="#1D1C1C" maxW="100vw" position="">
       <Box maxW="1280px" mx="auto" position="relative">
-        {/* Heading */}
+
         <Flex
           align="center"
           justify="center"

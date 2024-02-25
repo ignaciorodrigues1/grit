@@ -12,7 +12,6 @@ const App2 = () => {
       <Box maxW="1280px" mx="auto" textAlign="center" pt="20">
         <Center>
           <Flex direction="column">
-            {/* Título */}
             <Box textAlign="center" p="2">
               <FadeInFrom id="title2" direction="scale">
                 <Heading
@@ -34,13 +33,11 @@ const App2 = () => {
               </FadeInFrom>
             </Box>
 
-            {/* Imágenes de Play Store y App Store */}
             <Flex mt="10" mx="auto">
               <Image src="/images/playStore.png" alt="Play Store" mx="2" />
               <Image src="/images/appStore.png" alt="App Store" mx="2" />
             </Flex>
 
-            {/* Imagen del teléfono */}
             <FadeInFrom id="telephone" direction="bottom">
               <Box mx="auto">
                 <Image src="/images/app/phone.png" alt="Teléfono" />

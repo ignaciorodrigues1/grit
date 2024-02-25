@@ -165,7 +165,7 @@ const WavyGrid2 = () => {
           spacing={0}
           alignItems="center"
         >
-          {/* First Row/Column */}
+
           <Box position="relative" h="100%" mr={{ md: "-5.5%", xl: "-4.8%" }}>
             <Image
               src="/images/empresa/image1.png"
@@ -187,7 +187,6 @@ const WavyGrid2 = () => {
             />
           </Box>
 
-          {/* Second Row/Column */}
           <FadeInFrom id="info1" direction="right">
             <Box position="relative">
               <Heading
@@ -279,7 +278,7 @@ const WavyGrid2 = () => {
           spacing={0}
           alignItems="center"
         >
-          {/* First Row/Column */}
+
           <FadeInFrom id="info2" direction="left">
             <Box position="relative">
               <Heading

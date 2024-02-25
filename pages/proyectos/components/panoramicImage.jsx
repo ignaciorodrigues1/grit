@@ -23,7 +23,7 @@ const PanoramicImage = ({ isOpen, onClose, imageUrl }) => {
 
   useEffect(() => {
     if (isOpen && viewerRef.current && viewerRef.current.viewer) {
-      viewerRef.current.viewer.resize(); // Resize the viewer when the modal opens
+      viewerRef.current.viewer.resize();
     }
   }, [isOpen]);
 
