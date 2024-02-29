@@ -104,7 +104,7 @@ const Hero = () => {
         <ImageAnimation delay={1.3}>
           <Box
             display={{ base: "none", md: "block" }}
-            left="0"
+            left="0" 
             ml={{ md: "-34px" }}
           >
             <Image src="/images/vectorC.png" alt="Image 3" h="700px" />

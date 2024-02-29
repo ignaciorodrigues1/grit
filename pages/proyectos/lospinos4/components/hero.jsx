@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <Box minHh="100vh" bgColor="#4038C5" position="relative" zIndex={0}>
+    <Box minH="100vh" bgColor="#4038C5" position="relative" zIndex={0}>
       <Box
         position="absolute"
         inset="0"
