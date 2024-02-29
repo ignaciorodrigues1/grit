@@ -43,19 +43,16 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/viviendas.png" alt="viviendas" />
 
                     <Text
                       mt="2"
                       fontSize="lg"
                       fontFamily="Travels"
                       fontWeight="700"
+                      textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción
+                      Viviendas
                     </Text>
                   </Flex>
                 </Center>
@@ -88,7 +85,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/comunidad.png" alt="comunidad" />
 
                     <Text
                       mt="2"
@@ -97,11 +94,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción.
+                      Comunidad
                     </Text>
                   </Flex>
                 </Center>
@@ -134,7 +127,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/naturaleza.png" alt="naturaleza" />
 
                     <Text
                       mt="2"
@@ -143,11 +136,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción
+                      Naturaleza
                     </Text>
                   </Flex>
                 </Center>
@@ -180,7 +169,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/familia.png" alt="familia" />
 
                     <Text
                       mt="2"
@@ -189,11 +178,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción
+                      Familia
                     </Text>
                   </Flex>
                 </Center>
@@ -226,7 +211,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/inversion.png" alt="inversión" />
 
                     <Text
                       mt="2"
@@ -235,11 +220,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción
+                      Inversión
                     </Text>
                   </Flex>
                 </Center>
@@ -272,7 +253,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/present.png" alt="Icono 1" />
+                    <Image src="/images/neander/compromiso.png" alt="compromiso" />
 
                     <Text
                       mt="2"
@@ -281,11 +262,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      SERVICIO
-                    </Text>
-
-                    <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                      Descripción
+                      Compromiso
                     </Text>
                   </Flex>
                 </Center>
