@@ -5,9 +5,6 @@ import {
   Box,
   Image,
   useMediaQuery,
-  Heading,
-  Link,
-  Text,
   Flex,
   Button,
 } from "@chakra-ui/react";
@@ -18,39 +15,6 @@ const PhotoSlider = () => {
     "(min-width: 40em)",
     "(min-width: 48em)",
   ]);
-
-  const slides = [
-    {
-      image: "/images/slide1.png",
-      subtitle: "Arquitectura abstracta en tendencia mundial",
-      link: "/#",
-    },
-    {
-      image: "/images/slide2.png",
-      subtitle: "El arquitecto que construye castillos",
-      link: "/#",
-    },
-    {
-      image: "/images/slide3.png",
-      subtitle: "Los barrios como oficinas abiertas al mundo",
-      link: "/#",
-    },
-    {
-      image: "/images/slide1.png",
-      subtitle: "Arquitectura abstracta en tendencia mundial",
-      link: "/#",
-    },
-    {
-      image: "/images/slide2.png",
-      subtitle: "El arquitecto que construye castillos",
-      link: "/#",
-    },
-    {
-      image: "/images/slide3.png",
-      subtitle: "Los barrios como oficinas abiertas al mundo",
-      link: "/#",
-    },
-  ];
 
   const PrevArrow = (props) => (
     <Button
