@@ -135,7 +135,7 @@ const NewsSlider = () => {
                 <Image
                   src={slide.image}
                   alt={`News ${index + 1}`}
-                  boxSize="100%"
+                  boxSize="100%" 
                 />
                 <Text
                   color="white"

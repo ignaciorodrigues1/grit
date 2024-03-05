@@ -14,9 +14,8 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <Box
         as="img"
-        src="/images/heroMobile.png"
+        src="/images/bgPlaceholder.png"
         alt="Background Image"
-        display={{ base: "block", md: "none" }}
         w="100%"
         h="100%"
         objectFit="cover"
