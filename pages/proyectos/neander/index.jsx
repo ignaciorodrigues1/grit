@@ -5,6 +5,7 @@ import Subtitle from "./components/subtitle";
 import Info from "./components/info";
 import AppDownload from "../../../components/appDownload";
 import Images from "./components/images";
+import NextProyect from "./components/nextProyext";
 
 const NeanderPage = () => {
 
@@ -15,6 +16,7 @@ const NeanderPage = () => {
       <Info />
       <Images />
       <AppDownload />
+      <NextProyect />
     </Box>
   );
 };

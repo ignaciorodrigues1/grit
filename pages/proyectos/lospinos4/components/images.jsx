@@ -27,7 +27,7 @@ const Images = () => {
               color="#4139C6"
               pb="5"
             >
-              LOS PINOS 4 CRECE
+              Neander Crece
             </Text>
             <Text
               pb="5"

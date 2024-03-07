@@ -5,6 +5,7 @@ import { Box, Image, Text, Flex } from "@chakra-ui/react";
 import PanoramicImage from "../../components/panoramicImage";
 import { AnimatedIcon } from "../../../../components/animations/animatedIcon";
 import { PiCube } from "react-icons/pi";
+import FadeInFrom from "../../../../components/animations/fadeInFrom";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <Box minH="100vh" bgColor="#4038C5" position="relative" zIndex={0}>
+    <Box minHh="100vh" bgColor="#4038C5" position="relative" zIndex={0}>
       <Box
         position="absolute"
         inset="0"
@@ -38,6 +39,7 @@ const Hero = () => {
         bgColor="#4038C5"
       />
 
+      {/* Centered Content */}
       <Flex
         maxW="1280px"
         w="95%"
@@ -51,7 +53,8 @@ const Hero = () => {
         position="relative"
         pt="40"
       >
-
+        {/* Heading Image */}
+        <FadeInFrom id="heading-image" direction="scale">
         <Image
           src="/images/neanderTittle.png"
           alt="Neander Title"
@@ -59,7 +62,8 @@ const Hero = () => {
           mx="auto"
           my={4}
         />
-
+        </FadeInFrom>
+        {/* Subtitle */}
         <Text
           fontSize="32px"
           fontWeight="bold"
@@ -70,6 +74,7 @@ const Hero = () => {
           <span style={{ color: "#A29CE2" }}>Volvé a tu</span> esencia
         </Text>
 
+        {/* Arrow Icon */}
         <Flex justify="center" my={10}>
           <AnimatedIcon>
             <Image
@@ -81,7 +86,9 @@ const Hero = () => {
           </AnimatedIcon>
         </Flex>
 
+        {/* Additional Image */}
         <Box maxH="700px" mx="auto" position="relative">
+        <FadeInFrom id="heading-image" direction="bottom">
           <Image
             src="/images/neanderPreview.png"
             alt="Additional Image"
@@ -90,7 +97,9 @@ const Hero = () => {
             objectFit="cover"
             mb="-20%"
           />
+          </FadeInFrom>
 
+          {/* Cube Icon and Text */}
           <Box
             position="absolute"
             bottom="20px"
@@ -104,9 +113,10 @@ const Hero = () => {
             alignItems="center"
             mb="-20%"
           >
-
+            {/* Cube Icon */}
             <PiCube fontSize="35px" />
 
+            {/* Text */}
             <Text fontSize="25px" color="white" fontFamily="Travels" pl="1">
               360°
             </Text>
@@ -114,6 +124,7 @@ const Hero = () => {
         </Box>
       </Flex>
 
+      {/* 360° Photo Sphere Modal */}
       <PanoramicImage
         isOpen={isModalOpen}
         onClose={handleCloseModal}
