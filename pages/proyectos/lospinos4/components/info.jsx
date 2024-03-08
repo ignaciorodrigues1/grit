@@ -11,7 +11,7 @@ import FadeInFrom from "../../../../components/animations/fadeInFrom";
 
 const Info = () => {
   return (
-    <Box bgColor="#4038C5">
+    <Box bgColor="#1A6626">
       <Box maxW="1280px" mx="auto" w={{ md: "95%" }}>
         <SimpleGrid
           columns={{ base: "1", md: "3" }}
@@ -27,7 +27,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image1.png')"
+                  backgroundImage="url('/images/losPinos/image1.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -36,14 +36,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/viviendas.png" alt="viviendas" />
+                    <Image src="/images/losPinos/viviendas.png" alt="viviendas" />
 
                     <Text
                       mt="2"
@@ -69,7 +69,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image2.png')"
+                  backgroundImage="url('/images/losPinos/image2.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -78,14 +78,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/comunidad.png" alt="comunidad" />
+                    <Image src="/images/losPinos/comunidad.png" alt="comunidad" />
 
                     <Text
                       mt="2"
@@ -111,7 +111,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image3.png')"
+                  backgroundImage="url('/images/losPinos/image3.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -120,14 +120,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/naturaleza.png" alt="naturaleza" />
+                    <Image src="/images/losPinos/naturaleza.png" alt="naturaleza" />
 
                     <Text
                       mt="2"
@@ -153,7 +153,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image4.png')"
+                  backgroundImage="url('/images/losPinos/image4.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -162,14 +162,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/familia.png" alt="familia" />
+                    <Image src="/images/losPinos/familia.png" alt="familia" />
 
                     <Text
                       mt="2"
@@ -195,7 +195,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image5.png')"
+                  backgroundImage="url('/images/losPinos/image5.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -204,14 +204,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/inversion.png" alt="inversión" />
+                    <Image src="/images/losPinos/inversion.png" alt="inversión" />
 
                     <Text
                       mt="2"
@@ -237,7 +237,7 @@ const Info = () => {
                 <Box
                   w="100%"
                   h="100%"
-                  backgroundImage="url('/images/neander/image6.png')"
+                  backgroundImage="url('/images/losPinos/image6.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   backgroundPosition="center"
@@ -246,14 +246,14 @@ const Info = () => {
                   w="100%"
                   h="100%"
                   minH={{ base: "", md: "250.67px" }}
-                  bgColor="#4A42C8"
+                  bgColor="#319B41"
                 >
                   <Flex
                     color="white"
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/neander/compromiso.png" alt="compromiso" />
+                    <Image src="/images/losPinos/compromiso.png" alt="compromiso" />
 
                     <Text
                       mt="2"

@@ -85,7 +85,7 @@ const PhotoSlider = () => {
           {[1, 2, 3, 4, 5, 6].map((index) => (
             <Box key={index} className="slide">
               <Image
-                src={`/images/neander/image${index}.png`}
+                src={`/images/losPinos/image${index}.png`}
                 alt={`Image ${index}`}
                 className="slider3dImage"
                 borderRadius="1%"

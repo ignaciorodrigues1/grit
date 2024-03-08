@@ -23,8 +23,9 @@ const Subtitle = () => {
               align="right"
               w={{ base: "100%", md: "80%" }}
             >
-              <span style={{ color: "#4139C6" }}>LA VIDA SE CONSTRUYE</span>{" "}
-              <span style={{ color: "#A29CE2" }}>EN VILLA AMELIA</span>
+              <span style={{ color: "#1B6727" }}>EL NUEVO</span>{" "}
+              <span style={{ color: "#1B6727" }}>BARRIO DE</span>{" "}
+              <span style={{ color: "#319B41" }}>ÁLVAREZ</span>
             </Text>
 
             <Text
@@ -33,6 +34,7 @@ const Subtitle = () => {
               fontFamily="Ubuntu Mono"
               align="right"
               w={{ base: "70%", md: "60%" }}
+              color="#00000099"
             >
               A pocos minutos de Rosario, sobre la Ruta Provincial 18 en el Km
               12 hay una nueva opción para vivir o invertir.

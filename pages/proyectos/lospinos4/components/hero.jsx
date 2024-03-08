@@ -20,26 +20,35 @@ const Hero = () => {
   };
 
   return (
-    <Box minHh="100vh" bgColor="#4038C5" position="relative" zIndex={0}>
+    <Box minHh="100vh" bgColor="#1A6626" position="relative" zIndex={0}>
       <Box
         position="absolute"
         inset="0"
-        bgGradient="linear-gradient(180deg, #4038C5 54.06%, rgba(64, 56, 197, 0) 108.64%)"
+        bgGradient="linear-gradient(180deg, #1A6626 54.06%, rgba(64, 56, 197, 0) 108.64%)"
         zIndex={2}
       />
 
-      <Box
-        position="absolute"
-        inset="0"
-        backgroundImage="url('/images/bgPattern.png')"
-        backgroundRepeat="no-repeat"
-        backgroundSize="cover"
-        backgroundPosition="center"
-        zIndex={1}
-        bgColor="#4038C5"
-      />
+      <Box position="absolute" inset="0" zIndex={1}>
 
-      {/* Centered Content */}
+        <Box
+          position="absolute"
+          inset="0"
+          backgroundImage="url('/images/bgPattern.png')"
+          backgroundRepeat="no-repeat"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          zIndex={-1}
+        />
+
+        <Box
+          position="absolute"
+          inset="0"
+          bgColor="rgba(26, 102, 38, 0.9)"
+          zIndex={0}
+        />
+
+      </Box>
+
       <Flex
         maxW="1280px"
         w="95%"
@@ -53,25 +62,37 @@ const Hero = () => {
         position="relative"
         pt="40"
       >
-        {/* Heading Image */}
         <FadeInFrom id="heading-image" direction="scale">
-        <Image
-          src="/images/neanderTittle.png"
-          alt="Neander Title"
-          maxH="130px"
-          mx="auto"
-          my={4}
-        />
+          <Flex
+            flexDir="column"
+            justifyContent="flex-end"
+            pt="5%"
+            pb={{ md: "5%" }}
+          >
+            <Text
+              fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
+              lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
+              fontWeight="900"
+              fontFamily="Travels"
+              textTransform="uppercase"
+              align="center"
+              color="white"
+              pb="5"
+            >
+              Los pinos 4
+            </Text>
+          </Flex>
         </FadeInFrom>
-        {/* Subtitle */}
+
         <Text
           fontSize="32px"
           fontWeight="bold"
           my={10}
           fontFamily="Travels"
           textTransform="uppercase"
+          color="white"
         >
-          <span style={{ color: "#A29CE2" }}>Volvé a tu</span> esencia
+          <span style={{ color: "#43D259" }}>Respirá,</span> Tenés Opciones
         </Text>
 
         {/* Arrow Icon */}
@@ -88,15 +109,15 @@ const Hero = () => {
 
         {/* Additional Image */}
         <Box maxH="700px" mx="auto" position="relative">
-        <FadeInFrom id="heading-image" direction="bottom">
-          <Image
-            src="/images/neanderPreview.png"
-            alt="Additional Image"
-            maxH="100%"
-            maxW="100%"
-            objectFit="cover"
-            mb="-20%"
-          />
+          <FadeInFrom id="heading-image" direction="bottom">
+            <Image
+              src="/images/neanderPreview.png"
+              alt="Additional Image"
+              maxH="100%"
+              maxW="100%"
+              objectFit="cover"
+              mb="-20%"
+            />
           </FadeInFrom>
 
           {/* Cube Icon and Text */}

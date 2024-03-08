@@ -6,8 +6,6 @@ const Images = () => {
     <Box
       bgColor="white"
       mt="-20%"
-      backgroundImage={`linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/bgPattern.png")`}
-      backgroundSize="cover"
     >
       <Box background={`linear-gradient(to bottom, transparent 0%, white 35%)`}>
         <Box maxW="1280px" mx="auto">
@@ -24,10 +22,10 @@ const Images = () => {
               fontFamily="Travels"
               textTransform="uppercase"
               align="center"
-              color="#4139C6"
+              color="#1B6727"
               pb="5"
             >
-              Neander Crece
+              Respirá
             </Text>
             <Text
               pb="5"
@@ -37,9 +35,9 @@ const Images = () => {
               fontWeight="900"
               align="center"
               textTransform="uppercase"
-              color="#A29CE2"
+              color="#319B41"
             >
-              Y tu inversión también.
+              Tenés opciones
             </Text>
             <PhotoSlider />
           </Flex>
