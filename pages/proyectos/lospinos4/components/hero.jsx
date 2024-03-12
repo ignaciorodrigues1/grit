@@ -1,23 +1,21 @@
-"use client";
-
-import { useState } from "react";
-import { Box, Image, Text, Flex } from "@chakra-ui/react";
-import PanoramicImage from "../../components/panoramicImage";
+import { useState, useRef, useEffect } from "react";
+import { Box, Image, Text, Flex, Spinner } from "@chakra-ui/react";
 import { AnimatedIcon } from "../../../../components/animations/animatedIcon";
-import { PiCube } from "react-icons/pi";
 import FadeInFrom from "../../../../components/animations/fadeInFrom";
 
 const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
 
-  const handleImageClick = () => {
-    console.log("Image clicked");
-    setIsModalOpen(true);
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
   };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+  useEffect(() => {
+    if (videoRef.current && videoRef.current.readyState >= 3) {
+      setIsVideoLoaded(true);
+    }
+  }, []);
 
   return (
     <Box minHh="100vh" bgColor="#1A6626" position="relative" zIndex={0}>
@@ -29,7 +27,6 @@ const Hero = () => {
       />
 
       <Box position="absolute" inset="0" zIndex={1}>
-
         <Box
           position="absolute"
           inset="0"
@@ -46,7 +43,6 @@ const Hero = () => {
           bgColor="rgba(26, 102, 38, 0.9)"
           zIndex={0}
         />
-
       </Box>
 
       <Flex
@@ -95,7 +91,6 @@ const Hero = () => {
           <span style={{ color: "#43D259" }}>Respirá,</span> Tenés Opciones
         </Text>
 
-        {/* Arrow Icon */}
         <Flex justify="center" my={10}>
           <AnimatedIcon>
             <Image
@@ -107,50 +102,50 @@ const Hero = () => {
           </AnimatedIcon>
         </Flex>
 
-        {/* Additional Image */}
         <Box maxH="700px" mx="auto" position="relative">
-          <FadeInFrom id="heading-image" direction="bottom">
-            <Image
-              src="/images/neanderPreview.png"
-              alt="Additional Image"
-              maxH="100%"
-              maxW="100%"
-              objectFit="cover"
-              mb="-20%"
-            />
-          </FadeInFrom>
-
-          {/* Cube Icon and Text */}
+          {!isVideoLoaded && (
+            <Box position="relative" maxH="100%" maxW="100%">
+              <FadeInFrom id="heading-image" direction="bottom">
+                <Image
+                  src="/images/losPinos/losPinosHero.png"
+                  alt="Los Pinos Hero"
+                  maxH="100%"
+                  maxW="100%"
+                  objectFit="cover"
+                  mb="-20%"
+                />
+              </FadeInFrom>
+              <Spinner
+                size="xl"
+                position="absolute"
+                left="50%"
+                top="50%"
+                transform="translate(-50%, -50%)"
+                color="white"
+              />
+            </Box>
+          )}
           <Box
-            position="absolute"
-            bottom="20px"
-            right="20px"
-            bgColor="#FFFFFF4D"
-            padding="2px"
-            borderRadius="8px"
-            cursor="pointer"
-            onClick={handleImageClick}
-            display="flex"
-            alignItems="center"
-            mb="-20%"
+            as="video"
+            ref={videoRef}
+            onLoadedData={handleVideoLoad}
+            autoPlay
+            muted
+            loop
+            preload="auto"
+            style={{
+              maxWidth: "100%",
+              maxHeight: "100%",
+              objectFit: "cover",
+              marginBottom: "-20%",
+              display: isVideoLoaded ? "block" : "none",
+            }}
           >
-            {/* Cube Icon */}
-            <PiCube fontSize="35px" />
-
-            {/* Text */}
-            <Text fontSize="25px" color="white" fontFamily="Travels" pl="1">
-              360°
-            </Text>
+            <source src="/images/losPinos/lospinosVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </Box>
         </Box>
       </Flex>
-
-      {/* 360° Photo Sphere Modal */}
-      <PanoramicImage
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        imageUrl="/images/neander360.jpg"
-      />
     </Box>
   );
 };

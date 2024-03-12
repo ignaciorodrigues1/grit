@@ -43,7 +43,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/viviendas.png" alt="viviendas" />
+                    <Image src="/images/losPinos/calidad.png" alt="calidad" />
 
                     <Text
                       mt="2"
@@ -52,7 +52,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Viviendas
+                      calidad
                     </Text>
                   </Flex>
                 </Center>
@@ -85,7 +85,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/comunidad.png" alt="comunidad" />
+                    <Image src="/images/losPinos/tecnologia.png" alt="tecnologia" />
 
                     <Text
                       mt="2"
@@ -94,7 +94,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Comunidad
+                      tecnología
                     </Text>
                   </Flex>
                 </Center>
@@ -127,7 +127,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/naturaleza.png" alt="naturaleza" />
+                    <Image src="/images/losPinos/seguridad.png" alt="seguridad" />
 
                     <Text
                       mt="2"
@@ -136,7 +136,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Naturaleza
+                      seguridad
                     </Text>
                   </Flex>
                 </Center>
@@ -169,7 +169,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/familia.png" alt="familia" />
+                    <Image src="/images/losPinos/naturaleza.png" alt="naturaleza" />
 
                     <Text
                       mt="2"
@@ -178,7 +178,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Familia
+                      naturaleza
                     </Text>
                   </Flex>
                 </Center>
@@ -211,7 +211,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/inversion.png" alt="inversión" />
+                    <Image src="/images/losPinos/inversion.png" alt="crecimiento" />
 
                     <Text
                       mt="2"
@@ -220,7 +220,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Inversión
+                      crecimiento
                     </Text>
                   </Flex>
                 </Center>
@@ -253,7 +253,7 @@ const Info = () => {
                     alignItems="center"
                     flexDirection="column"
                   >
-                    <Image src="/images/losPinos/compromiso.png" alt="compromiso" />
+                    <Image src="/images/losPinos/recreacion.png" alt="recreacion" />
 
                     <Text
                       mt="2"
@@ -262,7 +262,7 @@ const Info = () => {
                       fontWeight="700"
                       textTransform="uppercase"
                     >
-                      Compromiso
+                      recreación
                     </Text>
                   </Flex>
                 </Center>
