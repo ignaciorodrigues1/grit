@@ -26,16 +26,16 @@ const Footer = () => {
 
           {/* Social Icons */}
           <Flex align="center" gap={4}>
-            <Link href="https://www.youtube.com/" isExternal>
+            <Link href="https://www.youtube.com/@Grit.Desarrollos" isExternal>
               <FaYoutube size="1.5em" color="white" />
             </Link>
-            <Link href="https://twitter.com/" isExternal>
+            {/* <Link href="https://twitter.com/" isExternal>
               <FaXTwitter size="1.5em" color="white" />
-            </Link>
-            <Link href="https://www.instagram.com/" isExternal>
+            </Link> */}
+            <Link href="https://www.instagram.com/grit.desarrollos" isExternal>
               <FaInstagram size="1.5em" color="white" />
             </Link>
-            <Link href="https://www.facebook.com/" isExternal>
+            <Link href="https://www.linkedin.com/company/grit-desarrollos/" isExternal>
               <FaLinkedinIn size="1.5em" color="white" />
             </Link>
           </Flex>

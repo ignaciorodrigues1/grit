@@ -41,7 +41,7 @@ const Hero = () => {
         top="0"
         left="0"
         zIndex="-1"
-        playbackRate={0.5}
+        playbackrate={0.5}
         className="fadeIn"
       />
 

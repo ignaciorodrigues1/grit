@@ -17,7 +17,7 @@ const WhatsappIcon = () => {
   };
 
   // Enlace de WhatsApp (puedes cambiar el número según tu necesidad)
-  const whatsappLink = "https://wa.me/1234567890";
+  const whatsappLink = "https://wa.me/+5493412178524";
 
   return (
     <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
