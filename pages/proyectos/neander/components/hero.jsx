@@ -31,7 +31,7 @@ const Hero = () => {
       <Box
         position="absolute"
         inset="0"
-        backgroundImage="url('/images/bgPattern.png')"
+        backgroundImage="url('/images/bgPatternNeander.png')"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
         backgroundPosition="center"

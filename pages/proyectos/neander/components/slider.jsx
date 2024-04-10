@@ -75,9 +75,9 @@ const PhotoSlider = () => {
   };
 
   return (
-    <Box py={10} overflowX="hidden">
+    <Box w={'100%'} py={10} overflowX="hidden">
       <Box
-        maxW="1280px"
+        w={'100%'}
         mx={{ base: "0", md: "auto" }}
         paddingX={{ md: "4rem", xl: "5rem" }}
       >

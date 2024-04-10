@@ -37,12 +37,6 @@ const Hero = () => {
           zIndex={-1}
         />
 
-        <Box
-          position="absolute"
-          inset="0"
-          bgColor="rgba(26, 102, 38, 0.9)"
-          zIndex={0}
-        />
       </Box>
 
       <Flex
@@ -65,18 +59,7 @@ const Hero = () => {
             pt="5%"
             pb={{ md: "5%" }}
           >
-            <Text
-              fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
-              lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
-              fontWeight="900"
-              fontFamily="Travels"
-              textTransform="uppercase"
-              align="center"
-              color="white"
-              pb="5"
-            >
-              Los pinos 4
-            </Text>
+            <Image src={"/images/losPinos/logo.svg"} width={'595'} height={'100'} alt={"Logo"} />
           </Flex>
         </FadeInFrom>
 

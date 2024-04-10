@@ -26,14 +26,11 @@ const WavyGrid2 = () => {
               <Image src="/images/icono3.png" alt="Icono 3" />
 
               <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
+                +5 años
               </Text>
 
               <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+                de experiencia
               </Text>
             </Flex>
 
@@ -67,14 +64,11 @@ const WavyGrid2 = () => {
               <Image src="/images/icono3.png" alt="Icono 3" />
 
               <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
+                +1000
               </Text>
 
               <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+                lotes
               </Text>
             </Flex>
 
@@ -108,7 +102,7 @@ const WavyGrid2 = () => {
               <Image src="/images/icono3.png" alt="Icono 3" />
 
               <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
+                +500
               </Text>
 
               <Text fontSize="sm" fontFamily="Ubuntu Mono">
@@ -147,14 +141,14 @@ const WavyGrid2 = () => {
               <Image src="/images/icono3.png" alt="Icono 3" />
 
               <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
+                +1000
               </Text>
 
               <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
+                familias
               </Text>
               <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+                contentas
               </Text>
             </Flex>
           </Flex>
@@ -311,6 +305,7 @@ const WavyGrid2 = () => {
                 w={{ sm: "90%", lg: "75%" }}
                 pt="2%"
                 pl="5%"
+                mb={{ base: "24px", md: "0"}}
               >
                 Proponen desarrollos urbanísticos distintivos por su compromiso
                 ambiental y comunitario, creando espacios que integran sociedad

@@ -83,9 +83,9 @@ const LosPinos = () => {
             maxWidth="60%"
             ml="auto"
           >
-            El profundo compromiso se ve reflejado en cada una de nuestras
-            obras, las cuales se distinguen por su calidad, cuidado del medio
-            ambiente e integración con la comunidad.
+            Nos enorgullecemos de nuestro profundo compromiso con la excelencia en cada detalle.
+            Cada aspecto de nuestras obras refleja este compromiso, desde la planificación hasta
+            la ejecución final. 
           </Text>
 
           <Link href="/proyectos/lospinos4">

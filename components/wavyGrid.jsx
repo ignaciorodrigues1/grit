@@ -122,11 +122,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono1.png" alt="Icono 1" />
 
-            <Text mt="2" fontSize="xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
               +3000
             </Text>
 
-            <Text fontSize="md" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Ubuntu Mono">
               árboles
             </Text>
           </Flex>
@@ -162,11 +162,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono2.png" alt="Icono 2" />
 
-            <Text mt="2" fontSize="xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
               +1000
             </Text>
 
-            <Text fontSize="md" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Ubuntu Mono">
               lotes
             </Text>
           </Flex>
@@ -222,11 +222,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono3.png" alt="Icono 3" />
 
-            <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
               +500
             </Text>
 
-            <Text fontSize="sm" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Ubuntu Mono">
               hectáreas
             </Text>
           </Flex>
@@ -262,14 +262,14 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono4.png" alt="Icono 4" />
 
-            <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
               +1000
             </Text>
 
-            <Text fontSize="sm" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Ubuntu Mono">
               familias
             </Text>
-            <Text fontSize="sm" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Ubuntu Mono">
               contentas
             </Text>
           </Flex>

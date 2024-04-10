@@ -71,17 +71,10 @@ const WavyGrid = () => {
               flexDirection="column"
               w="100%"
             >
-              <Image src="/images/icono3.png" alt="Icono 3" />
+              <Image src="/images/app/comunidad.png" width={"50px"} alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
-              </Text>
-
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+              <Text mt="2" fontSize="2xl" fontFamily="Travels" fontWeight="700">
+                COMUNIDAD
               </Text>
             </Flex>
 
@@ -112,17 +105,10 @@ const WavyGrid = () => {
               flexDirection="column"
               w="100%"
             >
-              <Image src="/images/icono3.png" alt="Icono 3" />
+              <Image src="/images/app/inversion.png" width={"50px"} alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
-              </Text>
-
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+              <Text mt="2" fontSize="2xl" fontFamily="Travels" fontWeight="700">
+                INVERSIÓN
               </Text>
             </Flex>
 
@@ -153,17 +139,10 @@ const WavyGrid = () => {
               flexDirection="column"
               w="100%"
             >
-              <Image src="/images/icono3.png" alt="Icono 3" />
+              <Image src="/images/app/naturaleza.png" width={"50px"} alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
-              </Text>
-
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+              <Text mt="2" fontSize="2xl" fontFamily="Travels" fontWeight="700">
+                NATURALEZA
               </Text>
             </Flex>
 
@@ -192,17 +171,10 @@ const WavyGrid = () => {
               alignItems="center"
               flexDirection="column"
             >
-              <Image src="/images/icono3.png" alt="Icono 3" />
+              <Image src="/images/app/compromiso.png" width={"50px"} alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
-                +500M
-              </Text>
-
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                hectáreas
-              </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
-                intervenidas
+              <Text mt="2" fontSize="2xl" fontFamily="Travels" fontWeight="700">
+                COMPROMISO
               </Text>
             </Flex>
           </Flex>

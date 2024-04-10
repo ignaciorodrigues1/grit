@@ -39,9 +39,9 @@ const App2 = () => {
             </Flex>
 
             <FadeInFrom id="telephone" direction="bottom">
-              <Box mx="auto">
-                <Image src="/images/app/phone.png" alt="Teléfono" />
-              </Box>
+              <Flex w="100%" justifyContent={"center"} mt="24px">
+                <Image src="/images/app/phone.png" maxW={"300px"} alt="Teléfono" />
+              </Flex>
             </FadeInFrom>
           </Flex>
         </Center>
