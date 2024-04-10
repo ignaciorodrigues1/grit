@@ -1,5 +1,5 @@
 
-import { fetchFacts } from "../../utils/fetch";
+import { fetchFacts } from "../../../utils/fetch";
 
 export async function GET() {
   const facts = await fetchFacts();
