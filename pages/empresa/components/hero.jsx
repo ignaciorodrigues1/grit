@@ -8,8 +8,8 @@ const Hero = () => {
       bgColor="#1D1C1C"
       overflowX="hidden"
       backgroundImage={{
-        base: "url('/images/empresa/heroMobile.png')",
-        md: "url('/images/empresa/heroDesktop.png')",
+        base: "url('/images/empresa/team-grit.jpeg')",
+        md: "url('/images/empresa/team-grit.jpeg')",
       }}
       backgroundSize="cover"
       backgroundPosition="center"

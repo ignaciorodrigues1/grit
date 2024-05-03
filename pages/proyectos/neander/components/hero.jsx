@@ -99,7 +99,7 @@ const Hero = () => {
           />
           </FadeInFrom>
 
-          {/* Cube Icon and Text */}
+          {/* Cube Icon and Text
           <Box
             position="absolute"
             bottom="20px"
@@ -112,15 +112,15 @@ const Hero = () => {
             display="flex"
             alignItems="center"
             mb="-20%"
-          >
-            {/* Cube Icon */}
-            <PiCube fontSize="35px" />
+          > */}
+            {/* Cube Icon
+            <PiCube fontSize="35px" /> */}
 
-            {/* Text */}
+            {/* Text
             <Text fontSize="25px" color="white" fontFamily="Travels" pl="1">
               360°
             </Text>
-          </Box>
+          </Box> */}
         </Box>
       </Flex>
 
