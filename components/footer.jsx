@@ -21,7 +21,7 @@ const Footer = () => {
         >
           {/* Text and Copyright */}
           <Box pt={{ base: "10px", sm: "none" }}>
-            <p>© Copyright 2023 - Grit Desarrollos</p>
+            <p>© Copyright 2024 - Grit Desarrollos</p>
           </Box>
 
           {/* Social Icons */}
