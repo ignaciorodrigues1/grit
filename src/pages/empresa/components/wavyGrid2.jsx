@@ -25,11 +25,11 @@ const WavyGrid2 = () => {
             >
               <Image src="/images/icono3.png" alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+              <Text mt="2" fontSize="2xl" fontFamily="Archivo" fontWeight="700">
                 +5 años
               </Text>
 
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
+              <Text fontSize="base" fontFamily="Archivo">
                 de experiencia
               </Text>
             </Flex>
@@ -63,11 +63,11 @@ const WavyGrid2 = () => {
             >
               <Image src="/images/icono3.png" alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+              <Text mt="2" fontSize="2xl" fontFamily="Archivo" fontWeight="600">
                 +1000
               </Text>
 
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
+              <Text fontSize="base" fontFamily="Archivo">
                 lotes
               </Text>
             </Flex>
@@ -101,14 +101,14 @@ const WavyGrid2 = () => {
             >
               <Image src="/images/icono3.png" alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+              <Text mt="2" fontSize="2xl" fontFamily="Archivo" fontWeight="600">
                 +500
               </Text>
 
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
+              <Text fontSize="base" fontFamily="Archivo">
                 hectáreas
               </Text>
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
+              <Text fontSize="base" fontFamily="Archivo">
                 intervenidas
               </Text>
             </Flex>
@@ -140,11 +140,11 @@ const WavyGrid2 = () => {
             >
               <Image src="/images/icono3.png" alt="Icono 3" />
 
-              <Text mt="2" fontSize="lg" fontFamily="Travels" fontWeight="700">
+              <Text mt="2" fontSize="2xl" fontFamily="Archivo" fontWeight="600">
                 +1000
               </Text>
 
-              <Text fontSize="sm" fontFamily="Ubuntu Mono">
+              <Text fontSize="base" fontFamily="Archivo">
                 familias
               </Text>
             </Flex>
@@ -183,7 +183,7 @@ const WavyGrid2 = () => {
               <Heading
                 fontSize={{ base: "20px", sm: "6vw", md: "4vw", lg: "48px" }}
                 fontWeight="bold"
-                fontFamily="Travels"
+                fontFamily="Archivo"
                 lineHeight={{ base: "33px", sm: "6vw", md: "30px", lg: "48px" }}
                 pt={{ base: "5", md: "" }}
                 color="white"
@@ -195,9 +195,9 @@ const WavyGrid2 = () => {
                 pb={{ md: "2", lg: "5" }}
               >
                 <Box fontWeight="700">
-                  Un camino de <br />
-                  <Box paddingLeft={{ base: "5%", md: "25%" }} fontWeight="900">
-                    transformación
+                  Transformando espacios,<br />
+                  <Box paddingLeft={{ base: "5%", md: "15%" }} fontWeight="600">
+                    creando oportunidades
                   </Box>
                 </Box>
               </Heading>
@@ -207,18 +207,14 @@ const WavyGrid2 = () => {
                 color="white"
                 fontSize={{ base: "14px", lg: "16px" }}
                 fontWeigh="700"
-                fontFamily="Ubuntu Mono"
+                fontFamily="Archivo"
                 lineHeight="20px"
                 w={{ sm: "90%", lg: "75%" }}
                 p={{ base: "5%", md: "0" }}
                 pb={{ lg: "5" }}
                 pl={{ lg: "5" }}
               >
-                Con una sólida trayectoria en Los Pinos I, II y III, Zorila S.A.
-                agrega valor mediante la profesionalización y la incorporación
-                de socios estratégicos con experiencia en infraestructura,
-                servicios y calidad. En este proceso, Constantino Zorila y
-                Martín Weller fundan GRIT.
+                Luego del desarrollo de los Barrios Los Pinos I, II y III, Zorila S.A. evoluciona sumando valor a través de la profesionalización y la colaboración con socios estratégicos especializados en infraestructura, servicios y calidad. De esta manera, nace GRIT, fundado por Constantino Zorila y Martín Weller, con el propósito de construir comunidades que perduren en el tiempo.
               </Text>
 
               <Box
@@ -227,13 +223,13 @@ const WavyGrid2 = () => {
                 my="4"
                 mx="auto"
                 color="white"
-                w="75%"
+                w="87%"
                 mb={{ lg: "5" }}
               >
                 <Text
                   textAlign="center"
-                  fontFamily="Travels"
-                  fontWeig="700"
+                  fontFamily="Archivo"
+                  fontWeight="600"
                   fontSize="16px"
                   color="#9EAD8E"
                   textTransform="uppercase"
@@ -247,7 +243,7 @@ const WavyGrid2 = () => {
                 color="white"
                 fontSize={{ base: "14px", lg: "16px" }}
                 fontWeigh="700"
-                fontFamily="Ubuntu Mono"
+                fontFamily="Archivo"
                 lineHeight="20px"
                 w={{ sm: "90%", lg: "75%" }}
                 ml="auto"
@@ -275,7 +271,7 @@ const WavyGrid2 = () => {
               <Heading
                 fontSize={{ base: "20px", sm: "6vw", md: "4vw", lg: "48px" }}
                 fontWeight="bold"
-                fontFamily="Travels"
+                fontFamily="Archivo"
                 lineHeight={{ base: "33px", sm: "6vw", md: "30px", lg: "48px" }}
                 pt={{ base: "5", md: "" }}
                 color="white"
@@ -287,8 +283,7 @@ const WavyGrid2 = () => {
                 pb={{ lg: "5" }}
               >
                 <Box fontWeight="700">
-                  Nuestro <br />
-                  <Box fontWeight="900">equipo</Box>
+                  Nuestro equipo
                 </Box>
               </Heading>
 
@@ -297,14 +292,14 @@ const WavyGrid2 = () => {
                 color="white"
                 fontSize={{ base: "14px", lg: "16px" }}
                 fontWeigh="700"
-                fontFamily="Ubuntu Mono"
+                fontFamily="Archivo"
                 lineHeight="20px"
                 w={{ sm: "90%", lg: "75%" }}
                 pt="2%"
                 pl="5%"
                 mb={{ base: "24px", md: "0"}}
               >
-                Día a día un equipo de profesionales que crece y se compromete con la mejora continua al momento de trabajar en cada proyecto. 
+                Día a día un equipo de profesionales que crece, trabaja de manera comprometida con la mejora continua en cada proyecto.
               </Text>
             </Box>
           </FadeInFrom>
@@ -323,7 +318,7 @@ const WavyGrid2 = () => {
               width="100%"
             />
             <Image
-              src="/images/empresa/image2M.png"
+              src="/images/empresa/image-2.png"
               alt="Image 6"
               display={{ base: "block", md: "none" }}
               width="100%"

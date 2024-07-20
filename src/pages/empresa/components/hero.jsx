@@ -8,8 +8,8 @@ const Hero = () => {
       bgColor="#1D1C1C"
       overflowX="hidden"
       backgroundImage={{
-        base: "url('/images/empresa/team-grit.jpeg')",
-        md: "url('/images/empresa/team-grit.jpeg')",
+        base: "url('/images/empresa/equipo-1.jpg')",
+        md: "url('/images/empresa/equipo-1.jpg')",
       }}
       backgroundSize="cover"
       backgroundPosition="center"
@@ -17,6 +17,7 @@ const Hero = () => {
       position="relative"
       zIndex="0"
     >
+      <Box position="absolute" height="100%" width="100%" background="rgba(0,0,0,0.50)" top="0" left="0"></Box>
       <Box maxW="1280px" mx="auto">
         <Flex
           maxW="1280px"
@@ -36,7 +37,7 @@ const Hero = () => {
               fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
               lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
               fontWeight="bold"
-              fontFamily="Travels"
+              fontFamily="Archivo"
               textTransform="uppercase"
               textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
               pb="5"
@@ -48,12 +49,11 @@ const Hero = () => {
             <Text
               color="#EBEBEB"
               fontSize="14px"
-              fontFamily="Ubuntu Mono"
+              fontFamily="Archivo"
+              fontWeight="400"
               maxWidth={{ md: "60%" }}
             >
-              El profundo compromiso se ve reflejado en cada una de nuestras
-              obras, las cuales se distinguen por su calidad, cuidado del medio
-              ambiente e integración con la comunidad.
+              Grit propone desarrollos urbanísticos innovadores, que se distinguen por su compromiso ambiental e impacto en la comunidad, creando espacios que integran a la sociedad y al ecosistema natural desde el inicio, estableciendo relaciones a largo plazo, respetando las tradiciones y valores culturales.
             </Text>
           </FadeInFrom>
         </Flex>

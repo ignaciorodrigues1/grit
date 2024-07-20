@@ -21,41 +21,39 @@ const AppDownload = () => {
           <Text
             mb={2}
             textTransform="uppercase"
-            fontFamily="Travels"
-            fontWeight="900"
+            fontFamily="Archivo"
+            fontWeight="600"
             fontSize={{ base: "18px", sm: "32px", md: "47px", lg: "72px" }}
             lineHeight={{ base: "31px", md: "62px" }}
             maxWidth="75%"
             flexShrink="0"
           >
-            Invertí en tu futuro
+            Simple, seguro, innovador!
           </Text>
 
           <Text
-            fontSize="14px"
-            lineHeight="14px"
+            fontSize="base"
             my={4}
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
+            fontWeight="400"
             display={{ base: "none", md: "block" }}
             maxWidth="75%"
             flexShrink="0"
           >
-            El profundo compromiso se ve reflejado en cada una de nuestras
-            obras, las cuales se distinguen por su calidad, cuidado del medio
-            ambiente e integración con la comunidad.
+            Invertí en metros cuadrados online y conectá con la comunidad Grit!
           </Text>
 
           <Text
             fontSize="14px"
             lineHeight="14px"
             mb={4}
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
+            fontWeight="400"
             display={{ base: "block", md: "none" }}
             maxWidth="75%"
             flexShrink="0"
           >
-            El profundo compromiso se ve reflejado en cada una de nuestras
-            obras.
+            Invertí en metros cuadrados online y conectá con la comunidad Grit!
           </Text>
 
           {/* App Store and Play Store Links */}

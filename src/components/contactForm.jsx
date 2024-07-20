@@ -118,8 +118,8 @@ const ContactForm = () => {
           textAlign="center"
           mb={4}
           fontSize={{ base: "21px", sm: "32px" }}
-          fontFamily="Travels"
-          fontWeight="900"
+          fontFamily="Archivo"
+          fontWeight="600"
           color="white"
         >
           CONTACTANOS
@@ -134,6 +134,7 @@ const ContactForm = () => {
               name="name"
               placeholder="Nombre"
               mr={2}
+              fontFamily="Archivo"
               color="white"
               _placeholder={{ color: "white" }}
               borderRadius="4px"
@@ -150,6 +151,7 @@ const ContactForm = () => {
               name="company"
               placeholder="Empresa"
               color="white"
+              fontFamily="Archivo"
               _placeholder={{ color: "white" }}
               borderRadius="4px"
               border="1px solid rgba(255, 255, 255, 0.80)"
@@ -182,6 +184,7 @@ const ContactForm = () => {
             name="message"
             placeholder="Mensaje"
             mb={4}
+            fontFamily="Archivo"
             color="white"
             _placeholder={{ color: "white" }}
             borderRadius="4px"
@@ -200,7 +203,7 @@ const ContactForm = () => {
             colorScheme="green"
             w="100%"
             textTransform="uppercase"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             bgColor="#EC6E44"
             h="36px"
             _hover={{ bgColor: "#9EAC8E" }}

@@ -112,7 +112,7 @@ const NewsSlider = () => {
         textAlign="center"
         color="white"
         mb={8}
-        fontFamily="Travels"
+        fontFamily="Archivo"
         fontSize="32px"
       >
         NOVEDADES
@@ -138,7 +138,7 @@ const NewsSlider = () => {
                   color="white"
                   textAlign="center"
                   mt={2}
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
                   fontSize="16px"
                   textTransform="uppercase"
                   fontWeight="700"
@@ -158,7 +158,8 @@ const NewsSlider = () => {
             textAlign="center"
             color="white"
             textTransform="uppercase"
-            fontFamily="Travels"
+            fontFamily="Archivo"
+            fontWeight="600"
             bgColor="#EC6E44"
             h="36px"
             _hover={{ bgColor: "#9EAC8E" }}

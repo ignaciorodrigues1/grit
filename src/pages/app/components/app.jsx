@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Box, Image, Center, Flex } from "@chakra-ui/react";
 
 const images = [
-  "/images/app/Home.png",
-  "/images/app/Login.png",
-  "/images/app/Carrito.png",
+  "/images/app/app_1.png",
+  "/images/app/app_2.png",
+  "/images/app/app_3.png",
 ];
 
 const App = () => {
@@ -39,12 +39,13 @@ const App = () => {
               transform={
                 index === currentImageIndex ? "scale(1.1)" : "scale(1)"
               }
+              zIndex={
+                index === currentImageIndex ? "10" : "0"
+              }
               transition="transform 0.3s ease"
               h="auto"
-              maxW="calc(33.33% - 20px)"
-              mr={index === 0 ? "-6%" : index === 2 ? "-7%" : undefined}
+              maxW="calc(30% - 20px)"
               mb="-10%"
-              ml={index === 2 ? "-7%" : undefined}
               
             />
           ))}

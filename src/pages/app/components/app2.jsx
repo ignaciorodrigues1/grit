@@ -18,7 +18,7 @@ const App2 = () => {
                   color="white"
                   fontSize={{ base: "25px", sm: "6vw", md: "55px", lg: "72px" }}
                   fontWeight="bold"
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
                   textTransform="uppercase"
                   lineHeight={{
                     base: "25px",
@@ -28,7 +28,7 @@ const App2 = () => {
                   }}
                   textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
                 >
-                  Construí tu futuro
+                  ¡Descargala ahora y sé parte de esta transformación!
                 </Heading>
               </FadeInFrom>
             </Box>

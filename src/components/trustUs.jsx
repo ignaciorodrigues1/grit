@@ -44,18 +44,18 @@ const TrustUs = () => {
           />
           <Box
             color="#EBEBEB"
-            fontFamily="Travels"
-            fontWeight="700"
+            fontFamily="Archivo"
+            fontWeight="600"
             fontSize={{ base: "24px", md: "48px" }}
             lineHeight={{ base: "26px", md: "48px" }}
           >
             LA{" "}
-            <Box as="span" color="#9EAC8E" fontWeight="900">
+            <Box as="span" color="#9EAC8E" fontWeight="600">
               NATURALEZA
             </Box>{" "}
-            COMO EL MOTOR DE NUESTROS{" "}
-            <Box as="span" color="#9EAC8E" fontWeight="900">
-              DESSARROLLOS
+            IMPULSA<br />NUESTROS{" "}
+            <Box as="span" color="#9EAC8E" fontWeight="600">
+              DESARROLLOS
             </Box>
           </Box>
         </Flex>
@@ -81,7 +81,8 @@ const TrustUs = () => {
             align="center"
             justify="center"
             fontSize="14px"
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
+            fontWeight="400"
             whiteSpace="nowrap"
           >
             Nuestros valores
@@ -104,8 +105,8 @@ const TrustUs = () => {
                 p={4}
                 mx={2}
                 color="#FFFFFF99"
-                fontFamily="Travels"
-                fontWeight="700"
+                fontFamily="Archivo"
+                fontWeight="600"
                 fontSize={{ base: "16px", md: "25px", lg: "32px" }}
               >
                 {brand}

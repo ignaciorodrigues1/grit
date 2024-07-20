@@ -16,7 +16,7 @@ const DesktopNavbar = () => {
         <Box
           marginRight="4"
           textColor="white"
-          fontFamily="Ubuntu Mono"
+          fontFamily="Archivo"
           fontSize="16px"
         >
           <Link href="/proyectos" _hover={{ textDecoration: "none" }}>
@@ -26,7 +26,7 @@ const DesktopNavbar = () => {
         <Box
           marginRight="4"
           textColor="white"
-          fontFamily="Ubuntu Mono"
+          fontFamily="Archivo"
           fontSize="16px"
         >
           <Link href="/empresa" _hover={{ textDecoration: "none" }}>
@@ -36,7 +36,7 @@ const DesktopNavbar = () => {
         <Box
           marginRight="4"
           textColor="white"
-          fontFamily="Ubuntu Mono"
+          fontFamily="Archivo"
           fontSize="16px"
         >
           <Link href="/app" _hover={{ textDecoration: "none" }}>
@@ -56,7 +56,7 @@ const DesktopNavbar = () => {
           fontSize="14px"
           fontWeight="700"
           borderRadius="4px"
-          fontFamily="Travels"
+          fontFamily="Archivo"
         >
           INGRESAR
         </Link>

@@ -25,7 +25,8 @@ const Info = () => {
           />
           <Text
             color="#EBEBEB"
-            fontFamily="Travels"
+            fontFamily="Archivo"
+            fontWeight="600"
             fontSize={{ base: "24px", md: "32px" }}
             lineHeight={{ base: "26px", md: "32px" }}
             textTransform="uppercase"

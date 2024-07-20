@@ -33,13 +33,14 @@ const WavyGrid = () => {
             <Flex flexDirection="column">
               <Text
                 color="#EBEBEB"
-                fontFamily="Travels"
-                fontWeight="700"
+                fontFamily="Archivo"
+                fontWeight="bold"
                 pb={2}
                 fontSize={{ base: "20px", sm: "5vw", md: "38px" }}
                 lineHeight={{ base: "26px", sm: "5vw", md: "38px" }}
+                maxWidth={{base:"100%", md: "70%"}}
               >
-                UN CAMINO DE{" "}
+                UN CAMINO DE {" "}
                 <Box as="span" color="#9EAC8E" fontWeight="900">
                   TRANSFORMACIÓN
                 </Box>
@@ -47,12 +48,11 @@ const WavyGrid = () => {
               <Text
                 color="#EBEBEB"
                 fontSize="14px"
-                fontFamily="Ubuntu Mono"
-                maxWidth={{ base: "100%", md: "90%", lg: "75%", xl: "60%" }}
+                fontFamily="Archivo"
+                fontWeight="400"
+                maxWidth={{ base: "100%", md: "60%" }}
               >
-                El profundo compromiso se ve reflejado en cada una de nuestras
-                obras, las cuales se distinguen por su calidad, cuidado del
-                medio ambiente e integración con la comunidad.
+                Impactamos en la vida de las personas a través del desarrollo de comunidades sustentables.
               </Text>
             </Flex>
           </Box>
@@ -122,11 +122,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono1.png" alt="Icono 1" />
 
-            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Archivo" fontWeight="bold">
               +3000
             </Text>
 
-            <Text fontSize="lg" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Archivo" fontWeight="400">
               árboles
             </Text>
           </Flex>
@@ -162,11 +162,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono2.png" alt="Icono 2" />
 
-            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Archivo" fontWeight="600">
               +1000
             </Text>
 
-            <Text fontSize="lg" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Archivo" fontWeight="400">
               lotes
             </Text>
           </Flex>
@@ -222,11 +222,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono3.png" alt="Icono 3" />
 
-            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Archivo" fontWeight="600">
               +500
             </Text>
 
-            <Text fontSize="lg" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Archivo" fontWeight="400">
               hectáreas
             </Text>
           </Flex>
@@ -262,11 +262,11 @@ const WavyGrid = () => {
           >
             <Image src="/images/icono4.png" alt="Icono 4" />
 
-            <Text mt="2" fontSize="3xl" fontFamily="Travels" fontWeight="700">
+            <Text mt="2" fontSize="3xl" fontFamily="Archivo" fontWeight="600">
               +1000
             </Text>
 
-            <Text fontSize="lg" fontFamily="Ubuntu Mono">
+            <Text fontSize="lg" fontFamily="Archivo" fontWeight="400">
               familias
             </Text>
           </Flex>
@@ -369,8 +369,8 @@ const WavyGrid = () => {
               </Text>
               <Text
                 color="white"
-                fontFamily="Travels"
-                fontWeight="900"
+                fontFamily="Archivo"
+                fontWeight="600"
                 textTransform="uppercase"
                 fontSize={{ base: "25px", md: "32px" }}
               >
@@ -381,7 +381,7 @@ const WavyGrid = () => {
               </Box>
               <Text
                 color="#EBEBEB"
-                fontFamily="Ubuntu Mono"
+                fontFamily="Archivo"
                 fontWeight="400"
                 fontSize="14px"
               >
@@ -394,7 +394,7 @@ const WavyGrid = () => {
                   textAlign="center"
                   color="white"
                   textTransform="uppercase"
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
                   bgColor="#EC6E44"
                   h="36px"
                   _hover={{ bgColor: "#9EAC8E" }}
@@ -444,7 +444,7 @@ const WavyGrid = () => {
             >
               <Text
                 color="white"
-                fontFamily="Travels"
+                fontFamily="Archivo"
                 fontWeight="400"
                 fontSize={{ base: "25px", md: "32px" }}
               >
@@ -452,8 +452,8 @@ const WavyGrid = () => {
               </Text>
               <Text
                 color="white"
-                fontFamily="Travels"
-                fontWeight="900"
+                fontFamily="Archivo"
+                fontWeight="600"
                 textTransform="uppercase"
                 fontSize={{ base: "25px", md: "32px" }}
               >
@@ -464,8 +464,8 @@ const WavyGrid = () => {
               </Box>
               <Text
                 color="#EBEBEB"
-                fontFamily="Ubuntu Mono"
-                fontWeight="400"
+                fontFamily="Archivo"
+                fontWeight="500"
                 fontSize="14px"
               >
                 Respirá, tenés opciones
@@ -477,7 +477,8 @@ const WavyGrid = () => {
                   textAlign="center"
                   color="white"
                   textTransform="uppercase"
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
+                  fontWeight="600"
                   bgColor="#EC6E44"
                   h="36px"
                   _hover={{ bgColor: "#9EAC8E" }}
