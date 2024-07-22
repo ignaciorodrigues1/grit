@@ -19,6 +19,16 @@ const DesktopNavbar = () => {
           fontFamily="Archivo"
           fontSize="16px"
         >
+          <Link href="/" _hover={{ textDecoration: "none" }}>
+            Inicio
+          </Link>
+        </Box>
+        <Box
+          marginRight="4"
+          textColor="white"
+          fontFamily="Archivo"
+          fontSize="16px"
+        >
           <Link href="/proyectos" _hover={{ textDecoration: "none" }}>
             Proyectos
           </Link>
@@ -30,7 +40,7 @@ const DesktopNavbar = () => {
           fontSize="16px"
         >
           <Link href="/empresa" _hover={{ textDecoration: "none" }}>
-            La Empresa
+            Empresa
           </Link>
         </Box>
         <Box

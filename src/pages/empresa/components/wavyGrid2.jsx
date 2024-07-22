@@ -318,7 +318,7 @@ const WavyGrid2 = () => {
               width="100%"
             />
             <Image
-              src="/images/empresa/image-2.png"
+              src="/images/empresa/image2.png"
               alt="Image 6"
               display={{ base: "block", md: "none" }}
               width="100%"

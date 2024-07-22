@@ -18,7 +18,7 @@ const Subtitle = () => {
               fontSize={{ base: "32px", md: "42px", lg: "72px" }}
               fontWeight="900"
               lineHeight={{ base: "32px", md: "42px", lg: "62px" }}
-              fontFamily="Travels"
+              fontFamily="Archivo"
               textTransform="uppercase"
               align="right"
               w={{ base: "100%", md: "80%" }}
@@ -30,9 +30,10 @@ const Subtitle = () => {
             <Text
               fontSize={{ base: "14px", md: "16px" }}
               lineHeight={{ base: "16px", md: "16px" }}
-              fontFamily="Ubuntu Mono"
+              fontFamily="Archivo"
               align="right"
               w={{ base: "70%", md: "60%" }}
+              mt="4"
             >
               A pocos minutos de Rosario, sobre la Ruta Provincial 18 en el Km
               12 hay una nueva opción para vivir o invertir.

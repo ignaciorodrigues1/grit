@@ -33,7 +33,7 @@ const Hero = () => {
             fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
             lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
             fontWeight="bold"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             textTransform="uppercase"
             textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
             pb="5"
@@ -43,7 +43,7 @@ const Hero = () => {
           <Text
             color="#EBEBEB"
             fontSize="14px"
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
             maxWidth={{ md: "60%" }}
           >
             El profundo compromiso se ve reflejado en cada una de nuestras

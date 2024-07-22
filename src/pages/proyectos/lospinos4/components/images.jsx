@@ -19,7 +19,7 @@ const Images = () => {
               fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
               lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
               fontWeight="900"
-              fontFamily="Travels"
+              fontFamily="Archivo"
               textTransform="uppercase"
               align="center"
               color="#1B6727"
@@ -31,7 +31,7 @@ const Images = () => {
               pb="5"
               fontSize={{ base: "20px", sm: "4vw", md: "35px", lg: "42px" }}
               lineHeight={{ base: "30px", sm: "6vw", md: "35px", lg: "47px" }}
-              fontFamily="Travels"
+              fontFamily="Archivo"
               fontWeight="900"
               align="center"
               textTransform="uppercase"

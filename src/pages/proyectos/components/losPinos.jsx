@@ -55,7 +55,7 @@ const LosPinos = () => {
           <Text
             color="white"
             fontSize="16px"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             fontWeight="300"
             textTransform="uppercase"
             pb="1"
@@ -67,7 +67,7 @@ const LosPinos = () => {
             color="white"
             fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
             fontWeight="bold"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             textTransform="uppercase"
             lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
             textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
@@ -79,13 +79,13 @@ const LosPinos = () => {
           <Text
             color="#EBEBEB"
             fontSize="14px"
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
             maxWidth="60%"
             ml="auto"
           >
-            Nos enorgullecemos de nuestro profundo compromiso con la excelencia en cada detalle.
-            Cada aspecto de nuestras obras refleja este compromiso, desde la planificación hasta
-            la ejecución final. 
+            Los Pinos 4, una comunidad en crecimiento.<br/>
+            Experimentá el equilibrio entre la vida urbana y la tranquilidad.<br/>
+            Todos los servicios a tu alcance: agua, gas, cloacas, internet y la plaza más divertida de la zona.  
           </Text>
 
           <Link href="/proyectos/lospinos4">
@@ -95,7 +95,7 @@ const LosPinos = () => {
               textAlign="center"
               textTransform="uppercase"
               color="#1A6626"
-              fontFamily="Travels"
+              fontFamily="Archivo"
               bgColor="white"
               h="36px"
               width="fit-content"

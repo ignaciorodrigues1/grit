@@ -58,7 +58,7 @@ const MobileNavbar = () => {
                   <VStack spacing={4} alignItems="center">
                     <Link
                       fontSize="32px"
-                      fontFamily="Travels"
+                      fontFamily="Archivo"
                       fontWeight="900"
                       _hover={{ textDecoration: "none" }}
                       href="/"
@@ -67,7 +67,7 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       fontSize="32px"
-                      fontFamily="Travels"
+                      fontFamily="Archivo"
                       fontWeight="900"
                       _hover={{ textDecoration: "none" }}
                       href="/proyectos"
@@ -76,7 +76,7 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       fontSize="32px"
-                      fontFamily="Travels"
+                      fontFamily="Archivo"
                       fontWeight="900"
                       _hover={{ textDecoration: "none" }}
                       href="/empresa"
@@ -85,7 +85,7 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       fontSize="32px"
-                      fontFamily="Travels"
+                      fontFamily="Archivo"
                       fontWeight="900"
                       _hover={{ textDecoration: "none" }}
                       href="/app"
@@ -107,7 +107,7 @@ const MobileNavbar = () => {
                     fontSize="14px"
                     fontWeight="700"
                     borderRadius="4px"
-                    fontFamily="Travels"
+                    fontFamily="Archivo"
                     mx="auto"
                     mt="7"
                   >

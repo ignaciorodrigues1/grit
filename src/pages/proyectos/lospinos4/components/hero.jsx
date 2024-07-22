@@ -67,7 +67,7 @@ const Hero = () => {
           fontSize="32px"
           fontWeight="bold"
           my={10}
-          fontFamily="Travels"
+          fontFamily="Archivo"
           textTransform="uppercase"
           color="white"
         >

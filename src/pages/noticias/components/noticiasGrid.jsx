@@ -129,7 +129,7 @@ const NewsSlider = () => {
                   color="white"
                   textAlign="center"
                   mt={2}
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
                   fontSize="16px"
                   textTransform="uppercase"
                   fontWeight="700"

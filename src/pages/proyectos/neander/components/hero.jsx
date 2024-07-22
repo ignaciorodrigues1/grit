@@ -68,7 +68,7 @@ const Hero = () => {
           fontSize="32px"
           fontWeight="bold"
           my={10}
-          fontFamily="Travels"
+          fontFamily="Archivo"
           textTransform="uppercase"
         >
           <span style={{ color: "#A29CE2" }}>Volvé a tu</span> esencia
@@ -117,7 +117,7 @@ const Hero = () => {
             <PiCube fontSize="35px" /> */}
 
             {/* Text
-            <Text fontSize="25px" color="white" fontFamily="Travels" pl="1">
+            <Text fontSize="25px" color="white" fontFamily="Archivo" pl="1">
               360°
             </Text>
           </Box> */}

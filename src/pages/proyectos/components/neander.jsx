@@ -55,7 +55,7 @@ const Neander = () => {
           <Text
             color="white"
             fontSize="16px"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             fontWeight="300"
             textTransform="uppercase"
             pb="1"
@@ -67,7 +67,7 @@ const Neander = () => {
             color="white"
             fontSize={{ base: "35px", sm: "6vw", md: "55px", lg: "72px" }}
             fontWeight="bold"
-            fontFamily="Travels"
+            fontFamily="Archivo"
             textTransform="uppercase"
             lineHeight={{ base: "35px", sm: "6vw", md: "55px", lg: "67px" }}
             textShadow="0px 0px 12px rgba(0, 0, 0, 0.65)"
@@ -79,13 +79,13 @@ const Neander = () => {
           <Text
             color="#EBEBEB"
             fontSize="14px"
-            fontFamily="Ubuntu Mono"
+            fontFamily="Archivo"
             maxWidth="60%"
             mr="auto"
           >
-            El profundo compromiso se ve reflejado en cada una de nuestras
-            obras, las cuales se distinguen por su calidad, cuidado del medio
-            ambiente e integración con la comunidad.
+            Neander, volvé a tu esencia.<br/>
+            La fusión perfecta entre naturaleza y comodidad.<br/>
+            ¡Todos los servicios a 20 minutos de Rosario! Importante área comercial y deportiva, plaza, reservorio de agua y mucho aire puro.
           </Text>
 
           <Link href="/proyectos/neander">
@@ -95,7 +95,7 @@ const Neander = () => {
               textAlign="center"
               textTransform="uppercase"
               color="#4139C6"
-              fontFamily="Travels"
+              fontFamily="Archivo"
               bgColor="white"
               h="36px"
               width="fit-content"

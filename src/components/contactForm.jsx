@@ -128,45 +128,44 @@ const ContactForm = () => {
         {/* Form */}
         <form onSubmit={sendEmail}>
           {/* Name and Company */}
-          <Flex gap={'16px'} direction={{base: "column", md: "row"}}>
-            <Input
-              type="text"
-              name="name"
-              placeholder="Nombre"
-              mr={2}
-              fontFamily="Archivo"
-              color="white"
-              _placeholder={{ color: "white" }}
-              borderRadius="4px"
-              border="1px solid rgba(255, 255, 255, 0.80)"
-              background="rgba(255, 255, 255, 0.10)"
-              mb={{base: "4", md: ""}}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              disabled={isPending}
-            />
-            <Input
-              type="text"
-              name="company"
-              placeholder="Empresa"
-              color="white"
-              fontFamily="Archivo"
-              _placeholder={{ color: "white" }}
-              borderRadius="4px"
-              border="1px solid rgba(255, 255, 255, 0.80)"
-              background="rgba(255, 255, 255, 0.10)"
-              onChange={(e) => setCompany(e.target.value)}
-              required
-              disabled={isLoading}
-            />
-          </Flex>
+          <Input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            mr={2}
+            fontFamily="Archivo"
+            color="white"
+            _placeholder={{ color: "white" }}
+            borderRadius="4px"
+            border="1px solid rgba(255, 255, 255, 0.80)"
+            background="rgba(255, 255, 255, 0.10)"
+            mb={{base: "4", md: ""}}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            disabled={isPending}
+          />
+          <Input
+            type="text"
+            name="company"
+            placeholder="Empresa"
+            color="white"
+            fontFamily="Archivo"
+            _placeholder={{ color: "white" }}
+            borderRadius="4px"
+            mb={4}
+            border="1px solid rgba(255, 255, 255, 0.80)"
+            background="rgba(255, 255, 255, 0.10)"
+            onChange={(e) => setCompany(e.target.value)}
+            required
+            disabled={isLoading}
+          />
 
           {/* Email */}
           <Input
             type="email"
             name="email"
-            placeholder="Correo Electrónico"
+            placeholder="Correo electrónico"
             mb={4}
             color="white"
             _placeholder={{ color: "white" }}

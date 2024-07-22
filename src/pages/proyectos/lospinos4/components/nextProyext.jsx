@@ -23,7 +23,7 @@ const NextProject = () => {
           textAlign="center"
           color="white"
           mb={8}
-          fontFamily="Travels"
+          fontFamily="Archivo"
           fontSize={{ base: "27px", md: "35px" }}
         >
           OTROS PROYECTOS
@@ -66,7 +66,7 @@ const NextProject = () => {
                   color="white"
                   fontSize={{ base: "35px", sm: "6vw", md: "35px", lg: "45px" }}
                   fontWeight="bold"
-                  fontFamily="Travels"
+                  fontFamily="Archivo"
                   textTransform="uppercase"
                   lineHeight={{
                     base: "35px",
@@ -82,7 +82,7 @@ const NextProject = () => {
                 <Text
                   color="#EBEBEB"
                   fontSize="14px"
-                  fontFamily="Ubuntu Mono"
+                  fontFamily="Archivo"
                   maxWidth="60%"
                   ml="auto"
                 >
@@ -96,7 +96,7 @@ const NextProject = () => {
                     textAlign="center"
                     textTransform="uppercase"
                     color="#4038C5"
-                    fontFamily="Travels"
+                    fontFamily="Archivo"
                     bgColor="white"
                     h="36px"
                     width="fit-content"

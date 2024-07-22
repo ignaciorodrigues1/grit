@@ -59,3 +59,10 @@ body,
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
+
+.icon {
+  width: 50px;
+  max-height: 50px;
+  color: #FFF;
+  fill: #FFF;
+}

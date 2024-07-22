@@ -361,7 +361,7 @@ const WavyGrid = () => {
             >
               <Text
                 color="white"
-                fontFamily="Travels"
+                fontFamily="Archivo"
                 fontWeight="400"
                 fontSize={{ base: "25px", md: "32px" }}
               >
